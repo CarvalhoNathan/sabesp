@@ -77,7 +77,7 @@ Os documentos técnicos do repositório correspondem diretamente à estrutura de
 | :--- | :--- | :---: |
 | **Capítulo 1 · Introdução** | Contextualização, problema, justificativa e objetivos. | [`metodologia-tcc.md`](metodologia-tcc.md) |
 | **Capítulo 2 · Referencial Teórico** | Saneamento em Santos, Sabesp, SEMAM, PMISB (Relatório R4), Lei 852/2014 e ODS da ONU. | [`contexto-e-legislacao.md`](contexto-e-legislacao.md) |
-| **Capítulo 3 · Engenharia de Requisitos** | Perfis de usuário, casos de uso, regras RBAC e especificação REST. | [`regras-e-api.md`](regras-e-api.md) |
+| **Capítulo 3 · Engenharia de Requisitos** | Matriz MoSCoW (RF/RNF), perfis de usuário, regras RBAC e especificação REST. | [`requisitos-do-sistema.md`](requisitos-do-sistema.md) / [`regras-e-api.md`](regras-e-api.md) |
 | **Capítulo 4 · Modelagem e Arquitetura** | Modelo ER (Proto SQL), Soft Delete, Auditoria e camadas Spring. | [`arquitetura-e-banco.md`](arquitetura-e-banco.md) |
 | **Capítulo 5 · Design e Prototipagem** | Identidade de Santos, tipografia Montserrat e telas no Figma. | [`design-system.md`](design-system.md) |
 | **Capítulo 6 · Considerações Finais** | Resultados obtidos, limitações do estudo e trabalhos futuros. | Monografia Final |

@@ -36,6 +36,7 @@ Aprofunde-se nos detalhes de engenharia e regras de negócio:
 | Módulo | Foco & Conteúdo | Link |
 | :--- | :--- | :---: |
 | **🏛️ Contexto & Legislação** | O diagnóstico real de Santos, a Ouvidoria 162, a Lei 852/2014, as 5 Zonas e os ODS da ONU. | [Explorar →](docs/contexto-e-legislacao.md) |
+| **📋 Requisitos & Regras** | Matriz formal de requisitos funcionais (RF), não-funcionais (RNF) e tipologia oficial do PMISB. | [Explorar →](docs/requisitos-do-sistema.md) |
 | **🗄️ Arquitetura & Banco** | Ciclo de vida do chamado, matriz de status, modelo ER (Proto SQL) e Soft Delete. | [Explorar →](docs/arquitetura-e-banco.md) |
 | **🔐 Regras de Negócio & API** | Controle de acesso por papéis (RBAC), validações de domínio e catálogo de rotas REST / Swagger. | [Explorar →](docs/regras-e-api.md) |
 | **🎨 Design System & UI/UX** | Tipografia Montserrat, catálogo de logos SVG oficiais e acesso ao protótipo no Figma. | [Explorar →](docs/design-system.md) |
