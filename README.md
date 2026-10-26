@@ -16,11 +16,13 @@ Um sistema web desenvolvido para modernizar e conferir transparência ao fluxo d
 ## 📌 Índice
 
 - [Visão Geral](#-visão-geral)
-- [Contexto Institucional e Atuação Municipal](#-contexto-institucional-e-atuação-municipal)
+- [O Problema Real vs. Solução Proposta](#-o-problema-real-vs-solução-proposta)
+- [Contexto Institucional, Regionalização e Marco Legal](#-contexto-institucional-regionalização-e-marco-legal)
+- [Alinhamento com os ODS da ONU](#-alinhamento-com-os-ods-da-onu)
 - [Ciclo de Vida do Chamado](#-ciclo-de-vida-do-chamado)
 - [Funcionalidades por Perfil](#-funcionalidades-por-perfil)
 - [Tecnologias Utilizadas](#-tecnologias-utilizadas)
-- [Arquitetura e Banco de Dados](#-arquitetura-e-banco-de-dados)
+- [Arquitetura e Banco de Dados (Proto SQL)](#-arquitetura-e-banco-de-dados-proto-sql)
 - [Endpoints Principais da API](#-endpoints-principais-da-api)
 - [Como Executar o Projeto](#-como-executar-o-projeto)
 - [Prototipagem](#-prototipagem)
@@ -32,17 +34,45 @@ Um sistema web desenvolvido para modernizar e conferir transparência ao fluxo d
 
 Historicamente, as solicitações sobre vazamentos e problemas na rede de esgoto dependem de canais fragmentados, dificultando o acompanhamento pelo cidadão e a fiscalização do município sobre os prazos da concessionária.
 
-Esta plataforma soluciona esse gargalo criando uma **esteira de atendimento transparente**:
+Esta plataforma soluciona esse gargalo criando uma **esteira de atendimento transparente e auditável**:
 
-1. O cidadão registra o chamado com fotos e localização.
-2. A Prefeitura (Semam) atua como órgão fiscalizador e regulador, realizando a triagem técnica.
-3. A Sabesp recebe as ordens oficiais já auditadas para execução em campo e atualiza o progresso em tempo real.
+1. O cidadão registra o chamado com fotos, tipo de ocorrência e localização.
+2. A Prefeitura (Semam/Gestão) atua como órgão fiscalizador e regulador, realizando a triagem técnica e regionalizada.
+3. A Sabesp recebe as ordens oficiais já auditadas para execução em campo e atualiza o progresso em tempo real com comprovações técnicas.
 
 ---
 
-## 🏛️ Contexto Institucional e Atuação Municipal
+## ⚖️ O Problema Real vs. Solução Proposta
+
+Atualmente no município de Santos, demandas de manutenção urbana (como vazamentos na rede coletora de esgoto, abatimentos asfálticos e tampas danificadas) tramitam por processos manuais e burocráticos:
+
+| Processo Atual (Ouvidoria / Manual) | Nova Esteira Digital (Sistema Web) |
+| :--- | :--- |
+| **Abertura:** O munícipe precisa ligar para o telefone 162 (Ouvidoria) ou comparecer presencialmente ao Paço Municipal em horário comercial. | **Abertura Digital 24/7:** Munícipe registra o chamado diretamente pela web com endereço, tipo da ocorrência e foto em segundos. |
+| **Triagem e Despacho:** Processamento manual distribuído via ofícios e planilhas entre órgãos e prefeituras regionais. | **Painel Integrado da Prefeitura:** Visualização centralizada e filtros por região administrativa para despacho ágil. |
+| **Comunicação com a Sabesp:** Notificações e intimações burocráticas formais, gerando atrito e atrasos na comunicação. | **Acesso Operacional Dedicado:** A Sabesp recebe as ordens já auditadas pela prefeitura diretamente em sua fila de trabalho. |
+| **Controle de SLA e Prazos:** Dificuldade em mensurar e auditar o cumprimento do prazo legal de 15 dias corridos. | **Auditoria Automatizada:** Registro imutável de datas para acompanhamento do prazo legal da Lei Complementar nº 852/2014. |
+| **Retorno ao Cidadão:** O munícipe não tem visibilidade se o local foi vistoriado ou quando a obra foi concluída. | **Transparência Total:** Acompanhamento do status em tempo real com histórico e parecer técnico conclusivo da Sabesp. |
+
+---
+
+## 🏛️ Contexto Institucional, Regionalização e Marco Legal
 
 A cidade de **Santos** possui particularidades geográficas e históricas marcantes, como seus icônicos **canais de drenagem** projetados por Saturnino de Brito e uma orla de grande relevância turística e ambiental. Vazamentos ou anomalias na rede de esgotamento sanitário afetam diretamente a balneabilidade das praias e a saúde pública do município.
+
+### ⚖️ Marco Regulatório: Lei Complementar Municipal nº 852/2014
+No âmbito municipal, a relação entre a Prefeitura de Santos e a concessionária Sabesp é respaldada por rigorosa legislação fiscalizatória:
+- **Prazo Legal de Atendimento:** A concessionária possui o prazo máximo de **15 dias corridos** para concluir os reparos após a notificação formal.
+- **Penalidades Financeiras:** O descumprimento dos prazos ou a realização de obras em desconformidade que acarretem risco à mobilidade urbana e à segurança sujeita a concessionária a multas a partir de **R$ 17.045,05** por ocorrência.
+- O sistema atua como **plataforma probatória e de auditoria**, permitindo à gestão pública evidenciar os prazos decorridos e instruir eventuais processos administrativos sancionatórios.
+
+### 🏙️ Regionalização Administrativa (As 5 Zonas de Santos)
+A fiscalização urbana do município atua dividida em **5 Prefeituras Regionais**, mapeadas nos filtros da aplicação para distribuição geográfica das demandas:
+1. **Zona da Orla / Intermediária:** Maior adensamento populacional e proximidade direta com a faixa de areia e canais de drenagem.
+2. **Centro Histórico:** Área com patrimônio histórico tombado e rede subterrânea centenária.
+3. **Zona Noroeste:** Bacia urbana densa com demandas frequentes de macrodrenagem e esgotamento.
+4. **Morros:** Geografia acidentada que exige cuidados geotécnicos e contenção de vazamentos em encostas.
+5. **Área Continental:** Ampla extensão territorial com características rurais e ecossistema de manguezais.
 
 ### 🌿 Secretaria Municipal de Meio Ambiente, Desenvolvimento Urbano e Sustentabilidade (SEMAM)
 - **Missão e Fiscalização:** Órgão municipal responsável pela proteção do ecossistema urbano e controle ambiental, atuando por meio do **DEPCAM** (Departamento de Políticas e Controle Ambiental) e da **SEFISCAM** (Seção de Fiscalização Ambiental).
@@ -53,6 +83,16 @@ A cidade de **Santos** possui particularidades geográficas e históricas marcan
 - **Operação e Manutenção do Saneamento:** Concessionária responsável pela coleta, transporte e tratamento de esgoto de Santos. Opera estações elevatórias, a Estação de Pré-Condicionamento (EPC) no José Menino e o Emissário Submarino de Santos.
 - **Marco Legal do Saneamento (Lei Federal nº 14.026/2020):** Compromisso com metas contínuas de eficiência operacional, universalização do esgotamento sanitário, combate a perdas e redução no tempo de atendimento emergencial a vazamentos.
 - **Transparência e Comprovação Técnica:** Na plataforma, a Sabesp registra pareceres técnicos formais, histórico de manutenções e registros fotográficos da obra concluída, garantindo conformidade aos órgãos de controle.
+
+---
+
+## 🌍 Alinhamento com os ODS da ONU
+
+O projeto contribui diretamente para a **Agenda 2030** da Organização das Nações Unidas (ONU), integrando metas essenciais de sustentabilidade urbana:
+
+- **ODS 6 — Água Potável e Saneamento:** Assegurar a disponibilidade e gestão sustentável da água e saneamento para todos, combatendo a contaminação de corpos hídricos e canais urbanos.
+- **ODS 9 — Indústria, Inovação e Infraestrutura:** Modernização digital da infraestrutura pública com automação de serviços essenciais de auditoria e manutenção da malha viária e sanitária.
+- **ODS 11 — Cidades e Comunidades Sustentáveis:** Fortalecimento da resiliência urbana e da capacidade de resposta rápida do município frente a emergências de infraestrutura urbana.
 
 ---
 
