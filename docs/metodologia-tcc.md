@@ -35,14 +35,16 @@
 ## 🎯 Objetivos
 
 ### Objetivo Geral
-Desenvolver e validar uma plataforma web centralizada em arquitetura Java Spring Boot e PostgreSQL que digitalize a esteira de requisições de manutenção na rede de esgoto de Santos, integrando a denúncia cidadã, a triagem fiscalizatória da Secretaria de Meio Ambiente (SEMAM) e a execução operacional da concessionária Sabesp.
+Desenvolver e validar uma plataforma web centralizada em arquitetura Java Spring Boot e PostgreSQL que digitalize a esteira de requisições de manutenção na rede de esgoto de Santos, integrando a denúncia cidadã, a triagem fiscalizatória da Secretaria de Meio Ambiente (SEMAM/Sepref) e a execução operacional da concessionária Sabesp.
 
 ### Objetivos Específicos
 1. **Mapear a esteira atual** de requisições municipais via Ouvidoria 162 e identificar os gargalos de comunicação entre os órgãos com base no **PMISB (Relatório R4 / Ações de Emergência)**, no caso emblemático da **Rua Goiás (2023)** e nos projetos de universalização periférica no **Dique da Vila Gilda (2025–2026)**.
-2. **Modelar um banco de dados relacional** com padrões de *Soft Delete* e tabelas de auditoria imutáveis (*Append-Only*).
-3. **Projetar interfaces intuitivas e acessíveis no Figma** com base no manual de identidade visual de Santos para Munícipe, Fiscal e Operador.
-4. **Implementar regras de negócio e controle de acesso (RBAC)** em API RESTful, automatizando a contagem de SLA de 15 dias corridos da legislação municipal e gerando insumos para o **CMSBS** e o **FMSBA**.
-5. **Avaliar a aderência da solução** aos Objetivos de Desenvolvimento Sustentável (ODS 6, 9, 11 e 16 da ONU).
+2. **Aplicar práticas de Design Thinking**, mapeando as personas de munícipes, fiscais e operadores, detalhando suas jornadas e criando um assistente de triagem inteligente (esgoto vs. água de chuva).
+3. **Estruturar uma matriz de riscos formal** (ISO 31000 / PMBOK) cobrindo riscos de trotes, LGPD, interferências de rede e contingências de maré.
+4. **Modelar um banco de dados relacional** com padrões de *Soft Delete* e tabelas de auditoria imutáveis (*Append-Only*).
+5. **Projetar interfaces intuitivas e acessíveis no Figma** com base no manual de identidade visual de Santos para Munícipe, Fiscal e Operador.
+6. **Implementar regras de negócio e controle de acesso (RBAC)** em API RESTful, automatizando a contagem de SLA de 15 dias corridos da legislação municipal e gerando insumos para o **CMSBS** e o **FMSBA**.
+7. **Avaliar a aderência da solução** aos Objetivos de Desenvolvimento Sustentável (ODS 6, 9, 11 e 16 da ONU).
 
 ---
 
@@ -62,10 +64,12 @@ Desenvolver e validar uma plataforma web centralizada em arquitetura Java Spring
 * **Fontes Primárias:** Plano Municipal Integrado de Saneamento Básico de Santos (PMISB · Relatório R4), Leis Municipais nº 852/2014, 817/2013 e 4.525/2024 (FMSBA), Decretos Municipais nº 10.687/2025 e 11.328/2026 (CMSBS), Lei Estadual nº 17.853/2023, relatórios da SEMAM e dados da parceria Sabesp/Prefeitura na Vila Gilda.
 * **Ciclo de Desenvolvimento:** Metodologia Ágil com sprints incrementais:
   * **Etapa 1:** Análise de domínio e levantamento de requisitos com base no PMISB e legislação municipal.
-  * **Etapa 2:** Prototipagem e design iterativo (Figma).
-  * **Etapa 3:** Modelagem arquitetural e persistência em nuvem (PostgreSQL/Supabase).
-  * **Etapa 4:** Desenvolvimento do backend em camadas (Spring Boot).
-  * **Etapa 5:** Verificação e testes de integração de API.
+  * **Etapa 2:** Design Thinking, personas, cenários e árvore de triagem inteligente.
+  * **Etapa 3:** Análise e gestão formal de riscos (ISO 31000 / PMBOK).
+  * **Etapa 4:** Prototipagem e design iterativo (Figma).
+  * **Etapa 5:** Modelagem arquitetural e persistência em nuvem (PostgreSQL/Supabase).
+  * **Etapa 6:** Desenvolvimento do backend em camadas (Spring Boot).
+  * **Etapa 7:** Verificação e testes de integração de API.
 
 ---
 
@@ -76,10 +80,10 @@ Os documentos técnicos do repositório correspondem diretamente à estrutura de
 | Capítulo da Monografia | Conteúdo Acadêmico | Documento Fonte no Repositório |
 | :--- | :--- | :---: |
 | **Capítulo 1 · Introdução** | Contextualização, caso Rua Goiás, caso Vila Gilda, problema, justificativa e objetivos. | [`metodologia-tcc.md`](metodologia-tcc.md) |
-| **Capítulo 2 · Referencial Teórico** | Saneamento em Santos, Sabesp (privatização), SEMAM, PMISB R4, Lei 852/2014, FMSBA e CMSBS. | [`contexto-e-legislacao.md`](contexto-e-legislacao.md) |
-| **Capítulo 3 · Engenharia de Requisitos** | Matriz MoSCoW (RF/RNF), perfis de usuário, regras RBAC e especificação REST. | [`requisitos-do-sistema.md`](requisitos-do-sistema.md) / [`regras-e-api.md`](regras-e-api.md) |
-| **Capítulo 4 · Modelagem e Arquitetura** | Modelo ER (Proto SQL), Soft Delete, Auditoria e camadas Spring. | [`arquitetura-e-banco.md`](arquitetura-e-banco.md) |
-| **Capítulo 5 · Design e Prototipagem** | Identidade de Santos, tipografia Montserrat e telas no Figma. | [`design-system.md`](design-system.md) |
+| **Capítulo 2 · Referencial Teórico** | Saneamento em Santos, Sabesp (privatização), SEMAM/Sepref, PMISB R4, Lei 852/2014, FMSBA e CMSBS. | [`contexto-e-legislacao.md`](contexto-e-legislacao.md) |
+| **Capítulo 3 · Engenharia de Requisitos & Design Thinking** | Personas, cenários, árvore de triagem inteligente, matriz MoSCoW (RF/RNF) e RBAC. | [`personas-e-cenarios.md`](personas-e-cenarios.md) • [`triagem-inteligente.md`](triagem-inteligente.md) • [`requisitos-do-sistema.md`](requisitos-do-sistema.md) • [`regras-e-api.md`](regras-e-api.md) |
+| **Capítulo 4 · Modelagem, Arquitetura & Gestão de Riscos** | Modelo ER (Proto SQL), Soft Delete, Auditoria, camadas Spring e Matriz de Riscos ISO 31000. | [`arquitetura-e-banco.md`](arquitetura-e-banco.md) • [`matriz-de-riscos.md`](matriz-de-riscos.md) |
+| **Capítulo 5 · Design de Interação e Prototipagem (UI/UX)** | Arquitetura de telas (Sitemap), wireframe textual, stepper de acompanhamento, tipografia Montserrat e Figma. | [`jornada-e-ux.md`](jornada-e-ux.md) • [`design-system.md`](design-system.md) |
 | **Capítulo 6 · Considerações Finais** | Resultados obtidos, limitações do estudo e trabalhos futuros. | Monografia Final |
 
 ---

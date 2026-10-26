@@ -41,12 +41,16 @@
 
 ## 🧭 Central de Documentação (Docs Hub)
 
-Aprofunde-se nos detalhes de engenharia, arquitetura e governança pública:
+Aprofunde-se nos detalhes de engenharia, arquitetura, experiência e governança pública:
 
 | Módulo | Foco & Conteúdo | Link |
 | :--- | :--- | :---: |
 | **🏛️ Contexto & Legislação** | Diagnóstico real de Santos, caso Rua Goiás, Vila Gilda, FMSBA (Lei 4.525), CMSBS, atuação Sepref/Semam/Seserp e ODS. | [Explorar →](docs/contexto-e-legislacao.md) |
+| **👥 Personas & Cenários** | Design Thinking aplicado: perfis de Dona Helena (Munícipe), Carlos (Fiscal Sepref), Roberto (Sabesp) e Dra. Renata (Semam). | [Explorar →](docs/personas-e-cenarios.md) |
+| **🧠 Triagem Inteligente** | Árvore de decisão lógica: diferenciação entre esgoto (Sabesp) e águas pluviais/chuva (Prefeitura/Seserp). | [Explorar →](docs/triagem-inteligente.md) |
+| **🧭 Jornada & UX** | Arquitetura de telas, sitemap completo, wireframe textual e linha do tempo de acompanhamento (Stepper). | [Explorar →](docs/jornada-e-ux.md) |
 | **📋 Requisitos & Regras** | Matriz MoSCoW (RF01 a RF13, RNF01 a RNF07), regras de negócio e tipologias oficiais do PMISB (Relatório R4). | [Explorar →](docs/requisitos-do-sistema.md) |
+| **🛡️ Gestão de Riscos** | Matriz de riscos ISO 31000 / PMBOK: trotes, LGPD, conflitos entre concessionárias e condições de maré. | [Explorar →](docs/matriz-de-riscos.md) |
 | **🗄️ Arquitetura & Banco** | Ciclo de vida do chamado, matriz de status, modelo ER (Proto SQL), Soft Delete e Logs imutáveis (*Append-Only*). | [Explorar →](docs/arquitetura-e-banco.md) |
 | **🔐 Regras de Negócio & API** | Controle de acesso por papéis (RBAC), validações de domínio e catálogo de rotas RESTful com Swagger UI. | [Explorar →](docs/regras-e-api.md) |
 | **🎨 Design System & UI/UX** | Tipografia Montserrat, catálogo de logos vetoriais SVG da Prefeitura de Santos e acesso ao protótipo no Figma. | [Explorar →](docs/design-system.md) |
@@ -88,9 +92,10 @@ mvn spring-boot:run
 - [x] **Fase 1 · Concepção e Marco Legal:** Diagnóstico municipal, Lei 852/2014, FMSBA (Lei 4.525/2024), PMISB R4 e esteira de valor.
 - [x] **Fase 2 · Modelagem e Arquitetura:** Proto SQL, regras de auditoria imutável (Logs), Soft Delete e matriz de requisitos (RF01–RF13).
 - [x] **Fase 3 · Identidade Visual:** Padronização dos vetores oficiais `.svg` da Prefeitura de Santos e tipografia Montserrat.
-- [ ] **Fase 4 · Prototipagem UI/UX:** Telas interativas no Figma (Munícipe, Fiscalização Municipal e Operação Sabesp).
-- [ ] **Fase 5 · Banco em Nuvem:** Implementação do schema relacional no PostgreSQL (Supabase).
-- [ ] **Fase 6 · Backend Spring Boot:** Desenvolvimento da API RESTful em Spring Boot 3 com autenticação, validações e RBAC.
+- [x] **Fase 4 · Design Thinking & UX:** Mapeamento de personas, árvore de triagem (esgoto vs. chuva), jornada do usuário e matriz de riscos.
+- [ ] **Fase 5 · Prototipagem UI/UX:** Telas interativas no Figma (Munícipe, Fiscalização Municipal e Operação Sabesp).
+- [ ] **Fase 6 · Banco em Nuvem:** Implementação do schema relacional no PostgreSQL (Supabase).
+- [ ] **Fase 7 · Backend Spring Boot:** Desenvolvimento da API RESTful em Spring Boot 3 com autenticação, validações e RBAC.
 
 ---
 
