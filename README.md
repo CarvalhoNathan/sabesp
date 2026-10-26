@@ -7,6 +7,7 @@
   <img src="https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
   <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white" alt="Supabase" />
   <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white" alt="Figma" />
+  <img src="https://img.shields.io/badge/Licen%C3%A7a-MIT-blue?style=flat-square" alt="Licença MIT" />
 </p>
 
 <p align="center">
@@ -45,6 +46,7 @@ Aprofunde-se nos detalhes de engenharia e regras de negócio:
 | **🗄️ Arquitetura & Banco** | Ciclo de vida do chamado, matriz de status, modelo ER (Proto SQL) e Soft Delete. | [Explorar →](docs/arquitetura-e-banco.md) |
 | **🔐 Regras de Negócio & API** | Controle de acesso por papéis (RBAC), validações de domínio e catálogo de rotas REST / Swagger. | [Explorar →](docs/regras-e-api.md) |
 | **🎨 Design System & UI/UX** | Tipografia Montserrat, catálogo de logos SVG oficiais e acesso ao protótipo no Figma. | [Explorar →](docs/design-system.md) |
+| **🎓 Metodologia TCC** | Objetivos, estudo de caso de Santos, metodologia ABNT e estrutura para a monografia. | [Explorar →](docs/metodologia-tcc.md) |
 
 ---
 
@@ -102,4 +104,5 @@ Projeto acadêmico concebido e desenvolvido por:
 
 ## 📄 Licença
 
-Este projeto é desenvolvido para fins acadêmicos e educacionais. Consulte o arquivo de licença para maiores detalhes.
+Este projeto é desenvolvido para fins acadêmicos e educacionais sob os termos da **[Licença MIT](LICENSE)**. Consulte o arquivo para maiores detalhes.  
+&copy; 2026 Nathan Carvalho & Andrey Celestino.
