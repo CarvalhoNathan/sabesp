@@ -21,11 +21,13 @@ Um sistema web desenvolvido para modernizar e conferir transparência ao fluxo d
 - [Alinhamento com os ODS da ONU](#-alinhamento-com-os-ods-da-onu)
 - [Ciclo de Vida do Chamado](#-ciclo-de-vida-do-chamado)
 - [Funcionalidades por Perfil](#-funcionalidades-por-perfil)
+- [Regras de Negócio e Controle de Acesso (RBAC)](#-regras-de-negócio-e-controle-de-acesso-rbac)
 - [Tecnologias Utilizadas](#-tecnologias-utilizadas)
-- [Arquitetura e Banco de Dados (Proto SQL)](#-arquitetura-e-banco-de-dados-proto-sql)
+- [Arquitetura de Software e Banco de Dados](#-arquitetura-de-software-e-banco-de-dados-proto-sql)
 - [Endpoints Principais da API](#-endpoints-principais-da-api)
 - [Como Executar o Projeto](#-como-executar-o-projeto)
-- [Prototipagem](#-prototipagem)
+- [Design System e Prototipagem](#-design-system-e-prototipagem)
+- [Roadmap de Desenvolvimento](#-roadmap-de-desenvolvimento)
 - [Equipe de Desenvolvimento](#-equipe-de-desenvolvimento)
 
 ---
@@ -144,6 +146,31 @@ graph TD
 
 ---
 
+## 🔐 Regras de Negócio e Controle de Acesso (RBAC)
+
+Para garantir a privacidade dos munícipes, a integridade da fiscalização pública e a segurança operacional, o sistema adota regras estritas de controle de acesso baseado em perfis (*Role-Based Access Control*):
+
+1. **Isolamento de Dados do Munícipe:**
+   - O munícipe autenticado possui permissão de leitura exclusivamente sobre os chamados abertos por ele mesmo (`id_cliente = usuario_autenticado`).
+   - Não possui visibilidade sobre chamados ou dados pessoais de outros munícipes.
+
+2. **Poder Fiscalizador da Prefeitura (`orgao_funcionario = 'prefeitura'`):**
+   - Acesso irrestrito a todos os chamados registrados no município.
+   - Permissão exclusiva para aprovação (despacho oficial para a Sabesp) ou rejeição de chamados com justificativa técnica.
+   - Acesso aos relatórios gerenciais e filtros por zonas administrativas de Santos.
+
+3. **Operação Restrita da Sabesp (`orgao_funcionario = 'sabesp'`):**
+   - Visualização restrita apenas a chamados com status `APROVADO`. Chamados rejeitados ou ainda pendentes de triagem não são visíveis para a concessionária.
+   - Permissão para alterar o status para `EM_EXECUCAO` e `CONCLUIDO`.
+   - Permissão para registrar laudos e pareceres em `ComentarioChamado`.
+
+4. **Validações de Domínio:**
+   - Validação algorítmica de CPF para munícipes e funcionários.
+   - Classificação padronizada de ocorrências: *Vazamento na Via Pública*, *Refluxo de Esgoto*, *Rompimento de Coletor*, *Tampa de Poço de Visita/Bueiro Danificada*.
+   - Upload de imagens limitado a arquivos de imagem válidos (PNG, JPG, JPEG) com limite seguro de tamanho.
+
+---
+
 ## 🛠️ Tecnologias Utilizadas
 
 - **Linguagem Principal:** Java (JDK 17+)
@@ -223,6 +250,21 @@ erDiagram
     }
 ```
 
+### 🏗️ Estrutura de Pacotes do Backend (Spring Boot)
+
+O projeto adota a arquitetura em camadas padrão de aplicações corporativas Spring Boot:
+
+```text
+src/main/java/com/santos/sabesp/
+├── config/             # Configurações globais (CORS, Segurança, Swagger/OpenAPI)
+├── controller/         # Camada de entrada REST (@RestController)
+├── dto/                # Data Transfer Objects (Requests e Responses para desacoplamento de entidades)
+├── entity/             # Modelos relacionais JPA com anotações de persistência (@Entity)
+├── repository/         # Interfaces de persistência e consultas derivadas (Spring Data JPA)
+├── service/            # Regras de negócio, validações e controle de transações (@Service)
+└── exception/          # Tratamento global de erros e respostas padronizadas (@ControllerAdvice)
+```
+
 ---
 
 ## 🔌 Endpoints Principais da API
@@ -282,11 +324,34 @@ http://localhost:8080/swagger-ui.html
 
 ---
 
-## 🎨 Prototipagem
+## 🎨 Design System e Prototipagem
 
-O design de interface e a experiência do usuário (UI/UX) foram projetados no Figma com telas específicas para Munícipe, Prefeitura e Sabesp.
+O design de interface e a experiência do usuário (UI/UX) foram projetados no Figma com fluxos e telas específicas para **Munícipe**, **Prefeitura** e **Sabesp**.
 
-> 🔗 **Figma:** _([Projeto Sabesp](https://www.figma.com/design/Tb4SDE9A4oEpLaXfN7aAhe/Projeto-%7C-Sabesp?node-id=0-1&t=yQExxpGpTtvoIWHk-1))_
+* **Tipografia Oficial:** Utilização da família de fontes **`Montserrat`**, conforme o manual de identidade visual da Prefeitura de Santos.
+* **Assets e Vetores Oficiais:** Disponíveis e organizados na pasta [`assets/logo-prefeitura/`](assets/logo-prefeitura/) em formato `.svg` para fundos claros e escuros.
+* **Identidade Visual Digital:** A paleta cromática está sendo modernizada no protótipo para um design contemporâneo de produto digital (GovTech/SaaS), integrando a identidade institucional da Sabesp com tons sustentáveis atuais que serão definidos e documentados na evolução do projeto.
+
+> 🔗 **Acesse o Protótipo no Figma:** _([Projeto Sabesp](https://www.figma.com/design/Tb4SDE9A4oEpLaXfN7aAhe/Projeto-%7C-Sabesp?node-id=0-1&t=yQExxpGpTtvoIWHk-1))_
+
+---
+
+## 🗺️ Roadmap de Desenvolvimento
+
+Acompanhamento do status de entrega dos módulos do projeto:
+
+- [x] Levantamento de requisitos e fundamentação legal (Lei Complementar nº 852/2014)
+- [x] Mapeamento das 5 Zonas Administrativas de Santos e esteira de atendimento
+- [x] Modelagem do Banco de Dados (Proto SQL & Imutabilidade de Auditoria)
+- [x] Coleta e padronização dos assets vetoriais oficiais (`assets/logo-prefeitura`)
+- [ ] Prototipagem completa das interfaces no Figma (Munícipe, Gestão Semam e Operação Sabesp)
+- [ ] Criação do esquema e tabelas relacionais no PostgreSQL (Supabase)
+- [ ] Setup do projeto Spring Boot com dependências Maven
+- [ ] Implementação das entidades JPA, DTOs e Repositories
+- [ ] Desenvolvimento dos Services e Controllers REST com validações de negócio
+- [ ] Implementação de autenticação e autorização por perfil (RBAC)
+- [ ] Integração com serviço de armazenamento de arquivos em nuvem para fotos de evidência
+- [ ] Cobertura de testes unitários e de integração
 
 ---
 
