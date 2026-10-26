@@ -1,10 +1,13 @@
-# 🔐 Regras de Negócio, Perfis e API REST
+[← Voltar ao Hub Principal](../README.md)
 
-Este documento detalha o controle de acesso baseado em papéis (*Role-Based Access Control - RBAC*), as regras de negócio do sistema e o catálogo de endpoints da API REST.
+# 🔐 Regras de Negócio, Perfis e API REST
+### Especificação de controle de acesso (RBAC), validações e catálogo de endpoints
+
+> 💡 **Em Resumo:** Este documento detalha a política de segurança baseada em papéis (*Role-Based Access Control*), as regras de negócio de triagem municipal e o catálogo de rotas REST com documentação interativa via Swagger UI.
 
 ---
 
-## 📌 Índice
+## 📌 Navegação Rápida
 - [Funcionalidades por Perfil](#-funcionalidades-por-perfil)
 - [Controle de Acesso Baseado em Perfis (RBAC)](#-controle-de-acesso-baseado-em-perfis-rbac)
 - [Validações de Domínio](#-validações-de-domínio)
@@ -14,73 +17,72 @@ Este documento detalha o controle de acesso baseado em papéis (*Role-Based Acce
 
 ## 👥 Funcionalidades por Perfil
 
-### 📱 Munícipe (Pessoa Comum)
-- Cadastro e login seguro na plataforma (`usuario_cliente` / `senha_cliente`).
-- Abertura de chamados com os seguintes dados:
-  - Endereço completo da ocorrência;
-  - Tipo do problema (classificação técnica);
-  - Descrição textual detalhada;
-  - Registro de data e hora;
-  - Upload de imagem comprobatória (evidência fotográfica).
-- Acompanhamento em tempo real do status da solicitação e consulta ao histórico de solicitações próprias.
+### 📱 Munícipe (Cidadão)
+* **Autenticação:** Cadastro simplificado e login com `usuario_cliente` e `senha_cliente`.
+* **Abertura de Ocorrência:**
+  * Endereço completo com suporte a geolocalização;
+  * Classificação técnica padronizada do problema;
+  * Descrição detalhada;
+  * Registro automático de data e hora;
+  * Upload de imagem comprobatória (evidência fotográfica).
+* **Acompanhamento Transparente:** Consulta em tempo real do status da solicitação e histórico de ocorrências abertas pelo próprio munícipe.
 
 ### 🏛️ Prefeitura / Semam (Gestão e Fiscalização)
-- Acompanhamento panorâmico de todas as demandas abertas no município de Santos.
-- **Filtros avançados** para gestão e triagem (por status, tipo de chamado, endereço/bairro e período).
-- Validação técnica da solicitação (aprovação ou rejeição formal com justificativa).
-- Emissão oficial de requisições de serviço para a Sabesp e fiscalização dos prazos da concessionária.
+* **Visão Panorâmica:** Acompanhamento centralizado de todas as demandas do município.
+* **Filtros Avançados:** Gestão e triagem por status, tipo de chamado, prefeitura regional (5 Zonas de Santos) e período cronológico.
+* **Triagem Técnica:** Aprovação oficial (emissão de requisição de serviço para a Sabesp) ou rejeição formal com justificativa técnica registrada.
+* **Fiscalização de SLA:** Auditoria e contagem dos 15 dias de prazo previstos na Lei Complementar nº 852/2014.
 
-### 💧 Sabesp (Operação e Execução Técnica)
-- Visualização exclusiva de chamados já aprovados e despachados pela prefeitura.
-- Gestão do fluxo operacional: transição de status para `EM_EXECUCAO` e `CONCLUIDO`.
-- Registro de comentários técnicos e histórico de andamento (`ComentarioChamado`) com evidências fotográficas da obra finalizada.
+### 💧 Sabesp (Operação Técnica em Campo)
+* **Visualização Restrita:** Acesso exclusivo a demandas já validadas e aprovadas pela Prefeitura.
+* **Gestão de Campo:** Atualização do status para `EM_EXECUCAO` e conclusão para `CONCLUIDO`.
+* **Comprovação dos Serviços:** Inserção de laudos técnicos e fotos da obra finalizada na esteira de `ComentarioChamado`.
 
 ---
 
-## 🔐 Controle de Acesso Baseado em Perfis (RBAC)
+## 🛡️ Controle de Acesso Baseado em Perfis (RBAC)
 
-Para garantir a privacidade dos munícipes, a integridade da fiscalização pública e a segurança operacional, o backend implementa as seguintes diretrizes de segurança:
+O backend implementa isolamento de dados e restrição de privilégios para garantir a segurança da informação e a conformidade com a LGPD:
 
-1. **Isolamento de Dados do Munícipe:**
-   - O munícipe autenticado possui permissão de leitura exclusivamente sobre os chamados abertos por ele mesmo (`id_cliente = usuario_autenticado`).
-   - Não possui visibilidade sobre chamados ou dados pessoais de outros munícipes.
+> 🔒 **1. Isolamento de Dados do Cidadão (Munícipe):**  
+> O munícipe autenticado possui permissão de leitura exclusivamente sobre os chamados abertos por ele mesmo (`WHERE id_cliente = usuario_autenticado`). Ele não tem visibilidade nem acesso aos dados cadastrais de outros munícipes.
 
-2. **Poder Fiscalizador da Prefeitura (`orgao_funcionario = 'prefeitura'`):**
-   - Acesso irrestrito a todos os chamados registrados no município.
-   - Permissão exclusiva para aprovação (despacho oficial para a Sabesp) ou rejeição de chamados com justificativa técnica.
-   - Acesso aos relatórios gerenciais e filtros por zonas administrativas de Santos.
+> 🏛️ **2. Prerrogativa Fiscalizatória da Prefeitura (`orgao_funcionario = 'prefeitura'`):**  
+> Acesso irrestrito de leitura a todas as demandas do município. Permissão exclusiva para transição de status de triagem (`APROVADO` ou `REJEITADO`).
 
-3. **Operação Restrita da Sabesp (`orgao_funcionario = 'sabesp'`):**
-   - Visualização restrita apenas a chamados com status `APROVADO`. Chamados rejeitados ou ainda pendentes de triagem não são visíveis para a concessionária.
-   - Permissão para alterar o status para `EM_EXECUCAO` e `CONCLUIDO`.
-   - Permissão para registrar laudos e pareceres em `ComentarioChamado`.
+> 💧 **3. Operação Restrita da Sabesp (`orgao_funcionario = 'sabesp'`):**  
+> Visualização restrita a chamados com status `APROVADO`. Chamados rejeitados ou ainda pendentes de triagem pela Prefeitura não aparecem na esteira da concessionária. Permissão de escrita restrita a comentários técnicos e transições operacionais.
 
 ---
 
 ## ⚙️ Validações de Domínio
 
-* **Validação de CPF:** Verificação de integridade algorítmica para munícipes e funcionários.
+* **Validação de CPF:** Verificação de integridade de dígitos verificadores para munícipes e funcionários.
 * **Classificação Padronizada de Ocorrências:**
   * *Vazamento de Esgoto na Via Pública*
   * *Refluxo de Esgoto em Ramal Predial*
   * *Rompimento de Tubulação / Coletor Tronco*
   * *Tampa de Poço de Visita (Bueiro) Danificada ou Faltante*
-* **Upload Seguro de Imagens:** Limitação a formatos de imagem reconhecidos (PNG, JPG, JPEG) com controle rigoroso de tamanho de payload (máximo 5MB por arquivo).
+* **Upload Seguro de Evidências:** Aceite restrito a extensões seguras (PNG, JPG, JPEG) com payload máximo de até 5MB por arquivo.
 
 ---
 
 ## 🔌 Catálogo de Endpoints da API REST
 
-A documentação interativa com Swagger UI pode ser acessada em:
-```
+A interface interativa do **Swagger UI / OpenAPI** pode ser acessada em ambiente local através de:
+```text
 http://localhost:8080/swagger-ui.html
 ```
 
-| Método  | Rota                             | Descrição                                              | Acesso Permitido       |
-| :------ | :------------------------------- | :----------------------------------------------------- | :--------------------- |
-| `POST`  | `/api/chamados`                  | Cadastro de novo chamado com upload de evidência       | Munícipe               |
-| `GET`   | `/api/chamados`                  | Listagem paginada e filtrada de chamados               | Autenticado            |
-| `GET`   | `/api/chamados/{id}`             | Detalhes completos do chamado e histórico de pareceres | Autenticado            |
-| `PATCH` | `/api/chamados/{id}/status`      | Alteração do status do chamado (Triagem ou Obra)       | Prefeitura / Sabesp    |
-| `POST`  | `/api/chamados/{id}/comentarios` | Inserção de parecer ou comentário técnico              | Prefeitura / Sabesp    |
-| `GET`   | `/api/logs`                      | Consulta da trilha de auditoria do sistema             | Prefeitura (Auditoria) |
+| Método | Rota | Descrição | Acesso Autorizado |
+| :---: | :--- | :--- | :--- |
+| `POST` | `/api/chamados` | Cadastro de nova solicitação com evidência fotográfica | Munícipe |
+| `GET` | `/api/chamados` | Listagem paginada com filtros por zona e status | Autenticado |
+| `GET` | `/api/chamados/{id}` | Consulta detalhada do chamado e histórico de pareceres | Autenticado |
+| `PATCH` | `/api/chamados/{id}/status` | Transição de status do chamado (Triagem ou Execução) | Prefeitura / Sabesp |
+| `POST` | `/api/chamados/{id}/comentarios` | Inserção de laudo técnico ou atualização de andamento | Prefeitura / Sabesp |
+| `GET` | `/api/logs` | Consulta detalhada da trilha imutável de auditoria | Prefeitura (Fiscalização) |
+
+---
+
+[← Voltar ao Hub Principal](../README.md)

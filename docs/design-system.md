@@ -1,53 +1,67 @@
-# 🎨 Design System e Identidade Visual
+[← Voltar ao Hub Principal](../README.md)
 
-Este documento consolida as diretrizes visuais, a tipografia oficial, os assets vetoriais da Prefeitura de Santos e as referências de prototipagem no Figma para os módulos do sistema.
+# 🎨 Design System e Identidade Visual
+### Diretrizes visuais, tipografia oficial, catálogo de vetores e prototipagem Figma
+
+> 💡 **Em Resumo:** Este documento consolida a identidade visual adotada na interface, combinando a tipografia e os brasões oficiais da Prefeitura de Santos com uma abordagem contemporânea de design digital para GovTech e SaaS.
 
 ---
 
-## 📌 Índice
+## 📌 Navegação Rápida
 - [Tipografia Oficial](#-tipografia-oficial)
 - [Catálogo de Assets Vetoriais (SVG)](#-catálogo-de-assets-vetoriais-svg)
 - [Diretrizes de Cores e UI Digital](#-diretrizes-de-cores-e-ui-digital)
-- [Prototipagem no Figma](#-prototipagem-no-figma)
+- [Prototipagem Interativa no Figma](#-prototipagem-interativa-no-figma)
 
 ---
 
 ## 🔤 Tipografia Oficial
 
-Em conformidade com o Manual de Identidade Visual da Prefeitura de Santos, a família tipográfica oficial adotada no projeto é a **`Montserrat`**:
+Em estrita conformidade com o Manual de Identidade Visual da Prefeitura de Santos, a família tipográfica oficial adotada no projeto é a **`Montserrat`**:
 
-* **Títulos e Métricas:** Pesos `Bold` (700) e `SemiBold` (600) para cards numéricos, headers e botões de ação primária.
-* **Textos e Formulários:** Pesos `Regular` (400) e `Medium` (500) para labels, tabelas e descrições de ocorrência.
-* **Acesso:** Disponível nativamente e gratuitamente no Figma e via Google Fonts.
+| Aplicação na Interface | Peso Sugerido | Finalidade |
+| :--- | :--- | :--- |
+| **Títulos e Métricas** | `Bold` (700) / `SemiBold` (600) | Cards numéricos do dashboard, títulos de seções e botões primários. |
+| **Textos Corridos e Labels** | `Regular` (400) / `Medium` (500) | Rótulos de formulários, linhas de tabelas e descrições detalhadas. |
+| **Notas e Metadados** | `Light` (300) / `Regular` (400) | Timestamps, textos de ajuda e notas regulatórias de rodapé. |
+
+> ℹ️ **Disponibilidade:** A fonte `Montserrat` está disponível nativamente no Figma e via CDN do Google Fonts.
 
 ---
 
 ## 🖼️ Catálogo de Assets Vetoriais (SVG)
 
-Os vetores oficiais da Prefeitura de Santos estão devidamente padronizados e organizados no repositório no diretório [`assets/logo-prefeitura/`](../assets/logo-prefeitura/):
+Os vetores oficiais da Prefeitura de Santos foram padronizados e organizados na pasta [`assets/logo-prefeitura/`](../assets/logo-prefeitura/):
 
-| Arquivo SVG | Aplicação Recomendada na Interface |
-| :--- | :--- |
-| **`logo-santos-horizontal.svg`** | Cabeçalho e topbar clara com fundo transparente. |
-| **`logo-santos-horizontal-branca.svg`** | Sidebar e menus em fundo escuro, verde ou azul institucional. |
-| **`logo-santos-vertical.svg`** | Telas de autenticação (Login/Cadastro) centralizadas em fundo claro. |
-| **`logo-santos-vertical-branca.svg`** | Telas de autenticação centralizadas em fundo escuro ou azul. |
-| **`logo-santos-fundo-branco-horizontal.svg`** | Aplicação sobreposta a fotos ou banners que demandem fundo branco sólido. |
-| **`logo-santos-fundo-branco-vertical.svg`** | Aplicação vertical em formato de selo com fundo branco sólido. |
+| Arquivo SVG | Orientação | Fundo | Aplicação Recomendada |
+| :--- | :---: | :---: | :--- |
+| **`logo-santos-horizontal.svg`** | Horizontal | Transparente | Cabeçalhos e barras de navegação com fundo claro. |
+| **`logo-santos-horizontal-branca.svg`** | Horizontal | Transparente | Sidebars e barras superiores com fundo escuro ou azul Sabesp. |
+| **`logo-santos-vertical.svg`** | Vertical | Transparente | Telas de autenticação (Login e Cadastro) com fundo claro. |
+| **`logo-santos-vertical-branca.svg`** | Vertical | Transparente | Telas de autenticação com fundo escuro ou gradiente azul. |
+| **`logo-santos-fundo-branco-horizontal.svg`** | Horizontal | Caixa Branca | Aplicação sobreposta a mapas, fotografias ou banners coloridos. |
+| **`logo-santos-fundo-branco-vertical.svg`** | Vertical | Caixa Branca | Aplicação em formato de selo em documentos ou laudos técnicos. |
 
 ---
 
 ## 🎨 Diretrizes de Cores e UI Digital
 
-* **Identidade Sabesp:** Utilização do azul corporativo clássico (`#004B87`) para identificação do módulo operacional e ações da concessionária.
-* **Modernização das Cores:** Os tons de verde clássicos do manual de papel impresso estão sendo atualizados no protótipo para uma paleta digital contemporânea (GovTech/SaaS moderno), trazendo maior contraste, leveza e aderência a padrões modernos de acessibilidade (WCAG).
-* **Superfícies e Contraste:** Fundos suaves (`#F8FAFC`), superfícies de cards em branco puro (`#FFFFFF`) e tipografia de alto contraste (`#1E293B`).
+* **Identidade Sabesp:** Aplicação do azul corporativo clássico (`#004B87` / `#0072CE`) para identificação do módulo operacional da concessionária e botões de ação em campo.
+* **Modernização das Cores de Santos:** Os tons de verde do manual clássico de papel impresso estão sendo atualizados no protótipo para uma paleta digital contemporânea (GovTech/SaaS moderno), assegurando maior leveza, contraste visual e acessibilidade (**WCAG AA**).
+* **Superfícies e Contraste:**
+  * Background da aplicação: Slate suave (`#F8FAFC`);
+  * Superfícies de cartões e formulários: Branco puro (`#FFFFFF`);
+  * Tipografia com alto contraste: Slate Navy (`#0F172A` e `#334155`).
 
 ---
 
-## 📱 Prototipagem no Figma
+## 📱 Prototipagem Interativa no Figma
 
-O design do sistema contempla fluxos específicos para munícipes, gestores públicos e equipes operacionais de campo:
+As interfaces foram prototipadas no Figma, cobrindo a esteira completa dos três perfis do sistema:
 
-> 🔗 **Acesse o Protótipo Oficial:**  
+> 🎨 **Acesse o Protótipo Oficial:**  
 > **[Projeto Sabesp no Figma](https://www.figma.com/design/Tb4SDE9A4oEpLaXfN7aAhe/Projeto-%7C-Sabesp?node-id=0-1&t=yQExxpGpTtvoIWHk-1)**
+
+---
+
+[← Voltar ao Hub Principal](../README.md)
