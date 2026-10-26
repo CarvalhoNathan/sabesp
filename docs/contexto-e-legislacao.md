@@ -3,12 +3,13 @@
 # 🏛️ Contexto Institucional, Regionalização e Marco Legal
 ### Fundamentação real e respaldo jurídico no município de Santos
 
-> 💡 **Em Resumo:** Este documento apresenta o diagnóstico territorial de Santos, a substituição da ouvidoria analógica (162) por uma esteira digital ágil, o **Estudo de Caso da Rua Goiás (multa de R$ 818 mil)**, o projeto de universalização no **Dique da Vila Gilda (Parque Palafitas)**, o plano de contingências do **PMISB (Relatório R4)** e a governança financeira/fiscalizatória do **FMSBA (Lei 4.525/2024)** e do **CMSBS**.
+> 💡 **Em Resumo:** Este documento apresenta o diagnóstico territorial de Santos, a disparidade entre a Ouvidoria Tradicional (SOM Web / 162) e os prazos legais, a atuação da **Sepref**, da **Seserp (Urgência Urbana)** e da **SEMAM**, o **Estudo de Caso da Rua Goiás (multa de R$ 818 mil)**, o projeto no **Dique da Vila Gilda (Parque Palafitas)**, o plano de contingências do **PMISB (Relatório R4)** e a governança financeira do **FMSBA (Lei 4.525/2024)** e do **CMSBS**.
 
 ---
 
 ## 📌 Navegação Rápida
 - [O Problema Real vs. Solução Proposta](#-o-problema-real-vs-solução-proposta)
+- [A Disparidade Crítica de SLAs: Ouvidoria SOM Web vs. Lei nº 852/2014](#-a-disparidade-crítica-de-slas-ouvidoria-som-web-vs-lei-nº-8522014)
 - [Estudo de Caso Real: O Incidente da Rua Goiás (2023)](#-estudo-de-caso-real-o-incidente-da-rua-goiás-2023)
 - [Universalização e Vulnerabilidade: O Caso do Dique da Vila Gilda (2025–2026)](#-universalização-e-vulnerabilidade-o-caso-do-dique-da-vila-gilda-20252026)
 - [O Plano Municipal Integrado de Saneamento Básico (PMISB · Relatório R4)](#-o-plano-municipal-integrado-de-saneamento-básico-pmisb--relatório-r4)
@@ -16,7 +17,7 @@
 - [Governança Financeira e Controle Social: FMSBA e CMSBS](#-governança-financeira-e-controle-social-fmsba-e-cmsbs)
 - [O Novo Cenário da Concessão: Lei Estadual nº 17.853/2023](#-o-novo-cenário-da-concessão-lei-estadual-nº-178532023)
 - [Regionalização Administrativa: As 5 Zonas de Santos](#-regionalização-administrativa-as-5-zonas-de-santos)
-- [Atuação e Papel dos Órgãos Públicos](#-atuação-e-papel-dos-órgãos-públicos)
+- [Atuação e Papel dos Órgãos Públicos Municipais](#-atuação-e-papel-dos-órgãos-públicos-municipais)
 - [Alinhamento com os Objetivos de Desenvolvimento Sustentável (ODS)](#-alinhamento-com-os-objetivos-de-desenvolvimento-sustentável-ods)
 - [Fontes Primárias e Referências Oficiais](#-fontes-primárias-e-referências-oficiais)
 
@@ -26,13 +27,33 @@
 
 Historicamente no município de Santos, solicitações sobre vazamentos na rede coletora de esgoto, abatimentos asfálticos e tampas danificadas dependem de processos físicos e canais fragmentados, gerando morosidade no atendimento e dificuldade de fiscalização:
 
-| Etapa do Processo | Processo Atual (Ouvidoria 162 / Manual) | Nova Esteira Digital (Sistema Web) |
+| Etapa do Processo | Processo Atual Fragmentado (Ouvidoria 162 / Santos Digital / Urgência Urbana) | Nova Esteira Digital Unificada (Sistema Web) |
 | :--- | :--- | :--- |
-| **Abertura do Chamado** | O munícipe precisa ligar para o telefone 162 ou comparecer presencialmente ao Paço Municipal em horário comercial. | **Digital e 24/7:** Abertura via web em segundos com endereço, tipo da ocorrência e evidência fotográfica. |
-| **Triagem e Despacho** | Tramitação manual via ofícios e planilhas entre secretarias e prefeituras regionais. | **Painel Integrado:** Triagem centralizada e filtros automáticos por região administrativa para despacho ágil. |
-| **Comunicação com a Sabesp** | Notificações burocráticas impressas, gerando ruído e atrasos no repasse de informações. | **Acesso Operacional Dedicado:** A Sabesp recebe as ordens já pré-validadas tecnicamente em sua fila de trabalho. |
-| **Controle de Prazos (SLA)** | Dificuldade em mensurar e auditar com precisão o cumprimento do prazo legal de 15 dias corridos. | **Auditoria Automatizada:** Registro cronológico imutável para contagem e cobrança do prazo legal da Lei nº 852/2014. |
-| **Transparência ao Cidadão** | O munícipe não tem visibilidade se o local foi vistoriado ou quando a obra foi concluída. | **Transparência Total:** Acompanhamento do status em tempo real com histórico e parecer técnico conclusivo da concessionária. |
+| **Abertura do Chamado** | O munícipe precisa escolher entre ligar no 162, navegar na plataforma genérica *Santos Digital* (aba Tapa-Buraco) ou ligar para o plantão da Urgência Urbana (3216-2065). | **Digital, Centralizado e 24/7:** Abertura via web em segundos com endereço, tipo da ocorrência e evidência fotográfica. |
+| **Triagem e Despacho** | Tramitação burocrática via ofícios e planilhas entre a Sepref (Prefeituras Regionais), Seserp e Semam. | **Painel Integrado:** Triagem centralizada e filtros automáticos pelas 5 Zonas de Santos para despacho imediato. |
+| **Comunicação com a Sabesp** | Notificações e intimações impressas em papel (uma média de 197 intimações mensais emitidas pela Sepref). | **Acesso Operacional Dedicado:** A Sabesp recebe as ordens já pré-validadas tecnicamente em sua fila de trabalho em tempo real. |
+| **Controle de Prazos (SLA)** | A Ouvidoria tradicional considera prazo "Verde" até 30 dias e tolera mais de 60 dias, em desacordo com a legislação. | **Auditoria Automatizada:** Contagem rigorosa do prazo legal improrrogável de **15 dias corridos** da Lei nº 852/2014. |
+| **Transparência ao Cidadão** | O munícipe precisa consultar protocolos complexos no SOM Web sem laudo técnico do reparo. | **Transparência Total:** Acompanhamento do status em tempo real com histórico e parecer técnico conclusivo com foto da concessionária. |
+
+---
+
+## ⏱️ A Disparidade Crítica de SLAs: Ouvidoria SOM Web vs. Lei nº 852/2014
+
+A maior justificativa técnica e acadêmica para a existência deste sistema reside no **conflito de prazos** verificado na máquina pública de Santos:
+
+```text
+Prazo Atual da Ouvidoria Municipal (SOM Web / 162):
+🟢 Verde:   Até 30 dias de tramitação
+🟡 Amarelo: De 31 a 60 dias de tramitação
+🔴 Vermelho: Acima de 60 dias de tramitação
+
+Prazo Legal Improrrogável (Lei Complementar nº 852/2014):
+⚡ Prazo Máximo: 15 dias corridos para conclusão e recomposição viária
+🚨 Penalidade: Multa a partir de R$ 17.045,05 por descumprimento
+```
+
+> ⚠️ **A Falha Estrutural:**  
+> Quando um munícipe reporta um vazamento de esgoto que abre um buraco na via, a Ouvidoria tradicional considera o chamado **"dentro da normalidade (Verde)" mesmo após 29 dias**. No entanto, sob a ótica regulatória, a Sabesp já **estourou o prazo legal em quase 100%**, gerando risco de acidentes e ensejando auto de infração que hoje muitas vezes não é cobrado por falta de integração entre a Ouvidoria e a fiscalização.
 
 ---
 
@@ -44,14 +65,14 @@ A urgência e a relevância deste projeto são comprovadas por episódios críti
 > Um vazamento subterrâneo prolongado e não detectado na rede de esgoto da Sabesp provocou o solapamento do solo sob o pavimento na **Rua Goiás, altura do nº 50**. O asfalto ruiu repentinamente, abrindo uma enorme cratera que engoliu um motociclista que transitava pelo local, resultando em ferimentos e bloqueio viário de grande impacto.
 
 * **Ação Fiscalizatória da SEMAM:** Após vistoria técnica de emergência, a Secretaria Municipal de Meio Ambiente autuou a concessionária em **R$ 818 mil**, fundamentada na Lei Complementar Municipal nº 817/2013 (Código Ambiental de Santos), em razão da contaminação do solo e danos ambientais decorrentes do esgoto bruto infiltrado.
-* **Diagnóstico da Falha Sistêmica:** O episódio evidenciou a fragilidade do modelo analógico de atendimento. Sem uma ferramenta ágil onde munícipes e fiscais pudessem reportar os sinais preliminares de abatimento asfáltico e refluxo com fotos geolocalizadas, o problema só foi abordado após o colapso físico da via.
-* **A Solução Proposta:** A plataforma web garante a detecção precoce de anomalias na malha, permitindo à SEMAM emitir ordens de emergência auditadas antes da ocorrência de sinistros viários e danos ambientais graves.
+* **Volume Operacional Real:** Dados oficiais da Prefeitura comprovam que a fiscalização das concessionárias é contínua e volumosa — em um único mês, a Sepref chega a emitir **mais de 190 intimações e notificações**, concentrando o maior número de demandas de saneamento na Zona Intermediária/Orla e no Centro.
+* **A Solução Proposta:** A plataforma web garante a detecção precoce de anomalias na malha, permitindo à fiscalização emitir ordens de emergência auditadas antes da ocorrência de sinistros viários e danos ambientais graves.
 
 ---
 
 ## 🌊 Universalização e Vulnerabilidade: O Caso do Dique da Vila Gilda (2025–2026)
 
-Se o incidente da Rua Goiás ilustra o risco em áreas nobres consolidadas, o **Dique da Vila Gilda**, localizado na Zona Noroeste de Santos, representa a fronteira viva da universalização do saneamento:
+Se o incidente da Rua Goiás ilustra o risco em áreas consolidadas, o **Dique da Vila Gilda**, localizado na Zona Noroeste de Santos, representa a fronteira viva da universalização do saneamento:
 
 > 🏘️ **A Maior Favela de Palafitas do Brasil:**  
 > O Dique da Vila Gilda abriga milhares de famílias em moradias erguidas sobre manguezal e lâmina d'água de maré. Historicamente, essa área concentrou o déficit residual de coleta e tratamento de esgoto apontado no PMISB.
@@ -102,12 +123,12 @@ Um sistema de fiscalização de serviços públicos só é completo quando conec
 
 ### 🏦 FMSBA · Fundo Municipal de Saneamento Básico e Ambiental de Santos
 * **Base Legal:** Instituído pela **Lei Municipal nº 4.525, de 19 de agosto de 2024**, e regulamentado pelo **Decreto nº 10.687/2025** (com atualizações pelos Decretos nº 11.170/2026 e 11.256/2026).
-* **Finalidade e Destinação das Multas:** O FMSBA centraliza os recursos oriundos de repasses contratuais da concessão e, crucialmente, as **multas e penalidades aplicadas pela SEMAM contra a concessionária** (tais como as infrações da Lei 852/2014 e a sanção de R$ 818 mil da Rua Goiás).
-* **Reinvestimento Carimbado:** Os valores arrecadados no fundo são legalmente vinculados a ações de proteção ambiental, drenagem, contenção de encostas e universalização do saneamento em áreas periféricas.
+* **Finalidade e Destinação das Multas:** Conforme o **Art. 4º, Inciso VII da Lei 4.525/2024**, o FMSBA centraliza os recursos oriundos de **“arrecadação de multas e juros de mora por infração”** aplicadas contra a concessionária (tais como as infrações da Lei 852/2014 e a sanção de R$ 818 mil da Rua Goiás).
+* **Subsídeo Social:** O **Art. 3º, Parágrafo Único (Incisos V e VI)** estipula expressamente que o fundo financia as ligações domiciliares de água e esgoto para **usuários de baixa renda**, conectando os valores arrecadados em autuações a projetos reais como o do Parque Palafitas (Vila Gilda).
 
 ### 👥 CMSBS · Conselho Municipal de Saneamento Básico de Santos
-* **Base Legal:** Reorganizado pelo **Decreto nº 11.153/2026** e consolidado pelo **Decreto nº 11.328, de 24 de setembro de 2026**.
-* **Papel Fiscalizatório e Participativo:** Órgão colegiado paritário composto por representantes do poder público, concessionária e sociedade civil organizada. Tem a competência legal de acompanhar a execução do PMISB, fiscalizar as aplicações financeiras do FMSBA e validar os indicadores de qualidade do serviço prestado.
+* **Base Legal:** Reorganizado pelo **Decreto nº 11.153/2026** e consolidado pelo **Decreto nº 11.328, de 24 de setembro de 2026** (com assento da Associação Comercial de Santos - ACS).
+* **Papel Fiscalizatório e Participativo:** Órgão colegiado paritário composto por representantes do poder público, concessionária e sociedade civil organizada. Tem a competência legal de acompanhar a execução do PMISB, fiscalizar as aplicações financeiras do FMSBA (**Art. 8º da Lei 4.525/2024 - relatórios bimestrais obrigatórios**) e validar os indicadores de qualidade do serviço prestado.
 * **Alimentação de Dados pelo Sistema:** A esteira de relatórios da aplicação fornece ao CMSBS métricas consolidadas e auditadas sobre o tempo médio de resposta (SLA), volume de extravasamentos e reincidências por bairro.
 
 ---
@@ -127,7 +148,7 @@ Para assegurar uma gestão territorial eficiente, as demandas no sistema são ca
 
 ```text
 Município de Santos
-├── 1. Zona da Orla / Intermediária   → Maior densidade populacional e contato com canais e praias
+├── 1. Zona da Orla / Intermediária   → Maior volume de intimações à Sabesp (rede densa e contato com canais)
 ├── 2. Centro Histórico               → Patrimônio histórico tombado e rede subterrânea centenária
 ├── 3. Zona Noroeste                  → Bacia urbana densa, marés e palafitas (Vila Gilda / Parque Palafitas)
 ├── 4. Morros                         → Topografia íngreme exigindo contenção rápida para evitar deslizamentos
@@ -136,12 +157,21 @@ Município de Santos
 
 ---
 
-## 🏛️ Atuação e Papel dos Órgãos Públicos
+## 🏛️ Atuação e Papel dos Órgãos Públicos Municipais
+
+A gestão e fiscalização do saneamento em Santos é articulada entre diferentes pastas municipais, agora integradas no sistema:
+
+### 🏛️ Secretaria de Prefeituras Regionais (SEPREF)
+* **Atribuição Operacional:** Coordena as 5 prefeituras regionais. Seus fiscais técnicos realizam vistorias de campo diárias nas vias e são os responsáveis diretos pela **emissão das intimações e notificações formais à Sabesp** (com registros oficiais de mais de 80 intimações mensais apenas na Orla/Intermediária).
+* **Papel no Sistema:** Os fiscais da Sepref validam os chamados abertos pelos munícipes na esteira de triagem técnica e despacham as ordens oficiais para a concessionária.
+
+### 🚨 Secretaria de Serviços Públicos (SESERP) & Seção de Urgência Urbana
+* **Atribuição Emergencial:** Opera em regime de plantão **24 horas por dia** (através da central telefônica 3216-2065). Atua diretamente em ocorrências críticas onde o asfalto cede repentinamente ou tampas de Poços de Visita (PV) são destruídas por vazamentos subterrâneos de esgoto.
+* **Papel no Sistema:** Responsável pela triagem de gravidade máxima, executando a sinalização provisória da via e acionando equipes de emergência da Sabesp.
 
 ### 🌿 Secretaria Municipal de Meio Ambiente, Desenvolvimento Urbano e Sustentabilidade (SEMAM)
-* **Missão Institucional:** Formular, coordenar e fiscalizar as políticas municipais de proteção ao meio ambiente natural e urbano.
-* **Divisões Operacionais:** Atua no sistema por meio do **DEPCAM** (*Departamento de Políticas e Controle Ambiental*) e da **SEFISCAM** (*Seção de Fiscalização Ambiental*).
-* **Proteção da Balneabilidade:** Santos possui uma rede centenária de canais projetada por Saturnino de Brito para drenagem de águas pluviais. A SEMAM atua rigorosamente para combater vazamentos de esgoto que possam extravasar para as galerias e desaguar nas praias da orla.
+* **Atribuição Fiscalizatória e Punitiva:** Formular e fiscalizar as políticas de proteção ambiental. Atua por meio do **DEPCAM** (*Departamento de Políticas e Controle Ambiental*) e da **SEFISCAM** (*Seção de Fiscalização Ambiental*).
+* **Papel no Sistema:** Órgão responsável pela lavratura de Autos de Infração e aplicação de penalidades financeiras graves contra a Sabesp com base no Código Ambiental Municipal (Lei nº 817/2013), destinando os recursos ao FMSBA.
 
 ### 💧 Sabesp (Unidade de Negócio Baixada Santista - RS)
 * **Operação e Manutenção do Saneamento:** Concessionária responsável pela coleta, afastamento e tratamento do esgoto sanitário de Santos.
@@ -165,6 +195,7 @@ Este projeto contribui diretamente para a **Agenda 2030 da Organização das Na�
 
 Para fins de comprovação documental e referencial bibliográfico oficial:
 
+* [Prefeitura de Santos · Sepref aplica 197 intimações e notificações a prestadoras de serviço (83 à Sabesp)](https://www.santos.sp.gov.br/?q=noticia/santos-aplica-197-intimacoes-e-notificacoes-a-prestadoras-de-servico) — Notícia oficial detalhando a fiscalização regional e volume de intimações.
 * [Prefeitura de Santos · Regularização de Água e Esgoto na Vila Gilda](https://www.santos.sp.gov.br/?q=noticia/parceria-garante-regularizacao-da-rede-de-agua-e-esgoto-para-a-vila-gilda-em-santos) — Termo de cooperação Sabesp e Prefeitura para 2.500 ligações na maior comunidade de palafitas do Brasil.
 * [Legis Santos · Lei Municipal nº 4.525/2024](https://egov.santos.sp.gov.br/legis/documents/10840) — Institui o Fundo Municipal de Saneamento Básico e Ambiental de Santos (FMSBA).
 * [Legis Santos · Decreto Municipal nº 10.687/2025](https://egov.santos.sp.gov.br/legis/documents/11127) — Regulamenta a Lei nº 4.525/2024 do FMSBA/Santos (atualizado pelos Decretos nº 11.170/2026 e 11.256/2026).
