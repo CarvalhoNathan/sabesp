@@ -81,25 +81,26 @@ graph TD
 
 ## 👥 Funcionalidades por Perfil
 
-### 📱 Munícipe (Cidadão)
-
-- Cadastro e autenticação simplificada.
-- Abertura de chamados com geolocalização/endereço, descrição detalhada e upload de evidências fotográficas.
-- Acompanhamento em tempo real da evolução do status do seu chamado.
-- Histórico completo de solicitações abertas pelo usuário.
+### 📱 Munícipe (Pessoa Comum)
+- Cadastro e login na plataforma (`usuario_cliente` / `senha_cliente`).
+- Abertura de chamados informando:
+  - Endereço da ocorrência;
+  - Tipo do problema (ex: vazamento na via, refluxo, rompimento de coletor);
+  - Descrição detalhada;
+  - Data e hora;
+  - Upload de imagem comprobatória (evidência fotográfica).
+- Acompanhamento em tempo real do status da solicitação e histórico de chamados próprios.
 
 ### 🏛️ Prefeitura / Semam (Gestão e Fiscalização)
-
-- Painel de controle (Dashboard) com visão panorâmica de todos os chamados abertos no município.
-- Módulo de triagem para aprovação ou rejeição de demandas cidadãs.
-- Emissão oficial de requisições de serviço para a Sabesp.
-- Monitoramento de prazos e cumprimento de ordens de serviço.
+- Acompanhamento centralizado de todas as demandas abertas no município.
+- **Filtros avançados** para gestão e triagem (por status, tipo de chamado, endereço/bairro e período).
+- Validação técnica da solicitação (aprovação ou rejeição formal).
+- Emissão oficial de requisições de serviço e auditoria dos prazos da Sabesp.
 
 ### 💧 Sabesp (Operação e Execução Técnica)
-
-- Acesso exclusivo a demandas aprovadas e despachadas pela Prefeitura.
-- Gestão do fluxo operacional: transição de status para `EM_EXECUCAO` e `CONCLUIDO`.
-- Registro de pareceres técnicos, histórico de manutenções e fotos da obra finalizada.
+- Visualização exclusiva de chamados validados pela prefeitura.
+- Alteração do status da solicitação conforme avanço da obra (`EM_EXECUCAO`, `CONCLUIDO`).
+- Registro de comentários técnicos e histórico de andamento (`ComentarioChamado`) com evidências da intervenção.
 
 ---
 
@@ -117,56 +118,68 @@ graph TD
 
 ---
 
-## 🗄️ Arquitetura e Banco de Dados
+## 🗄️ Arquitetura e Banco de Dados (Proto SQL)
 
-Para garantir a confiabilidade de dados públicos e atender a requisitos de conformidade legal, a arquitetura implementa:
+O modelo de dados foi estruturado para atender aos requisitos de auditoria, rastreabilidade e integridade histórica do setor público:
 
-1. **Soft Delete (Exclusão Lógica):** Registros nunca são expurgados fisicamente do banco de dados, permitindo rastreabilidade histórica e recuperação de registros.
-2. **Trilhas de Auditoria (Logs):** Todas as operações sensíveis (criação, alteração de status e comentários) geram eventos de log imutáveis contendo data/hora e identificação do usuário.
+1. **Soft Delete (`excluido: Boolean, default false`):** Aplicado às entidades cadastrais (`Cliente`, `Funcionario`, `Chamado` e `ComentarioChamado`), garantindo que nenhuma informação seja perdida fisicamente.
+2. **Trilha de Auditoria (`Logs`):** Estrutura *append-only* (somente inserção) para registro do histórico de operações realizadas no sistema.
 
 ```mermaid
 erDiagram
     CLIENTE ||--o{ CHAMADO : abre
     FUNCIONARIO ||--o{ COMENTARIO_CHAMADO : registra
     CHAMADO ||--o{ COMENTARIO_CHAMADO : contem
-    LOGS }o--|| FUNCIONARIO : audita
+    CHAMADO ||--o{ LOGS : rastreia
 
     CLIENTE {
-        Long id PK
-        String nome
-        String email
-        String cpf
-        Boolean ativo
-    }
-
-    FUNCIONARIO {
-        Long id PK
-        String nome
-        String matricula
-        String perfil "PREFEITURA | SABESP"
-        Boolean ativo
+        Long id_cliente PK
+        String cpf_cliente
+        String nome_cliente
+        String email_cliente
+        String usuario_cliente
+        String senha_cliente
+        Boolean excluido "default: false"
     }
 
     CHAMADO {
-        Long id PK
-        String titulo
-        String descricao
-        String endereco
-        String status
-        String fotoEvidenciaUrl
-        Boolean ativo
+        Long id_chamado PK
+        Long id_cliente FK
+        String endereco_chamado
+        String tipo_chamado
+        String descricao_problema "text"
+        Timestamp data_hora_criacao
+        String status_chamado
+        String imagem_chamado
+        Boolean excluido "default: false"
+    }
+
+    FUNCIONARIO {
+        Long id_funcionario PK
+        String cpf_funcionario
+        String nome_funcionario
+        String email_funcionario
+        String usuario_funcionario
+        String senha_funcionario
+        String orgao_funcionario "prefeitura ou sabesp"
+        Boolean excluido "default: false"
     }
 
     COMENTARIO_CHAMADO {
-        Long id PK
-        String texto
-        LocalDateTime dataRegistro
+        Long id_comentario PK
+        Long id_chamado FK
+        Long id_funcionario FK
+        String texto_comentario "text"
+        Timestamp data_hora_comentario
+        Boolean excluido "default: false"
     }
 
     LOGS {
-        Long id PK
-        String acao
-        LocalDateTime timestamp
+        Long id_logs PK
+        Long id_chamado FK
+        Long id_usuario_log "quem fez a alteracao"
+        String operacao_realizada "ex: Status alterado..."
+        Timestamp data_hora_log
     }
 ```
 
