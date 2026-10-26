@@ -11,13 +11,6 @@
 </p>
 
 <p align="center">
-  <a href="https://www.figma.com/design/Tb4SDE9A4oEpLaXfN7aAhe/Projeto-%7C-Sabesp?node-id=0-1&t=yQExxpGpTtvoIWHk-1" target="_blank"><b>🎨 Protótipo no Figma</b></a> •
-  <a href="#-central-de-documentação-docs-hub"><b>🧭 Documentação</b></a> •
-  <a href="#-início-rápido-quickstart"><b>⚡ Início Rápido</b></a> •
-  <a href="#-roadmap-de-entrega"><b>🗺️ Roadmap</b></a>
-</p>
-
-<p align="center">
   <a href="https://www.figma.com/design/Tb4SDE9A4oEpLaXfN7aAhe/Projeto-%7C-Sabesp?node-id=0-1&t=yQExxpGpTtvoIWHk-1" target="_blank">
     <img src="assets/preview-mockup.svg" alt="Preview da Interface no Figma" width="850px" />
   </a>
