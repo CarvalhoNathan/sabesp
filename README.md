@@ -95,7 +95,8 @@ Projeto acadêmico concebido e desenvolvido por:
 * **Nathan Carvalho** — [@CarvalhoNathan](https://github.com/CarvalhoNathan)
 * **Andrey Celestino** — [@DreyCelestino](https://github.com/DreyCelestino)
 
-> 🎨 **Protótipo Interativo:** [Acessar Telas no Figma](https://www.figma.com/design/Tb4SDE9A4oEpLaXfN7aAhe/Projeto-%7C-Sabesp?node-id=0-1&t=yQExxpGpTtvoIWHk-1)
+> 🎨 **Protótipo Interativo:** [Acessar Telas no Figma](https://www.figma.com/design/Tb4SDE9A4oEpLaXfN7aAhe/Projeto-%7C-Sabesp?node-id=0-1&t=yQExxpGpTtvoIWHk-1)  
+> 🤝 **Padrões de Desenvolvimento & Git:** [Consulte o Guia de Contribuição (CONTRIBUTING.md)](CONTRIBUTING.md)
 
 ---
 
