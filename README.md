@@ -1,100 +1,88 @@
-# 💧 Sabesp & Semam - Gestão e Auditoria de Obras na Rede de Esgoto (Santos)
+# 💧 Sabesp & Semam · Santos
+### Gestão inteligente e auditoria pública na rede de esgoto
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
-  <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white" alt="Spring Boot" />
-  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase" />
-  <img src="https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=hibernate&logoColor=white" alt="Hibernate" />
-  <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Figma" />
+  <img src="https://img.shields.io/badge/Java_17-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java" />
+  <img src="https://img.shields.io/badge/Spring_Boot_3-6DB33F?style=flat-square&logo=spring-boot&logoColor=white" alt="Spring Boot" />
+  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white" alt="Supabase" />
+  <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white" alt="Figma" />
 </p>
 
-Um sistema web desenvolvido para modernizar e conferir transparência ao fluxo de requisições e obras na rede de esgoto do município de Santos. O projeto integra a população, a Secretaria de Meio Ambiente (Semam) e a Sabesp em uma única plataforma centralizada de auditoria, fiscalização e controle operacional.
-
-A plataforma substitui o modelo burocrático e manual da ouvidoria tradicional por uma **esteira digital 24/7 auditável**, automatizando a triagem técnica por regiões de Santos e o controle de prazos legais de atendimento da concessionária.
+> **A Visão:** Transformar a fiscalização urbana do município de Santos substituindo a burocracia da ouvidoria tradicional por uma **esteira digital única, transparente e auditável**, conectando o cidadão, o órgão regulador ambiental (Semam) e a concessionária (Sabesp) em tempo real.
 
 ---
 
-## 📚 Documentação do Projeto
+## 💎 Os Três Pilares da Solução
 
-Para manter a documentação organizada e acessível, os detalhes técnicos foram organizados em módulos na pasta [`docs/`](docs/):
-
-| Módulo | Descrição | Link de Acesso |
+| 📱 Para o Munícipe | 🏛️ Para a Prefeitura (Semam) | 💧 Para a Sabesp |
 | :--- | :--- | :--- |
-| **🏛️ Contexto e Legislação** | O problema real em Santos, Lei Complementar nº 852/2014, as 5 Zonas Regionais e ODS da ONU. | [Acessar Documento](docs/contexto-e-legislacao.md) |
-| **🗄️ Arquitetura e Banco** | Ciclo de vida do chamado, matriz de status, modelo ER (Proto SQL), Soft Delete e estrutura Spring Boot. | [Acessar Documento](docs/arquitetura-e-banco.md) |
-| **🔐 Regras de Negócio e API** | Perfis de acesso (RBAC), isolamento de dados, validações e catálogo de endpoints REST / Swagger. | [Acessar Documento](docs/regras-e-api.md) |
-| **🎨 Design System e UI/UX** | Tipografia Montserrat, catálogo de logos SVG oficiais e link para o protótipo no Figma. | [Acessar Documento](docs/design-system.md) |
+| **Voz Ativa & Agilidade** | **Controle & Fiscalização** | **Operação & Rastreabilidade** |
+| Abertura em segundos com upload de fotos e localização. Acompanhamento transparente do status sem depender de ligações no 162. | Painel centralizado com triagem nas 5 Zonas de Santos e auditoria em tempo real do cumprimento da Lei Complementar nº 852/2014. | Recepção de ordens já pré-validadas tecnicamente, registro de pareceres e comprovação fotográfica das intervenções em campo. |
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 🧭 Central de Documentação (Docs Hub)
 
-- **Backend:** Java 17+, Spring Boot (Data JPA, Web, Validation), Hibernate, RESTful API
-- **Banco de Dados:** PostgreSQL hospedado via Supabase
-- **Prototipagem:** Figma
-- **Controle de Versão & Documentação:** Git, GitHub & Markdown
+Aprofunde-se nos detalhes de engenharia e regras de negócio:
 
----
-
-## 🚀 Como Executar o Projeto
-
-### Pré-requisitos
-* **Java JDK 17** ou superior
-* **Apache Maven 3.8+** (ou o wrapper `./mvnw`)
-* Instância ativa do **PostgreSQL** ou projeto no **Supabase**
-
-### Passo a Passo
-
-1. **Clonar o repositório:**
-   ```bash
-   git clone https://github.com/CarvalhoNathan/sabesp.git
-   cd sabesp
-   ```
-
-2. **Configurar as credenciais do banco:**
-   No arquivo `src/main/resources/application.properties`, configure as credenciais do Supabase/PostgreSQL:
-   ```properties
-   spring.datasource.url=jdbc:postgresql://<HOST_SUPABASE>:5432/<DATABASE>
-   spring.datasource.username=postgres
-   spring.datasource.password=<SUA_SENHA_DO_SUPABASE>
-   
-   spring.jpa.hibernate.ddl-auto=update
-   spring.jpa.show-sql=true
-   spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
-   ```
-
-3. **Executar a aplicação:**
-   ```bash
-   mvn spring-boot:run
-   ```
-   A aplicação estará disponível em `http://localhost:8080` e o Swagger em `http://localhost:8080/swagger-ui.html`.
+| Módulo | Foco & Conteúdo | Link |
+| :--- | :--- | :---: |
+| **🏛️ Contexto & Legislação** | O diagnóstico real de Santos, a Ouvidoria 162, a Lei 852/2014, as 5 Zonas e os ODS da ONU. | [Explorar →](docs/contexto-e-legislacao.md) |
+| **🗄️ Arquitetura & Banco** | Ciclo de vida do chamado, matriz de status, modelo ER (Proto SQL) e Soft Delete. | [Explorar →](docs/arquitetura-e-banco.md) |
+| **🔐 Regras de Negócio & API** | Controle de acesso por papéis (RBAC), validações de domínio e catálogo de rotas REST / Swagger. | [Explorar →](docs/regras-e-api.md) |
+| **🎨 Design System & UI/UX** | Tipografia Montserrat, catálogo de logos SVG oficiais e acesso ao protótipo no Figma. | [Explorar →](docs/design-system.md) |
 
 ---
 
-## 🗺️ Roadmap de Desenvolvimento
+## 🛠️ Stack Tecnológica
 
-- [x] Levantamento de requisitos e fundamentação legal (Lei Complementar nº 852/2014)
-- [x] Mapeamento das 5 Zonas Administrativas de Santos e esteira de atendimento
-- [x] Modelagem do Banco de Dados (Proto SQL & Imutabilidade de Auditoria)
-- [x] Coleta e padronização dos assets vetoriais oficiais (`assets/logo-prefeitura`)
-- [ ] Prototipagem completa das interfaces no Figma (Munícipe, Gestão Semam e Operação Sabesp)
-- [ ] Criação do esquema e tabelas relacionais no PostgreSQL (Supabase)
-- [ ] Setup do projeto Spring Boot com dependências Maven
-- [ ] Implementação das entidades JPA, DTOs e Repositories
-- [ ] Desenvolvimento dos Services e Controllers REST com validações de negócio
-- [ ] Implementação de autenticação e autorização por perfil (RBAC)
-- [ ] Integração com serviço de armazenamento de arquivos em nuvem para fotos de evidência
-- [ ] Cobertura de testes unitários e de integração
+* **Core Backend:** Java 17 • Spring Boot 3 (Data JPA, Web, Validation) • Hibernate
+* **Banco de Dados & Nuvem:** PostgreSQL • Supabase
+* **Design & Experiência:** Figma • Identidade Visual Oficial de Santos
+* **Padronização:** RESTful API • OpenAPI 3 (Swagger UI) • Git & GitHub
 
 ---
 
-## 👨‍💻 Equipe de Desenvolvimento
+## ⚡ Início Rápido (Quickstart)
 
-Projeto acadêmico desenvolvido por:
+```bash
+# 1. Clone o repositório
+git clone https://github.com/CarvalhoNathan/sabesp.git
+cd sabesp
 
-- **Nathan Carvalho** — [GitHub](https://github.com/CarvalhoNathan)
-- **Andrey Celestino** — [GitHub](https://github.com/DreyCelestino)
+# 2. Configure o Supabase em src/main/resources/application.properties
+# spring.datasource.url=jdbc:postgresql://<HOST_SUPABASE>:5432/<DATABASE>
+# spring.datasource.username=postgres
+# spring.datasource.password=<SUA_SENHA>
+
+# 3. Execute a aplicação
+mvn spring-boot:run
+```
+
+> Acesse a aplicação em `http://localhost:8080` e a documentação interativa em `http://localhost:8080/swagger-ui.html`.
+
+---
+
+## 🗺️ Roadmap de Entrega
+
+- [x] **Fase 1 · Concepção:** Fundamentação legal (Lei 852/2014), diagnóstico municipal e esteira de valor.
+- [x] **Fase 2 · Modelagem:** Proto SQL, regras de auditoria imutável (Logs) e Soft Delete.
+- [x] **Fase 3 · Identidade:** Padronização dos vetores oficiais `.svg` e tipografia Montserrat.
+- [ ] **Fase 4 · UI/UX:** Prototipagem interativa das telas no Figma (Munícipe, Gestão e Operação).
+- [ ] **Fase 5 · Banco em Nuvem:** Implementação do schema relacional no PostgreSQL (Supabase).
+- [ ] **Fase 6 · Backend:** Desenvolvimento da API RESTful em Spring Boot com validações e RBAC.
+
+---
+
+## 👥 Engenharia & Autoria
+
+Projeto acadêmico concebido e desenvolvido por:
+
+* **Nathan Carvalho** — [@CarvalhoNathan](https://github.com/CarvalhoNathan)
+* **Andrey Celestino** — [@DreyCelestino](https://github.com/DreyCelestino)
+
+> 🎨 **Protótipo Interativo:** [Acessar Telas no Figma](https://www.figma.com/design/Tb4SDE9A4oEpLaXfN7aAhe/Projeto-%7C-Sabesp?node-id=0-1&t=yQExxpGpTtvoIWHk-1)
 
 ---
 
