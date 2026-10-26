@@ -3,7 +3,7 @@
 # 📋 Especificação de Requisitos e Regras de Negócio
 ### Matriz formal de Requisitos Funcionais (RF), Não-Funcionais (RNF) e Regras de Domínio
 
-> 💡 **Em Resumo:** Este documento formaliza a engenharia de requisitos do software sob o rigor metodológico de Engenharia de Software para o TCC, alinhando as necessidades dos munícipes, os protocolos do **PMISB (Relatório R4 / Ações de Emergência)** e os prazos legais da **Lei Complementar nº 852/2014**.
+> 💡 **Em Resumo:** Este documento formaliza a engenharia de requisitos do software sob o rigor metodológico de Engenharia de Software para o TCC, alinhando as necessidades dos munícipes, os protocolos do **PMISB (Relatório R4 / Ações de Emergência)**, os prazos legais da **Lei Complementar nº 852/2014** e o controle social do **CMSBS / FMSBA (Lei nº 4.525/2024)**.
 
 ---
 
@@ -20,7 +20,7 @@
 
 Os requisitos são classificados conforme a metodologia internacional **MoSCoW**:
 * **Must Have (Essencial):** Obrigatório para o funcionamento do MVP e conformidade legal.
-* **Should Have (Importante):** Relevante para otimização da esteira operacional.
+* **Should Have (Importante):** Relevante para otimização da esteira operacional e relatórios governamentais.
 * **Could Have (Desejável):** Recurso de valor agregado para etapas futuras.
 
 ---
@@ -41,6 +41,7 @@ Os requisitos são classificados conforme a metodologia internacional **MoSCoW**
 | **RF10** | Registro de Pareceres Técnicos | Permitir inserção de comentários e laudos técnicos (`ComentarioChamado`) com fotos comprobatórias do reparo finalizado. | Sabesp / Prefeitura | **Must** |
 | **RF11** | Auditoria e Contagem de SLA (Lei 852/2014) | Calcular automaticamente os dias decorridos a partir da aprovação da Prefeitura, alertando prazos próximos de 15 dias. | Sistema | **Must** |
 | **RF12** | Trilha Imutável de Auditoria | Registrar em log indelével toda alteração de status, inserção de parecer e dados de auditoria (*quem, quando e o que alterou*). | Sistema | **Must** |
+| **RF13** | Relatórios de Auditoria (CMSBS / FMSBA) | Gerar relatórios consolidados com taxa de cumprimento de SLA, reincidência por região e autuações potenciais para subsidiar o Conselho Municipal de Saneamento (CMSBS) e o FMSBA. | Prefeitura (SEMAM) | **Should** |
 
 ---
 
@@ -71,7 +72,7 @@ Os requisitos são classificados conforme a metodologia internacional **MoSCoW**
 > * **SLA Verde (< 7 dias):** Dentro da normalidade operacional.
 > * **SLA Amarelo (8 a 12 dias):** Alerta de atenção para despacho de equipe.
 > * **SLA Vermelho (13 a 15 dias):** Risco iminente de autuação.
-> * **SLA Roxo (> 15 dias):** Prazo legal estourado / Base para aplicação de multa de R$ 17.045,05.
+> * **SLA Roxo (> 15 dias):** Prazo legal estourado / Base para aplicação de multa de R$ 17.045,05 destinada ao FMSBA.
 
 > 📸 **RN04 · Comprovação Obrigatória de Conclusão:**  
 > Para alterar o status de `EM_EXECUCAO` para `CONCLUIDO`, a Sabesp deve obrigatoriamente anexar um parecer técnico de encerramento e evidência fotográfica da intervenção realizada na via.

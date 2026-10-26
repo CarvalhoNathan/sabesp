@@ -3,15 +3,17 @@
 # 🏛️ Contexto Institucional, Regionalização e Marco Legal
 ### Fundamentação real e respaldo jurídico no município de Santos
 
-> 💡 **Em Resumo:** Este documento apresenta o diagnóstico territorial de Santos, a substituição da ouvidoria analógica (162) por uma esteira digital ágil, o **Estudo de Caso da Rua Goiás (multa de R$ 818 mil)**, o plano de contingências do **PMISB (Relatório R4)** e a fundamentação jurídica que transforma esta aplicação em uma ferramenta probatória de auditoria pública.
+> 💡 **Em Resumo:** Este documento apresenta o diagnóstico territorial de Santos, a substituição da ouvidoria analógica (162) por uma esteira digital ágil, o **Estudo de Caso da Rua Goiás (multa de R$ 818 mil)**, o projeto de universalização no **Dique da Vila Gilda (Parque Palafitas)**, o plano de contingências do **PMISB (Relatório R4)** e a governança financeira/fiscalizatória do **FMSBA (Lei 4.525/2024)** e do **CMSBS**.
 
 ---
 
 ## 📌 Navegação Rápida
 - [O Problema Real vs. Solução Proposta](#-o-problema-real-vs-solução-proposta)
 - [Estudo de Caso Real: O Incidente da Rua Goiás (2023)](#-estudo-de-caso-real-o-incidente-da-rua-goiás-2023)
+- [Universalização e Vulnerabilidade: O Caso do Dique da Vila Gilda (2025–2026)](#-universalização-e-vulnerabilidade-o-caso-do-dique-da-vila-gilda-20252026)
 - [O Plano Municipal Integrado de Saneamento Básico (PMISB · Relatório R4)](#-o-plano-municipal-integrado-de-saneamento-básico-pmisb--relatório-r4)
 - [Marco Regulatório: Lei Complementar Municipal nº 852/2014](#-marco-regulatório-lei-complementar-municipal-nº-8522014)
+- [Governança Financeira e Controle Social: FMSBA e CMSBS](#-governança-financeira-e-controle-social-fmsba-e-cmsbs)
 - [O Novo Cenário da Concessão: Lei Estadual nº 17.853/2023](#-o-novo-cenário-da-concessão-lei-estadual-nº-178532023)
 - [Regionalização Administrativa: As 5 Zonas de Santos](#-regionalização-administrativa-as-5-zonas-de-santos)
 - [Atuação e Papel dos Órgãos Públicos](#-atuação-e-papel-dos-órgãos-públicos)
@@ -44,6 +46,19 @@ A urgência e a relevância deste projeto são comprovadas por episódios críti
 * **Ação Fiscalizatória da SEMAM:** Após vistoria técnica de emergência, a Secretaria Municipal de Meio Ambiente autuou a concessionária em **R$ 818 mil**, fundamentada na Lei Complementar Municipal nº 817/2013 (Código Ambiental de Santos), em razão da contaminação do solo e danos ambientais decorrentes do esgoto bruto infiltrado.
 * **Diagnóstico da Falha Sistêmica:** O episódio evidenciou a fragilidade do modelo analógico de atendimento. Sem uma ferramenta ágil onde munícipes e fiscais pudessem reportar os sinais preliminares de abatimento asfáltico e refluxo com fotos geolocalizadas, o problema só foi abordado após o colapso físico da via.
 * **A Solução Proposta:** A plataforma web garante a detecção precoce de anomalias na malha, permitindo à SEMAM emitir ordens de emergência auditadas antes da ocorrência de sinistros viários e danos ambientais graves.
+
+---
+
+## 🌊 Universalização e Vulnerabilidade: O Caso do Dique da Vila Gilda (2025–2026)
+
+Se o incidente da Rua Goiás ilustra o risco em áreas nobres consolidadas, o **Dique da Vila Gilda**, localizado na Zona Noroeste de Santos, representa a fronteira viva da universalização do saneamento:
+
+> 🏘️ **A Maior Favela de Palafitas do Brasil:**  
+> O Dique da Vila Gilda abriga milhares de famílias em moradias erguidas sobre manguezal e lâmina d'água de maré. Historicamente, essa área concentrou o déficit residual de coleta e tratamento de esgoto apontado no PMISB.
+
+* **O Termo de Cooperação Prefeitura–Sabesp (Novembro de 2025):** A Prefeitura de Santos e a Sabesp firmaram parceria formal para a implantação de redes completas de distribuição de água e esgotamento sanitário em todas as palafitas da região, totalizando cerca de **2.500 ligações regulares** até o final de 2026.
+* **O Projeto Parque Palafitas:** Integração entre habitação social sustentável (reconhecida nacionalmente no Fórum de Habitação de Interesse Social) e engenharia sanitária avançada adaptada a solos de manguezal e oscilações de maré.
+* **Relevância para o Sistema:** No sistema, a **Zona Noroeste** possui tratamento prioritário para chamados de extravasamento, assegurando que áreas de alta densidade e vulnerabilidade socioambiental tenham o mesmo nível de transparência, celeridade e fiscalização pública que a Orla da praia.
 
 ---
 
@@ -81,6 +96,22 @@ A plataforma digital opera como um **instrumento de auditoria e fé pública**, 
 
 ---
 
+## 💰 Governança Financeira e Controle Social: FMSBA e CMSBS
+
+Um sistema de fiscalização de serviços públicos só é completo quando conectado aos canais de responsabilização financeira e controle social do município:
+
+### 🏦 FMSBA · Fundo Municipal de Saneamento Básico e Ambiental de Santos
+* **Base Legal:** Instituído pela **Lei Municipal nº 4.525, de 19 de agosto de 2024**, e regulamentado pelo **Decreto nº 10.687/2025** (com atualizações pelos Decretos nº 11.170/2026 e 11.256/2026).
+* **Finalidade e Destinação das Multas:** O FMSBA centraliza os recursos oriundos de repasses contratuais da concessão e, crucialmente, as **multas e penalidades aplicadas pela SEMAM contra a concessionária** (tais como as infrações da Lei 852/2014 e a sanção de R$ 818 mil da Rua Goiás).
+* **Reinvestimento Carimbado:** Os valores arrecadados no fundo são legalmente vinculados a ações de proteção ambiental, drenagem, contenção de encostas e universalização do saneamento em áreas periféricas.
+
+### 👥 CMSBS · Conselho Municipal de Saneamento Básico de Santos
+* **Base Legal:** Reorganizado pelo **Decreto nº 11.153/2026** e consolidado pelo **Decreto nº 11.328, de 24 de setembro de 2026**.
+* **Papel Fiscalizatório e Participativo:** Órgão colegiado paritário composto por representantes do poder público, concessionária e sociedade civil organizada. Tem a competência legal de acompanhar a execução do PMISB, fiscalizar as aplicações financeiras do FMSBA e validar os indicadores de qualidade do serviço prestado.
+* **Alimentação de Dados pelo Sistema:** A esteira de relatórios da aplicação fornece ao CMSBS métricas consolidadas e auditadas sobre o tempo médio de resposta (SLA), volume de extravasamentos e reincidências por bairro.
+
+---
+
 ## 🏛️ O Novo Cenário da Concessão: Lei Estadual nº 17.853/2023
 
 A promulgação da **Lei Estadual nº 17.853/2023**, que autorizou a desestatização da Sabesp, alterou a governança das concessões de saneamento no Estado de São Paulo:
@@ -98,7 +129,7 @@ Para assegurar uma gestão territorial eficiente, as demandas no sistema são ca
 Município de Santos
 ├── 1. Zona da Orla / Intermediária   → Maior densidade populacional e contato com canais e praias
 ├── 2. Centro Histórico               → Patrimônio histórico tombado e rede subterrânea centenária
-├── 3. Zona Noroeste                  → Bacia urbana densa com desafios frequentes de drenagem
+├── 3. Zona Noroeste                  → Bacia urbana densa, marés e palafitas (Vila Gilda / Parque Palafitas)
 ├── 4. Morros                         → Topografia íngreme exigindo contenção rápida para evitar deslizamentos
 └── 5. Área Continental               → Extensão territorial extensa e ecossistemas sensíveis de manguezais
 ```
@@ -126,6 +157,7 @@ Este projeto contribui diretamente para a **Agenda 2030 da Organização das Na�
 * **ODS 6 · Água Potável e Saneamento:** Assegurar a disponibilidade e gestão sustentável da água e saneamento para todos, mitigando a contaminação de corpos hídricos e canais urbanos.
 * **ODS 9 · Indústria, Inovação e Infraestrutura:** Modernização tecnológica da gestão pública por meio da digitalização de serviços de zeladoria e infraestrutura urbana.
 * **ODS 11 · Cidades e Comunidades Sustentáveis:** Promoção da resiliência urbana e fortalecimento da capacidade de resposta integrada do poder público em prol da qualidade de vida dos cidadãos.
+* **ODS 16 · Paz, Justiça e Instituições Eficazes:** Promoção da transparência pública, combate à precarização dos serviços e fortalecimento da governança de dados municipais.
 
 ---
 
@@ -133,6 +165,10 @@ Este projeto contribui diretamente para a **Agenda 2030 da Organização das Na�
 
 Para fins de comprovação documental e referencial bibliográfico oficial:
 
+* [Prefeitura de Santos · Regularização de Água e Esgoto na Vila Gilda](https://www.santos.sp.gov.br/?q=noticia/parceria-garante-regularizacao-da-rede-de-agua-e-esgoto-para-a-vila-gilda-em-santos) — Termo de cooperação Sabesp e Prefeitura para 2.500 ligações na maior comunidade de palafitas do Brasil.
+* [Legis Santos · Lei Municipal nº 4.525/2024](https://egov.santos.sp.gov.br/legis/documents/10840) — Institui o Fundo Municipal de Saneamento Básico e Ambiental de Santos (FMSBA).
+* [Legis Santos · Decreto Municipal nº 10.687/2025](https://egov.santos.sp.gov.br/legis/documents/11127) — Regulamenta a Lei nº 4.525/2024 do FMSBA/Santos (atualizado pelos Decretos nº 11.170/2026 e 11.256/2026).
+* [Legis Santos · Decreto Municipal nº 11.328/2026](https://egov.santos.sp.gov.br/legis/documents/12103) — Nomeação de membros e consolidação do Conselho Municipal de Saneamento Básico de Santos (CMSBS).
 * [Prefeitura de Santos · Notícia Oficial: Santos multa Sabesp em R$ 818 mil por contaminação de solo na Rua Goiás](https://www.santos.sp.gov.br/?q=noticia/santos-multa-sabesp-em-r-818-mil-reais-devido-a-contaminacao-de-solo-na-rua-goias)
 * [G1 Santos · Sabesp é multada em R$ 818 mil após contaminação de solo na Rua Goiás](https://g1.globo.com/sp/santos-regiao/noticia/2023/03/07/sabesp-e-multada-em-r-818-mil-apos-contaminacao-de-solo-na-rua-goias-em-santos-sp.ghtml)
 * [ALESP · Lei Estadual nº 17.853/2023 (Desestatização e Governança da Sabesp)](https://www.al.sp.gov.br/repositorio/legislacao/lei/2023/lei-17853-08.12.2023.html)
