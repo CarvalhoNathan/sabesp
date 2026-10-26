@@ -1,5 +1,5 @@
-# 💧 Sabesp & Semam · Santos
-### Gestão inteligente e auditoria pública na rede de esgoto
+# 💧 Sabesp & Prefeitura de Santos
+### Gestão inteligente e auditoria pública na rede de esgoto municipal
 
 <p align="center">
   <img src="https://img.shields.io/badge/Java_17-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java" />
@@ -16,39 +16,49 @@
   </a>
 </p>
 
-> **A Visão:** Transformar a fiscalização urbana do município de Santos substituindo a burocracia da ouvidoria tradicional por uma **esteira digital única, transparente e auditável**, conectando o cidadão, o órgão regulador ambiental (Semam) e a concessionária (Sabesp) em tempo real.
+> **A Visão:** Transformar a fiscalização urbana do município de Santos substituindo a lentidão e fragmentação da ouvidoria tradicional (onde chamados levam de 30 a 60 dias) por uma **esteira digital única, transparente e auditável**, garantindo o cumprimento do prazo legal de 15 dias da Lei Complementar nº 852/2014 e conectando o munícipe, a Prefeitura (Sepref / Semam / Seserp) e a Sabesp em tempo real.
+
+---
+
+## 📊 O Cenário Real em Números
+
+* **99% de Cobertura Urbana:** Conforme o PMISB (Relatório R4), o desafio de Santos não é a falta de rede, mas a manutenção preventiva e corretiva de uma malha centenária e o fechamento do déficit de 1% em palafitas (como o projeto de 2.500 ligações no **Dique da Vila Gilda**).
+* **15 Dias Corridos:** Prazo legal máximo improrrogável estabelecido pela **Lei Complementar nº 852/2014** para a Sabesp concluir reparos na via pública após notificação.
+* **30 a 60 Dias na Ouvidoria:** O descompasso da Ouvidoria tradicional (SOM Web / 162), que considera "normal" prazos de até 30 dias enquanto a lei exige solução em 15.
+* **+190 Intimações / Mês:** Volume real de intimações e notificações emitidas pelos fiscais técnicos das Prefeituras Regionais (Sepref) para cobrar concessionárias.
+* **R$ 818 Mil em Multa:** Sanção histórica aplicada pela SEMAM contra a Sabesp após vazamento que engoliu a Rua Goiás, recurso que hoje alimenta o **Fundo Municipal de Saneamento Básico e Ambiental (FMSBA / Lei nº 4.525/2024)** sob controle do Conselho Municipal (**CMSBS**).
 
 ---
 
 ## 💎 Os Três Pilares da Solução
 
-| 📱 Para o Munícipe | 🏛️ Para a Prefeitura (Semam) | 💧 Para a Sabesp |
+| 📱 Para o Munícipe | 🏛️ Para a Prefeitura (Sepref / Semam) | 💧 Para a Sabesp |
 | :--- | :--- | :--- |
 | **Voz Ativa & Agilidade** | **Controle & Fiscalização** | **Operação & Rastreabilidade** |
-| Abertura em segundos com upload de fotos e localização. Acompanhamento transparente do status sem depender de ligações no 162. | Painel centralizado com triagem nas 5 Zonas de Santos e auditoria em tempo real do cumprimento da Lei Complementar nº 852/2014. | Recepção de ordens já pré-validadas tecnicamente, registro de pareceres e comprovação fotográfica das intervenções em campo. |
+| Abertura em segundos com upload de fotos e localização. Acompanhamento transparente do status sem depender de ligações no 162 ou prazos lentos de 60 dias. | Painel centralizado com triagem nas 5 Zonas de Santos, despacho automático de intimações e auditoria do prazo de 15 dias da Lei nº 852/2014. | Recepção de ordens já pré-validadas tecnicamente, registro de pareceres de campo e comprovação fotográfica das intervenções na via. |
 
 ---
 
 ## 🧭 Central de Documentação (Docs Hub)
 
-Aprofunde-se nos detalhes de engenharia e regras de negócio:
+Aprofunde-se nos detalhes de engenharia, arquitetura e governança pública:
 
 | Módulo | Foco & Conteúdo | Link |
 | :--- | :--- | :---: |
-| **🏛️ Contexto & Legislação** | Diagnóstico real de Santos, Vila Gilda, FMSBA (Lei 4.525), CMSBS, Lei 852/2014, 5 Zonas e ODS. | [Explorar →](docs/contexto-e-legislacao.md) |
-| **📋 Requisitos & Regras** | Matriz formal de requisitos funcionais (RF), não-funcionais (RNF) e tipologia oficial do PMISB. | [Explorar →](docs/requisitos-do-sistema.md) |
-| **🗄️ Arquitetura & Banco** | Ciclo de vida do chamado, matriz de status, modelo ER (Proto SQL) e Soft Delete. | [Explorar →](docs/arquitetura-e-banco.md) |
-| **🔐 Regras de Negócio & API** | Controle de acesso por papéis (RBAC), validações de domínio e catálogo de rotas REST / Swagger. | [Explorar →](docs/regras-e-api.md) |
-| **🎨 Design System & UI/UX** | Tipografia Montserrat, catálogo de logos SVG oficiais e acesso ao protótipo no Figma. | [Explorar →](docs/design-system.md) |
-| **🎓 Metodologia TCC** | Objetivos, estudo de caso de Santos, metodologia ABNT e estrutura para a monografia. | [Explorar →](docs/metodologia-tcc.md) |
+| **🏛️ Contexto & Legislação** | Diagnóstico real de Santos, caso Rua Goiás, Vila Gilda, FMSBA (Lei 4.525), CMSBS, atuação Sepref/Semam/Seserp e ODS. | [Explorar →](docs/contexto-e-legislacao.md) |
+| **📋 Requisitos & Regras** | Matriz MoSCoW (RF01 a RF13, RNF01 a RNF07), regras de negócio e tipologias oficiais do PMISB (Relatório R4). | [Explorar →](docs/requisitos-do-sistema.md) |
+| **🗄️ Arquitetura & Banco** | Ciclo de vida do chamado, matriz de status, modelo ER (Proto SQL), Soft Delete e Logs imutáveis (*Append-Only*). | [Explorar →](docs/arquitetura-e-banco.md) |
+| **🔐 Regras de Negócio & API** | Controle de acesso por papéis (RBAC), validações de domínio e catálogo de rotas RESTful com Swagger UI. | [Explorar →](docs/regras-e-api.md) |
+| **🎨 Design System & UI/UX** | Tipografia Montserrat, catálogo de logos vetoriais SVG da Prefeitura de Santos e acesso ao protótipo no Figma. | [Explorar →](docs/design-system.md) |
+| **🎓 Metodologia TCC** | Tema, problema de pesquisa, objetivos, justificativa tríplice, metodologia científica e mapeamento para monografia ABNT. | [Explorar →](docs/metodologia-tcc.md) |
 
 ---
 
 ## 🛠️ Stack Tecnológica
 
-* **Core Backend:** Java 17 • Spring Boot 3 (Data JPA, Web, Validation) • Hibernate
+* **Core Backend:** Java 17 • Spring Boot 3 (Data JPA, Security, Web, Validation) • Hibernate • Lombok
 * **Banco de Dados & Nuvem:** PostgreSQL • Supabase
-* **Design & Experiência:** Figma • Identidade Visual Oficial de Santos
+* **Design & Experiência:** Figma • Identidade Visual Oficial da Prefeitura de Santos (Montserrat)
 * **Padronização:** RESTful API • OpenAPI 3 (Swagger UI) • Git & GitHub
 
 ---
@@ -60,7 +70,7 @@ Aprofunde-se nos detalhes de engenharia e regras de negócio:
 git clone https://github.com/CarvalhoNathan/sabesp.git
 cd sabesp
 
-# 2. Configure o Supabase em src/main/resources/application.properties
+# 2. Configure as variáveis de conexão com o Supabase em src/main/resources/application.properties
 # spring.datasource.url=jdbc:postgresql://<HOST_SUPABASE>:5432/<DATABASE>
 # spring.datasource.username=postgres
 # spring.datasource.password=<SUA_SENHA>
@@ -75,18 +85,18 @@ mvn spring-boot:run
 
 ## 🗺️ Roadmap de Entrega
 
-- [x] **Fase 1 · Concepção:** Fundamentação legal (Lei 852/2014), diagnóstico municipal e esteira de valor.
-- [x] **Fase 2 · Modelagem:** Proto SQL, regras de auditoria imutável (Logs) e Soft Delete.
-- [x] **Fase 3 · Identidade:** Padronização dos vetores oficiais `.svg` e tipografia Montserrat.
-- [ ] **Fase 4 · UI/UX:** Prototipagem interativa das telas no Figma (Munícipe, Gestão e Operação).
+- [x] **Fase 1 · Concepção e Marco Legal:** Diagnóstico municipal, Lei 852/2014, FMSBA (Lei 4.525/2024), PMISB R4 e esteira de valor.
+- [x] **Fase 2 · Modelagem e Arquitetura:** Proto SQL, regras de auditoria imutável (Logs), Soft Delete e matriz de requisitos (RF01–RF13).
+- [x] **Fase 3 · Identidade Visual:** Padronização dos vetores oficiais `.svg` da Prefeitura de Santos e tipografia Montserrat.
+- [ ] **Fase 4 · Prototipagem UI/UX:** Telas interativas no Figma (Munícipe, Fiscalização Municipal e Operação Sabesp).
 - [ ] **Fase 5 · Banco em Nuvem:** Implementação do schema relacional no PostgreSQL (Supabase).
-- [ ] **Fase 6 · Backend:** Desenvolvimento da API RESTful em Spring Boot com validações e RBAC.
+- [ ] **Fase 6 · Backend Spring Boot:** Desenvolvimento da API RESTful em Spring Boot 3 com autenticação, validações e RBAC.
 
 ---
 
 ## 👥 Engenharia & Autoria
 
-Projeto acadêmico concebido e desenvolvido por:
+Projeto concebido e desenvolvido para o Trabalho de Conclusão de Curso (TCC) por:
 
 * **Nathan Carvalho** — [@CarvalhoNathan](https://github.com/CarvalhoNathan)
 * **Andrey Celestino** — [@DreyCelestino](https://github.com/DreyCelestino)
