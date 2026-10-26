@@ -3,16 +3,18 @@
 # 🏛️ Contexto Institucional, Regionalização e Marco Legal
 ### Fundamentação real e respaldo jurídico no município de Santos
 
-> 💡 **Em Resumo:** Este documento apresenta o diagnóstico territorial de Santos, a substituição da ouvidoria analógica (162) por uma esteira digital ágil e a fundamentação jurídica que transforma esta aplicação em uma ferramenta probatória de auditoria pública.
+> 💡 **Em Resumo:** Este documento apresenta o diagnóstico territorial de Santos, a substituição da ouvidoria analógica (162) por uma esteira digital ágil, as diretrizes do **Plano Municipal Integrado de Saneamento Básico (PMISB)** e a fundamentação jurídica que transforma esta aplicação em uma ferramenta probatória de auditoria pública.
 
 ---
 
 ## 📌 Navegação Rápida
 - [O Problema Real vs. Solução Proposta](#-o-problema-real-vs-solução-proposta)
+- [O Plano Municipal Integrado de Saneamento Básico (PMISB · Relatório R4)](#-o-plano-municipal-integrado-de-saneamento-básico-pmisb--relatório-r4)
 - [Marco Regulatório: Lei Complementar Municipal nº 852/2014](#-marco-regulatório-lei-complementar-municipal-nº-8522014)
 - [Regionalização Administrativa: As 5 Zonas de Santos](#-regionalização-administrativa-as-5-zonas-de-santos)
 - [Atuação e Papel dos Órgãos Públicos](#-atuação-e-papel-dos-órgãos-públicos)
 - [Alinhamento com os Objetivos de Desenvolvimento Sustentável (ODS)](#-alinhamento-com-os-objetivos-de-desenvolvimento-sustentável-ods)
+- [Fontes Primárias e Referências Oficiais da Prefeitura](#-fontes-primárias-e-referências-oficiais-da-prefeitura)
 
 ---
 
@@ -27,6 +29,17 @@ Historicamente no município de Santos, solicitações sobre vazamentos na rede 
 | **Comunicação com a Sabesp** | Notificações burocráticas impressas, gerando ruído e atrasos no repasse de informações. | **Acesso Operacional Dedicado:** A Sabesp recebe as ordens já pré-validadas tecnicamente em sua fila de trabalho. |
 | **Controle de Prazos (SLA)** | Dificuldade em mensurar e auditar com precisão o cumprimento do prazo legal de 15 dias corridos. | **Auditoria Automatizada:** Registro cronológico imutável para contagem e cobrança do prazo legal da Lei nº 852/2014. |
 | **Transparência ao Cidadão** | O munícipe não tem visibilidade se o local foi vistoriado ou quando a obra foi concluída. | **Transparência Total:** Acompanhamento do status em tempo real com histórico e parecer técnico conclusivo da concessionária. |
+
+---
+
+## 📑 O Plano Municipal Integrado de Saneamento Básico (PMISB · Relatório R4)
+
+O planejamento de saneamento de Santos é consolidado no **Plano Municipal Integrado de Saneamento Básico (PMISB)**, em cumprimento à Lei Federal nº 11.445/2007 e ao Novo Marco Legal do Saneamento (Lei Federal nº 14.026/2020).
+
+> 🔍 **O Paradoxo do Saneamento Santista:**  
+> De acordo com os relatórios técnicos do PMISB (como o documento oficial **Anexo 5 · Relatório R4 / Ações para Emergências e Contingências**), Santos possui índices de cobertura urbana de esgoto próximos a **99%**. Portanto, o gargalo central da cidade **não é a ausência de infraestrutura**, mas sim a **manutenção e integridade de uma malha subterrânea centenária**, sujeita a abatimentos asfálticos, refluxos prediais e rompimentos de tubulações que podem contaminar as galerias pluviais e as praias.
+
+O sistema web atua exatamente na diretriz prioritária estipulada pelo Relatório R4 do PMISB: **resiliência operacional, contingência ágil e fiscalização de emergências sanitárias**.
 
 ---
 
@@ -81,6 +94,18 @@ Este projeto contribui diretamente para a **Agenda 2030 da Organização das Na�
 * **ODS 6 · Água Potável e Saneamento:** Assegurar a disponibilidade e gestão sustentável da água e saneamento para todos, mitigando a contaminação de corpos hídricos e canais urbanos.
 * **ODS 9 · Indústria, Inovação e Infraestrutura:** Modernização tecnológica da gestão pública por meio da digitalização de serviços de zeladoria e infraestrutura urbana.
 * **ODS 11 · Cidades e Comunidades Sustentáveis:** Promoção da resiliência urbana e fortalecimento da capacidade de resposta integrada do poder público em prol da qualidade de vida dos cidadãos.
+
+---
+
+## 🔗 Fontes Primárias e Referências Oficiais da Prefeitura
+
+Para fins de fundamentação bibliográfica e comprovação documental:
+
+* [Secretaria Municipal de Meio Ambiente, Desenvolvimento Urbano e Sustentabilidade (SEMAM)](https://www.santos.sp.gov.br/?q=institucional/secretaria-de-meio-ambiente-desenvolvimento-urbano-e-sustentabilidade)
+* [Portal Oficial de Meio Ambiente de Santos](https://www.santos.sp.gov.br/?q=portal/meio-ambiente-desenvolvimento-urbano-e-sustentabilidade)
+* [Serviço Oficial · Plano Municipal de Saneamento Básico de Santos](https://www.santos.sp.gov.br/?q=servico/plano-municipal-de-saneamento-basico)
+* [Documento Oficial PMISB · Anexo 5 - SAN_R4_r5 (Ações para Emergências e Contingências)](https://www.santos.sp.gov.br/static/files_www/conteudo/13%20Anexo%205%20-%20Plano%20Municipal%20Integrado%20de%20Saneamento%20B%C3%A1sico.pdf)
+* [Manual de Identidade Visual da Prefeitura Municipal de Santos](https://www.santos.sp.gov.br/?q=hotsite/manual-de-identidade)
 
 ---
 
