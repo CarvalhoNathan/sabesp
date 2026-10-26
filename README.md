@@ -9,6 +9,19 @@
   <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white" alt="Figma" />
 </p>
 
+<p align="center">
+  <a href="https://www.figma.com/design/Tb4SDE9A4oEpLaXfN7aAhe/Projeto-%7C-Sabesp?node-id=0-1&t=yQExxpGpTtvoIWHk-1" target="_blank"><b>🎨 Protótipo no Figma</b></a> •
+  <a href="#-central-de-documentação-docs-hub"><b>🧭 Documentação</b></a> •
+  <a href="#-início-rápido-quickstart"><b>⚡ Início Rápido</b></a> •
+  <a href="#-roadmap-de-entrega"><b>🗺️ Roadmap</b></a>
+</p>
+
+<p align="center">
+  <a href="https://www.figma.com/design/Tb4SDE9A4oEpLaXfN7aAhe/Projeto-%7C-Sabesp?node-id=0-1&t=yQExxpGpTtvoIWHk-1" target="_blank">
+    <img src="assets/preview-mockup.svg" alt="Preview da Interface no Figma" width="850px" />
+  </a>
+</p>
+
 > **A Visão:** Transformar a fiscalização urbana do município de Santos substituindo a burocracia da ouvidoria tradicional por uma **esteira digital única, transparente e auditável**, conectando o cidadão, o órgão regulador ambiental (Semam) e a concessionária (Sabesp) em tempo real.
 
 ---

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="100%" height="auto">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="50%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="btnGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#004B87" />
+      <stop offset="100%" stop-color="#0072CE" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3ECF8E" />
+      <stop offset="100%" stop-color="#0072CE" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- Background Frame -->
+  <rect width="1200" height="480" rx="16" fill="url(#bgGrad)" stroke="#334155" stroke-width="2" />
+
+  <!-- Window Header / Browser Dots -->
+  <rect x="0" y="0" width="1200" height="48" rx="16" fill="#1E293B" />
+  <rect x="0" y="32" width="1200" height="16" fill="#1E293B" />
+  <circle cx="28" cy="24" r="6" fill="#EF4444" />
+  <circle cx="48" cy="24" r="6" fill="#F59E0B" />
+  <circle cx="68" cy="24" r="6" fill="#10B981" />
+  <text x="600" y="29" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#94A3B8" text-anchor="middle" font-weight="500">sabesp.santos.sp.gov.br · Ambiente de Gestão e Triagem</text>
+
+  <!-- Central Preview Graphic -->
+  <g transform="translate(100, 80)">
+    <!-- Decorative Grid / Glow -->
+    <rect x="0" y="0" width="1000" height="340" rx="12" fill="#0B1120" stroke="#1E293B" stroke-width="1.5" filter="url(#shadow)" />
+    
+    <!-- Top Accent Line -->
+    <rect x="0" y="0" width="1000" height="3" fill="url(#accentGrad)" />
+
+    <!-- Badges in Mockup -->
+    <rect x="40" y="35" width="180" height="32" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1" />
+    <text x="130" y="56" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#38BDF8" text-anchor="middle" font-weight="600">💧 Sabesp · Operação</text>
+
+    <rect x="235" y="35" width="220" height="32" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1" />
+    <text x="345" y="56" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#34D399" text-anchor="middle" font-weight="600">🏛️ Semam · Fiscalização</text>
+
+    <!-- Main Heading inside Mockup -->
+    <text x="500" y="145" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" fill="#FFFFFF" text-anchor="middle" font-weight="700" letter-spacing="-0.5">Interface em Prototipagem no Figma</text>
+    <text x="500" y="185" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" fill="#94A3B8" text-anchor="middle" font-weight="400">Design System oficial, fluxos do munícipe, painel de triagem e controle de ordens de serviço</text>
+
+    <!-- CTA Button in Mockup -->
+    <g transform="translate(370, 225)">
+      <rect x="0" y="0" width="260" height="52" rx="10" fill="url(#btnGrad)" />
+      <text x="130" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" fill="#FFFFFF" text-anchor="middle" font-weight="600">🎨 Acessar Protótipo Interativo →</text>
+    </g>
+
+    <text x="500" y="315" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#64748B" text-anchor="middle">Clique para abrir o projeto oficial diretamente no Figma</text>
+  </g>
+</svg>
