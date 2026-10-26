@@ -3,7 +3,7 @@
 # 🏛️ Contexto Institucional, Regionalização e Marco Legal
 ### Fundamentação real e respaldo jurídico no município de Santos
 
-> 💡 **Em Resumo:** Este documento apresenta o diagnóstico territorial de Santos, a substituição da ouvidoria analógica (162) por uma esteira digital ágil, as diretrizes do **Plano Municipal Integrado de Saneamento Básico (PMISB)** e a fundamentação jurídica que transforma esta aplicação em uma ferramenta probatória de auditoria pública.
+> 💡 **Em Resumo:** Este documento apresenta o diagnóstico territorial de Santos, a substituição da ouvidoria analógica (162) por uma esteira digital ágil, as diretrizes de contingência do **Plano Municipal Integrado de Saneamento Básico (PMISB · Relatório R4)** e a fundamentação jurídica que transforma esta aplicação em uma ferramenta probatória de auditoria pública.
 
 ---
 
@@ -37,9 +37,17 @@ Historicamente no município de Santos, solicitações sobre vazamentos na rede 
 O planejamento de saneamento de Santos é consolidado no **Plano Municipal Integrado de Saneamento Básico (PMISB)**, em cumprimento à Lei Federal nº 11.445/2007 e ao Novo Marco Legal do Saneamento (Lei Federal nº 14.026/2020).
 
 > 🔍 **O Paradoxo do Saneamento Santista:**  
-> De acordo com os relatórios técnicos do PMISB (como o documento oficial **Anexo 5 · Relatório R4 / Ações para Emergências e Contingências**), Santos possui índices de cobertura urbana de esgoto próximos a **99%**. Portanto, o gargalo central da cidade **não é a ausência de infraestrutura**, mas sim a **manutenção e integridade de uma malha subterrânea centenária**, sujeita a abatimentos asfálticos, refluxos prediais e rompimentos de tubulações que podem contaminar as galerias pluviais e as praias.
+> De acordo com o documento oficial **Anexo 5 · Relatório R4 (Ações para Emergências e Contingências)**, Santos possui cobertura urbana de esgoto próxima a **99%**. Portanto, o desafio central da cidade **não reside na ausência de infraestrutura**, mas sim na **manutenção preventiva e corretiva de uma malha subterrânea centenária**, sujeita a abatimentos asfálticos, refluxos prediais e rompimentos de coletores que extravasam para os canais de drenagem e praias.
 
-O sistema web atua exatamente na diretriz prioritária estipulada pelo Relatório R4 do PMISB: **resiliência operacional, contingência ágil e fiscalização de emergências sanitárias**.
+### As 4 Ocorrências Críticas Catalogadas no PMISB (Pág. 85):
+O plano municipal mapeia formalmente as 4 situações críticas de esgotamento que exigem resposta imediata da concessionária:
+1. **Rompimento de tubulações:** Causado por erosão do solo, acomodação de taludes ou desmoronamento de paredes dos canais;
+2. **Extravasamento de rede coletora e coletores-tronco:** Provocado por entupimentos mecânicos ou sobrecarga hidráulica;
+3. **Extravasamento de esgotos em estações elevatórias:** Decorrente de interrupções de energia elétrica ou falhas eletromecânicas de bombas;
+4. **Danificação e rebaixamento de Poços de Visita (PV):** Rompimento ou perda de tampas que geram buracos e risco viário.
+
+> 🚨 **Diretriz Obrigatória de Contingência (Páginas 82 e 85):**  
+> Para todas as ocorrências acima, o plano estipula como ação emergencial imediata a **comunicação compulsória aos órgãos ambientais fiscalizadores (SEMAM)** e o **registro rigoroso do histórico das intervenções** (Seção 6.2.5.2.2, Item B.f), justificando a esteira de auditoria imutável do sistema.
 
 ---
 
@@ -99,13 +107,12 @@ Este projeto contribui diretamente para a **Agenda 2030 da Organização das Na�
 
 ## 🔗 Fontes Primárias e Referências Oficiais da Prefeitura
 
-Para fins de fundamentação bibliográfica e comprovação documental:
+Para fins de comprovação documental e referencial bibliográfico oficial:
 
-* [Secretaria Municipal de Meio Ambiente, Desenvolvimento Urbano e Sustentabilidade (SEMAM)](https://www.santos.sp.gov.br/?q=institucional/secretaria-de-meio-ambiente-desenvolvimento-urbano-e-sustentabilidade)
-* [Portal Oficial de Meio Ambiente de Santos](https://www.santos.sp.gov.br/?q=portal/meio-ambiente-desenvolvimento-urbano-e-sustentabilidade)
-* [Serviço Oficial · Plano Municipal de Saneamento Básico de Santos](https://www.santos.sp.gov.br/?q=servico/plano-municipal-de-saneamento-basico)
-* [Documento Oficial PMISB · Anexo 5 - SAN_R4_r5 (Ações para Emergências e Contingências)](https://www.santos.sp.gov.br/static/files_www/conteudo/13%20Anexo%205%20-%20Plano%20Municipal%20Integrado%20de%20Saneamento%20B%C3%A1sico.pdf)
-* [Manual de Identidade Visual da Prefeitura Municipal de Santos](https://www.santos.sp.gov.br/?q=hotsite/manual-de-identidade)
+* [Secretaria Municipal de Meio Ambiente, Desenvolvimento Urbano e Sustentabilidade (SEMAM)](https://www.santos.sp.gov.br/?q=institucional/secretaria-de-meio-ambiente-desenvolvimento-urbano-e-sustentabilidade) — Página oficial institucional da pasta.
+* [Plano Municipal Integrado de Saneamento Básico de Santos (PMISB)](https://www.santos.sp.gov.br/?q=servico/plano-municipal-de-saneamento-basico) — Serviço e legislação oficial do plano de saneamento.
+* [Anexo 5 · Relatório R4 do PMISB (Ações para Emergências e Contingências)](https://www.santos.sp.gov.br/static/files_www/conteudo/13%20Anexo%205%20-%20Plano%20Municipal%20Integrado%20de%20Saneamento%20B%C3%A1sico.pdf) — Relatório técnico municipal de contingências sanitárias.
+* [Manual de Identidade Visual da Prefeitura de Santos](https://www.santos.sp.gov.br/?q=hotsite/manual-de-identidade) — Diretrizes oficiais de tipografia e brasões vetoriais.
 
 ---
 
