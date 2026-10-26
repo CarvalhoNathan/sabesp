@@ -38,7 +38,7 @@
 Desenvolver e validar uma plataforma web centralizada em arquitetura Java Spring Boot e PostgreSQL que digitalize a esteira de requisições de manutenção na rede de esgoto de Santos, integrando a denúncia cidadã, a triagem fiscalizatória da Secretaria de Meio Ambiente (SEMAM) e a execução operacional da concessionária Sabesp.
 
 ### Objetivos Específicos
-1. **Mapear a esteira atual** de requisições municipais via Ouvidoria 162 e identificar os gargalos de comunicação entre os órgãos com base no **PMISB (Relatório R4 / Ações de Emergência)**.
+1. **Mapear a esteira atual** de requisições municipais via Ouvidoria 162 e identificar os gargalos de comunicação entre os órgãos com base no **PMISB (Relatório R4 / Ações de Emergência)** e no caso emblemático da **Rua Goiás (2023)**.
 2. **Modelar um banco de dados relacional** com padrões de *Soft Delete* e tabelas de auditoria imutáveis (*Append-Only*).
 3. **Projetar interfaces intuitivas e acessíveis no Figma** com base no manual de identidade visual de Santos para Munícipe, Fiscal e Operador.
 4. **Implementar regras de negócio e controle de acesso (RBAC)** em API RESTful, automatizando a contagem de SLA de 15 dias corridos da legislação municipal.
@@ -50,7 +50,7 @@ Desenvolver e validar uma plataforma web centralizada em arquitetura Java Spring
 
 > 🌿 **1. Relevância Ambiental:** A rede centenária de drenagem de Santos (canais) deságua na orla da praia. Vazamentos de esgoto não contidos contaminam o lençol freático e a balneabilidade das águas, demandando as ações de contingência preconizadas pelo PMISB.
 
-> ⚖️ **2. Relevância Jurídica e Fiscalizatória:** A Lei Complementar nº 852/2014 prevê multa de R$ 17.045,05 por atraso nos reparos da Sabesp. O sistema fornece à Prefeitura o respaldo probatório incontestável com registros cronológicos auditáveis.
+> ⚖️ **2. Relevância Jurídica e Fiscalizatória:** Episódios reais como o incidente da Rua Goiás em 2023 (cratera e contaminação de solo que resultou em multa de R$ 818 mil da SEMAM contra a Sabesp) e o controle do prazo de 15 dias da Lei Complementar nº 852/2014 evidenciam a necessidade de auditoria pública digital. Ademais, com o novo cenário de desestatização da concessionária (Lei Estadual nº 17.853/2023), o poder municipal assume papel regulador mandatório, demandando esteira própria e transparente de fiscalização.
 
 > 💻 **3. Relevância Tecnológica:** Demonstra a aplicação prática do ecossistema corporativo Java (Spring Boot) com persistência JPA, controle transacional e computação em nuvem com Supabase.
 
@@ -59,7 +59,7 @@ Desenvolver e validar uma plataforma web centralizada em arquitetura Java Spring
 ## 🔬 Metodologia Científica e de Desenvolvimento
 
 * **Classificação da Pesquisa:** Pesquisa aplicada de natureza tecnológica, baseada no método de **Estudo de Caso** centrado no município de Santos.
-* **Fontes Primárias:** Plano Municipal Integrado de Saneamento Básico de Santos (PMISB · Relatório R4), Leis Municipais nº 852/2014 e 3.322/2016 e relatórios da SEMAM.
+* **Fontes Primárias:** Plano Municipal Integrado de Saneamento Básico de Santos (PMISB · Relatório R4), Leis Municipais nº 852/2014 e 817/2013, Lei Estadual nº 17.853/2023, relatórios da SEMAM e registros do incidente da Rua Goiás.
 * **Ciclo de Desenvolvimento:** Metodologia Ágil com sprints incrementais:
   * **Etapa 1:** Análise de domínio e levantamento de requisitos com base no PMISB e legislação municipal.
   * **Etapa 2:** Prototipagem e design iterativo (Figma).
@@ -75,8 +75,8 @@ Os documentos técnicos do repositório correspondem diretamente à estrutura de
 
 | Capítulo da Monografia | Conteúdo Acadêmico | Documento Fonte no Repositório |
 | :--- | :--- | :---: |
-| **Capítulo 1 · Introdução** | Contextualização, problema, justificativa e objetivos. | [`metodologia-tcc.md`](metodologia-tcc.md) |
-| **Capítulo 2 · Referencial Teórico** | Saneamento em Santos, Sabesp, SEMAM, PMISB (Relatório R4), Lei 852/2014 e ODS da ONU. | [`contexto-e-legislacao.md`](contexto-e-legislacao.md) |
+| **Capítulo 1 · Introdução** | Contextualização, caso Rua Goiás, problema, justificativa e objetivos. | [`metodologia-tcc.md`](metodologia-tcc.md) |
+| **Capítulo 2 · Referencial Teórico** | Saneamento em Santos, Sabesp (privatização), SEMAM, PMISB R4 e Lei 852/2014. | [`contexto-e-legislacao.md`](contexto-e-legislacao.md) |
 | **Capítulo 3 · Engenharia de Requisitos** | Matriz MoSCoW (RF/RNF), perfis de usuário, regras RBAC e especificação REST. | [`requisitos-do-sistema.md`](requisitos-do-sistema.md) / [`regras-e-api.md`](regras-e-api.md) |
 | **Capítulo 4 · Modelagem e Arquitetura** | Modelo ER (Proto SQL), Soft Delete, Auditoria e camadas Spring. | [`arquitetura-e-banco.md`](arquitetura-e-banco.md) |
 | **Capítulo 5 · Design e Prototipagem** | Identidade de Santos, tipografia Montserrat e telas no Figma. | [`design-system.md`](design-system.md) |
