@@ -63,15 +63,15 @@ Santos possui desafios de saneamento e zeladoria urbana que envolvem a manutenç
 
 ---
 
-## 💎 Públicos e Benefícios Esperados
+## 💎 Perfis e Responsabilidades Propostas
 
-| Público | Necessidade Considerada | Contribuição Proposta pelo Sistema |
+| Perfil / Ator | Responsabilidade Proposta | Contribuição Proposta pelo Sistema |
 | :--- | :--- | :--- |
-| **📱 Munícipe** | Registrar ocorrências com rapidez e acompanhar o andamento sem burocracia. | [Proposta de abertura em 3 passos](docs/design-ux/jornada-e-ux.md#-fluxo-mobile-do-munícipe-3-passos) com fotos e geolocalização, e [linha do tempo visual (stepper)](docs/design-ux/jornada-e-ux.md#-linha-do-tempo-de-acompanhamento-stepper-visual) sem depender de ligações no `162`. |
-| **🏛️ Prefeitura (`Sepref` / `Semam`)** | Triar ocorrências, encaminhar demandas ao órgão correto e auditar prazos legais. | Proposta de painel centralizado de triagem nas [cinco regiões administrativas](docs/institucional/contexto-e-legislacao.md#%EF%B8%8F-regionaliza%C3%A7%C3%A3o-administrativa-as-5-zonas-de-santos), despacho de intimações e monitoramento do cumprimento do prazo de `15 dias` da [Lei nº 852/2014](docs/institucional/contexto-e-legislacao.md#-marco-regulat%C3%B3rio-lei-complementar-municipal-n%C2%BA-8522014). |
-| **💧 Concessionária (`Sabesp`)** | Receber demandas tecnicamente qualificadas e comprovar a execução do reparo. | Recepção de chamados [pré-validados na triagem](docs/institucional/triagem-inteligente.md), com proposta de registro de laudo de campo e comprovação fotográfica da recomposição viária. |
+| **📱 Cidadão / Munícipe** | Registrar ocorrências e acompanhar o andamento dos chamados. | [Abertura ágil em 3 passos](docs/design-ux/jornada-e-ux.md#-fluxo-mobile-do-munícipe-3-passos) com fotos e geolocalização, e [linha do tempo visual (stepper)](docs/design-ux/jornada-e-ux.md#-linha-do-tempo-de-acompanhamento-stepper-visual) sem depender de ligações no `162`. |
+| **🏛️ Prefeitura (`Sepref` / `Semam`)** | Acompanhar ocorrências, fiscalizar prazos de reparos e gerenciar pendências viárias. | Proposta de painel centralizado de triagem nas [cinco regiões administrativas](docs/institucional/contexto-e-legislacao.md#%EF%B8%8F-regionaliza%C3%A7%C3%A3o-administrativa-as-5-zonas-de-santos), despacho de intimações e monitoramento do cumprimento do prazo de `15 dias` da [Lei nº 852/2014](docs/institucional/contexto-e-legislacao.md#-marco-regulat%C3%B3rio-lei-complementar-municipal-n%C2%BA-8522014). |
+| **💧 Sabesp (Concessionária)** | Receber ocorrências pertinentes, documentar o atendimento operacional e atualizar informações de campo. | Recepção de chamados [pré-validados na triagem](docs/institucional/triagem-inteligente.md), com proposta de registro de laudo de campo e comprovação fotográfica da recomposição viária. |
 
-> ℹ️ *Esses benefícios descrevem o desenho da solução proposta. A disponibilidade efetiva de cada recurso depende da implementação técnica e de eventuais validações institucionais.*
+> ℹ️ *Essas responsabilidades e benefícios descrevem o desenho da solução proposta, respeitando as atribuições e os limites institucionais de cada órgão. A disponibilidade efetiva de cada recurso depende da implementação técnica e de validações institucionais.*
 
 ### 🔄 Fluxo Operacional Proposto
 
@@ -83,6 +83,15 @@ flowchart LR
 ```
 
 > *O fluxo acima é conceitual. A atribuição de responsabilidades, os prazos e os critérios de encaminhamento seguem as normas municipais e as regras de negócio documentadas no projeto.*
+
+#### 📋 Exemplo de Registro de Ocorrência (Campos Previstos na Proposta)
+* **Tipologia do Incidente:** Extravasamento de esgoto em via pública (conforme catálogo técnico do PMISB).
+* **Localização Espacial:** Coordenadas geográficas e identificação por logradouro/bairro (adotando agregação para proteção de dados).
+* **Registro de Evidências:** Fotos do dano viário ou extravasamento anexadas no momento da abertura.
+* **Marcação Temporal:** Data e hora registradas automaticamente pelo sistema (*timestamp* de abertura).
+* **Descrição do Munícipe:** Breve relato sobre o problema (ex.: retorno em poço de visita, odor intenso, solapamento).
+
+> 🔍 **Acompanhamento Fiscalizatório e Trilha Histórica:** A fiscalização municipal acompanha a evolução do chamado por meio de um histórico cronológico de alterações, que reúne pareceres de campo, registros de notificações e evidências fotográficas da recomposição viária. Essa trilha de registros visa assegurar transparência ao processo e fornecer subsídios objetivos para a conferência dos prazos legais aplicáveis.
 
 ---
 
