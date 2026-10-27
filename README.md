@@ -33,11 +33,11 @@
 
 ## 📊 O Cenário Real em Números
 
-* **99% de Cobertura Urbana:** Conforme o PMISB (Relatório R4), o desafio de Santos não é a falta de rede, mas a manutenção preventiva e corretiva de uma malha centenária e o fechamento do déficit de 1% em palafitas (como o projeto de 2.500 ligações no **Dique da Vila Gilda**).
-* **15 Dias Corridos:** Prazo legal máximo improrrogável estabelecido pela **Lei Complementar nº 852/2014** para a Sabesp concluir reparos na via pública após notificação.
-* **30 a 60 Dias na Ouvidoria:** O descompasso da Ouvidoria tradicional (SOM Web / 162), que considera "normal" prazos de até 30 dias enquanto a lei exige solução em 15.
-* **+190 Intimações / Mês:** Volume real de intimações e notificações emitidas pelos fiscais técnicos das Prefeituras Regionais (Sepref) para cobrar concessionárias.
-* **R$ 818 Mil em Multa:** Sanção histórica aplicada pela SEMAM contra a Sabesp após vazamento que engoliu a Rua Goiás, recurso que hoje alimenta o **Fundo Municipal de Saneamento Básico e Ambiental (FMSBA / Lei nº 4.525/2024)** sob controle do Conselho Municipal (**CMSBS**).
+* **99% de Cobertura Urbana:** Conforme o [PMISB (Relatório R4)](https://www.santos.sp.gov.br/static/files_www/conteudo/13%20Anexo%205%20-%20Plano%20Municipal%20Integrado%20de%20Saneamento%20B%C3%A1sico.pdf), o desafio de Santos não é a falta de rede, mas a manutenção de uma malha centenária e o fechamento do déficit de 1% em palafitas (como o projeto de 2.500 ligações no [Dique da Vila Gilda](https://www.santos.sp.gov.br/?q=noticia/parceria-garante-regularizacao-da-rede-de-agua-e-esgoto-para-a-vila-gilda-em-santos)).
+* **15 Dias Corridos:** Prazo legal máximo improrrogável estabelecido pela [Lei Complementar nº 852/2014](https://egov.santos.sp.gov.br/legis/documents/5195) para a Sabesp concluir reparos na via pública após notificação.
+* **30 a 60 Dias na Ouvidoria:** O descompasso da Ouvidoria tradicional ([SOM Web / 162](https://egov.santos.sp.gov.br/somweb/)), que considera "normal" prazos de até 30 dias enquanto a lei municipal exige solução em 15. ([Ver diagnóstico](docs/institucional/contexto-e-legislacao.md#-a-disparidade-crítica-de-slas-ouvidoria-som-web-vs-lei-nº-8522014))
+* **+190 Intimações / Mês:** Volume real de intimações emitidas pelos fiscais das Prefeituras Regionais ([Sepref](https://www.santos.sp.gov.br/?q=noticia/santos-aplica-197-intimacoes-e-notificacoes-a-prestadoras-de-servico-em-janeiro)) para cobrar concessionárias por reparos nas vias.
+* **R$ 818 Mil em Multa:** Sanção histórica aplicada pela SEMAM contra a Sabesp após vazamento que solapou a Rua Goiás ([Notícia Oficial PMS](https://www.santos.sp.gov.br/?q=noticia/santos-multa-sabesp-em-r-818-mil-reais-devido-a-contaminacao-de-solo-na-rua-goias) • [G1](https://g1.globo.com/sp/santos-regiao/noticia/2023/03/07/sabesp-e-multada-em-r-818-mil-apos-contaminacao-de-solo-na-rua-goias-em-santos-sp.ghtml)), valor revertido ao [Fundo Municipal de Saneamento (FMSBA)](https://egov.santos.sp.gov.br/legis/documents/10840) fiscalizado pelo [CMSBS](https://egov.santos.sp.gov.br/legis/documents/12103).
 
 ---
 

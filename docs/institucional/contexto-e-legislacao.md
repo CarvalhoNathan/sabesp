@@ -195,7 +195,7 @@ Este projeto contribui diretamente para a **Agenda 2030 da Organização das Na�
 
 Para fins de comprovação documental e referencial bibliográfico oficial:
 
-* [Prefeitura de Santos · Sepref aplica 197 intimações e notificações a prestadoras de serviço (83 à Sabesp)](https://www.santos.sp.gov.br/?q=noticia/santos-aplica-197-intimacoes-e-notificacoes-a-prestadoras-de-servico) — Notícia oficial detalhando a fiscalização regional e volume de intimações.
+* [Prefeitura de Santos · Sepref aplica 197 intimações e notificações a prestadoras de serviço (83 à Sabesp)](https://www.santos.sp.gov.br/?q=noticia/santos-aplica-197-intimacoes-e-notificacoes-a-prestadoras-de-servico-em-janeiro) — Notícia oficial detalhando a fiscalização regional e volume de intimações.
 * [Prefeitura de Santos · Regularização de Água e Esgoto na Vila Gilda](https://www.santos.sp.gov.br/?q=noticia/parceria-garante-regularizacao-da-rede-de-agua-e-esgoto-para-a-vila-gilda-em-santos) — Termo de cooperação Sabesp e Prefeitura para 2.500 ligações na maior comunidade de palafitas do Brasil.
 * [Legis Santos · Lei Municipal nº 4.525/2024](https://egov.santos.sp.gov.br/legis/documents/10840) — Institui o Fundo Municipal de Saneamento Básico e Ambiental de Santos (FMSBA).
 * [Legis Santos · Decreto Municipal nº 10.687/2025](https://egov.santos.sp.gov.br/legis/documents/11127) — Regulamenta a Lei nº 4.525/2024 do FMSBA/Santos (atualizado pelos Decretos nº 11.170/2026 e 11.256/2026).
