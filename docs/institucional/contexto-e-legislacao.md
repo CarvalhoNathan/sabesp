@@ -1,4 +1,4 @@
-[← Voltar ao Hub Principal](../README.md)
+[← Voltar ao Hub Principal](../../README.md)
 
 # 🏛️ Contexto Institucional, Regionalização e Marco Legal
 ### Fundamentação real e respaldo jurídico no município de Santos
@@ -210,4 +210,4 @@ Para fins de comprovação documental e referencial bibliográfico oficial:
 
 ---
 
-[← Voltar ao Hub Principal](../README.md)
+[← Voltar ao Hub Principal](../../README.md)

@@ -41,20 +41,20 @@
 
 ## 🧭 Central de Documentação (Docs Hub)
 
-Aprofunde-se nos detalhes de engenharia, arquitetura, experiência e governança pública:
+A documentação é categorizada em **4 pilares temáticos** para facilitar a navegação:
 
-| Módulo | Foco & Conteúdo | Link |
-| :--- | :--- | :---: |
-| **🏛️ Contexto & Legislação** | Diagnóstico real de Santos, caso Rua Goiás, Vila Gilda, FMSBA (Lei 4.525), CMSBS, atuação Sepref/Semam/Seserp e ODS. | [Explorar →](docs/contexto-e-legislacao.md) |
-| **👥 Personas & Cenários** | Design Thinking aplicado: perfis de Dona Helena (Munícipe), Carlos (Fiscal Sepref), Roberto (Sabesp) e Dra. Renata (Semam). | [Explorar →](docs/personas-e-cenarios.md) |
-| **🧠 Triagem Inteligente** | Árvore de decisão lógica: diferenciação entre esgoto (Sabesp) e águas pluviais/chuva (Prefeitura/Seserp). | [Explorar →](docs/triagem-inteligente.md) |
-| **🧭 Jornada & UX** | Arquitetura de telas, sitemap completo, wireframe textual e linha do tempo de acompanhamento (Stepper). | [Explorar →](docs/jornada-e-ux.md) |
-| **📋 Requisitos & Regras** | Matriz MoSCoW (RF01 a RF13, RNF01 a RNF07), regras de negócio e tipologias oficiais do PMISB (Relatório R4). | [Explorar →](docs/requisitos-do-sistema.md) |
-| **🛡️ Gestão de Riscos** | Matriz de riscos ISO 31000 / PMBOK: trotes, LGPD, conflitos entre concessionárias e condições de maré. | [Explorar →](docs/matriz-de-riscos.md) |
-| **🗄️ Arquitetura & Banco** | Ciclo de vida do chamado, matriz de status, modelo ER (Proto SQL), Soft Delete e Logs imutáveis (*Append-Only*). | [Explorar →](docs/arquitetura-e-banco.md) |
-| **🔐 Regras de Negócio & API** | Controle de acesso por papéis (RBAC), validações de domínio e catálogo de rotas RESTful com Swagger UI. | [Explorar →](docs/regras-e-api.md) |
-| **🎨 Design System & UI/UX** | Tipografia Montserrat, catálogo de logos vetoriais SVG da Prefeitura de Santos e acesso ao protótipo no Figma. | [Explorar →](docs/design-system.md) |
-| **🎓 Metodologia TCC** | Tema, problema de pesquisa, objetivos, justificativa tríplice, metodologia científica e mapeamento para monografia ABNT. | [Explorar →](docs/metodologia-tcc.md) |
+| Categoria | Módulo | Foco & Conteúdo | Link |
+| :---: | :--- | :--- | :---: |
+| 🏛️ **Institucional** | **Contexto & Legislação** | Diagnóstico real de Santos, caso Rua Goiás, Vila Gilda, FMSBA (Lei 4.525), CMSBS, Sepref/Semam e ODS. | [Explorar →](docs/institucional/contexto-e-legislacao.md) |
+| 🏛️ **Institucional** | **Triagem Inteligente** | Árvore de decisão lógica: diferenciação entre esgoto (Sabesp) e águas pluviais/chuva (Prefeitura/Seserp). | [Explorar →](docs/institucional/triagem-inteligente.md) |
+| 🎨 **Design & UX** | **Personas & Cenários** | Design Thinking: perfis de Dona Helena (Munícipe), Carlos (Fiscal Sepref), Roberto (Sabesp) e Dra. Renata (Semam). | [Explorar →](docs/design-ux/personas-e-cenarios.md) |
+| 🎨 **Design & UX** | **Jornada & Arquitetura** | Arquitetura de telas, sitemap completo, wireframe textual e linha do tempo de acompanhamento (Stepper). | [Explorar →](docs/design-ux/jornada-e-ux.md) |
+| 🎨 **Design & UX** | **Design System & UI** | Tipografia Montserrat, catálogo de logos vetoriais SVG da Prefeitura de Santos e acesso ao protótipo no Figma. | [Explorar →](docs/design-ux/design-system.md) |
+| ⚙️ **Engenharia** | **Requisitos do Sistema** | Matriz MoSCoW (RF01 a RF13, RNF01 a RNF07), regras de negócio e tipologias oficiais do PMISB (Relatório R4). | [Explorar →](docs/engenharia/requisitos-do-sistema.md) |
+| ⚙️ **Engenharia** | **Arquitetura & Banco** | Ciclo de vida do chamado, matriz de status, modelo ER (Proto SQL), Soft Delete e Logs imutáveis (*Append-Only*). | [Explorar →](docs/engenharia/arquitetura-e-banco.md) |
+| ⚙️ **Engenharia** | **Regras de Negócio & API** | Controle de acesso por papéis (RBAC), validações de domínio e catálogo de rotas RESTful com Swagger UI. | [Explorar →](docs/engenharia/regras-e-api.md) |
+| ⚙️ **Engenharia** | **Gestão de Riscos** | Matriz de riscos ISO 31000 / PMBOK: trotes, LGPD, conflitos entre concessionárias e condições de maré. | [Explorar →](docs/engenharia/matriz-de-riscos.md) |
+| 🎓 **Acadêmico** | **Metodologia TCC** | Tema, problema de pesquisa, objetivos, justificativa tríplice, metodologia científica e mapeamento para monografia ABNT. | [Explorar →](docs/academico/metodologia-tcc.md) |
 
 ---
 

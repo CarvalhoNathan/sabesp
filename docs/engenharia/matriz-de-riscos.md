@@ -1,4 +1,4 @@
-[← Voltar ao Hub Principal](../README.md)
+[← Voltar ao Hub Principal](../../README.md)
 
 # 🛡️ Matriz de Análise e Gestão de Riscos
 ### Identificação de ameaças técnicas, operacionais, jurídicas e planos de mitigação
@@ -98,4 +98,4 @@ $$\text{Severidade} = \text{Probabilidade} \times \text{Impacto}$$
 
 ---
 
-[← Voltar ao Hub Principal](../README.md)
+[← Voltar ao Hub Principal](../../README.md)

@@ -1,4 +1,4 @@
-[← Voltar ao Hub Principal](../README.md)
+[← Voltar ao Hub Principal](../../README.md)
 
 # 👥 Personas e Cenários de Uso (Design Thinking)
 ### Perfis humanizados, dores reais e fluxos de interação com o ecossistema
@@ -117,4 +117,4 @@ Renata monitora a qualidade ambiental da cidade e a balneabilidade das praias de
 
 ---
 
-[← Voltar ao Hub Principal](../README.md)
+[← Voltar ao Hub Principal](../../README.md)

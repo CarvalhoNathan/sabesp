@@ -62,8 +62,8 @@ Adotamos a especificação de **[Conventional Commits](https://www.conventionalc
    * Mantenha as configurações locais no `application.properties` e compartilhe apenas modelos vazios (`application.properties.example`).
 
 2. **Alinhamento com a Documentação:**
-   * Qualquer alteração em nomes de tabelas ou colunas deve ser previamente refletida no documento [docs/arquitetura-e-banco.md](docs/arquitetura-e-banco.md).
-   * Novas rotas REST devem ser documentadas em [docs/regras-e-api.md](docs/regras-e-api.md).
+   * Qualquer alteração em nomes de tabelas ou colunas deve ser previamente refletida no documento [docs/arquitetura-e-banco.md](docs/engenharia/arquitetura-e-banco.md).
+   * Novas rotas REST devem ser documentadas em [docs/regras-e-api.md](docs/engenharia/regras-e-api.md).
 
 3. **Imutabilidade e Soft Delete:**
    * Todas as consultas e operações de exclusão em `Cliente`, `Funcionario`, `Chamado` e `ComentarioChamado` devem respeitar a exclusão lógica (`excluido = true`).

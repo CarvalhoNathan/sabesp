@@ -1,4 +1,4 @@
-[← Voltar ao Hub Principal](../README.md)
+[← Voltar ao Hub Principal](../../README.md)
 
 # 🎨 Design System e Identidade Visual
 ### Diretrizes visuais, tipografia oficial, catálogo de vetores e prototipagem Figma
@@ -31,7 +31,7 @@ Em estrita conformidade com o Manual de Identidade Visual da Prefeitura de Santo
 
 ## 🖼️ Catálogo de Assets Vetoriais (SVG)
 
-Os vetores oficiais da Prefeitura de Santos foram padronizados e organizados na pasta [`assets/logo-prefeitura/`](../assets/logo-prefeitura/):
+Os vetores oficiais da Prefeitura de Santos foram padronizados e organizados na pasta [`assets/logo-prefeitura/`](../../assets/logo-prefeitura/):
 
 | Arquivo SVG | Orientação | Fundo | Aplicação Recomendada |
 | :--- | :---: | :---: | :--- |
@@ -64,4 +64,4 @@ As interfaces foram prototipadas no Figma, cobrindo a esteira completa dos três
 
 ---
 
-[← Voltar ao Hub Principal](../README.md)
+[← Voltar ao Hub Principal](../../README.md)

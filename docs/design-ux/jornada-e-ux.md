@@ -1,4 +1,4 @@
-[← Voltar ao Hub Principal](../README.md)
+[← Voltar ao Hub Principal](../../README.md)
 
 # 🧭 Arquitetura de Informação, Telas e Jornada do Usuário (UX)
 ### Mapa do ecossistema, wireframe textual e fluxos de navegação Mobile-First
@@ -146,4 +146,4 @@ Linha do Tempo Visual do Chamado:
 
 ---
 
-[← Voltar ao Hub Principal](../README.md)
+[← Voltar ao Hub Principal](../../README.md)

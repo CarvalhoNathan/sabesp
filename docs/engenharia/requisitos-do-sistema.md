@@ -1,4 +1,4 @@
-[← Voltar ao Hub Principal](../README.md)
+[← Voltar ao Hub Principal](../../README.md)
 
 # 📋 Especificação de Requisitos e Regras de Negócio
 ### Matriz formal de Requisitos Funcionais (RF), Não-Funcionais (RNF) e Regras de Domínio
@@ -96,4 +96,4 @@ Classificação de Ocorrências (PMISB · Relatório R4)
 
 ---
 
-[← Voltar ao Hub Principal](../README.md)
+[← Voltar ao Hub Principal](../../README.md)

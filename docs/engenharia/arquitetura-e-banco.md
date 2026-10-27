@@ -1,4 +1,4 @@
-[← Voltar ao Hub Principal](../README.md)
+[← Voltar ao Hub Principal](../../README.md)
 
 # 🗄️ Arquitetura de Software e Banco de Dados
 ### Modelagem relacional, padrões de auditoria e estrutura em camadas Spring Boot
@@ -134,4 +134,4 @@ src/main/java/com/santos/sabesp/
 
 ---
 
-[← Voltar ao Hub Principal](../README.md)
+[← Voltar ao Hub Principal](../../README.md)

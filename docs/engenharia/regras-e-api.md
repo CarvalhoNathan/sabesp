@@ -1,4 +1,4 @@
-[← Voltar ao Hub Principal](../README.md)
+[← Voltar ao Hub Principal](../../README.md)
 
 # 🔐 Regras de Negócio, Perfis de Usuário e Especificação de API
 ### Matriz de controle de acesso (RBAC), catálogo de rotas RESTful e validações de domínio
@@ -97,4 +97,4 @@ http://localhost:8080/v3/api-docs
 
 ---
 
-[← Voltar ao Hub Principal](../README.md)
+[← Voltar ao Hub Principal](../../README.md)

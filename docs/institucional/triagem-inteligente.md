@@ -1,4 +1,4 @@
-[← Voltar ao Hub Principal](../README.md)
+[← Voltar ao Hub Principal](../../README.md)
 
 # 🧠 Triagem Inteligente: Esgoto Sanitário vs. Água Pluvial
 ### Engenharia de decisão para mitigar chamados inválidos e educar o cidadão
@@ -94,4 +94,4 @@ Existe uma situação comum na Baixada Santista onde a triagem inteligente opera
 
 ---
 
-[← Voltar ao Hub Principal](../README.md)
+[← Voltar ao Hub Principal](../../README.md)
