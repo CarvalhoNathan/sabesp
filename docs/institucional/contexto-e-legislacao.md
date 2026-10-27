@@ -30,7 +30,7 @@ Historicamente no município de Santos, solicitações sobre vazamentos na rede 
 | Etapa do Processo | Processo Atual Fragmentado (Ouvidoria 162 / Santos Digital / Urgência Urbana) | Nova Esteira Digital Unificada (Sistema Web) |
 | :--- | :--- | :--- |
 | **Abertura do Chamado** | O munícipe precisa escolher entre ligar no 162, navegar na plataforma genérica *Santos Digital* (aba Tapa-Buraco) ou ligar para o plantão da Urgência Urbana (3216-2065). | **Digital, Centralizado e 24/7:** Abertura via web em segundos com endereço, tipo da ocorrência e evidência fotográfica. |
-| **Triagem e Despacho** | Tramitação burocrática via ofícios e planilhas entre a Sepref (Prefeituras Regionais), Seserp e Semam. | **Painel Integrado:** Triagem centralizada e filtros automáticos pelas 5 Zonas de Santos para despacho imediato. |
+| **Triagem e Despacho** | Tramitação burocrática via ofícios e planilhas entre a Sepref (Prefeituras Regionais), Seserp e Semam. | **Painel Integrado:** Triagem centralizada e filtros pelas cinco Prefeituras Regionais (5 zonas de Santos) para despacho imediato. |
 | **Comunicação com a Sabesp** | Notificações e intimações impressas em papel (uma média de 197 intimações mensais emitidas pela Sepref). | **Acesso Operacional Dedicado:** A Sabesp recebe as ordens já pré-validadas tecnicamente em sua fila de trabalho em tempo real. |
 | **Controle de Prazos (SLA)** | A Ouvidoria tradicional considera prazo "Verde" até 30 dias e tolera mais de 60 dias, em desacordo com a legislação. | **Auditoria Automatizada:** Contagem rigorosa do prazo legal improrrogável de **15 dias corridos** da Lei nº 852/2014. |
 | **Transparência ao Cidadão** | O munícipe precisa consultar protocolos complexos no SOM Web sem laudo técnico do reparo. | **Transparência Total:** Acompanhamento do status em tempo real com histórico e parecer técnico conclusivo com foto da concessionária. |
@@ -88,7 +88,7 @@ Se o incidente da Rua Goiás ilustra o risco em áreas consolidadas, o **Dique d
 O planejamento de saneamento de Santos é consolidado no **Plano Municipal Integrado de Saneamento Básico (PMISB)**, em cumprimento à Lei Federal nº 11.445/2007 e ao Novo Marco Legal do Saneamento (Lei Federal nº 14.026/2020).
 
 > 🔍 **O Paradoxo do Saneamento Santista:**  
-> De acordo com o documento oficial **Anexo 5 · Relatório R4 (Ações para Emergências e Contingências)**, a área urbana consolidada de Santos conta com atendimento por rede coletora de esgoto próximo a **99%**. Portanto, o desafio central da cidade **não reside na ausência de infraestrutura**, mas sim na **manutenção preventiva e corretiva de uma malha subterrânea centenária**, sujeita a abatimentos asfálticos, refluxos prediais e rompimentos de coletores que extravasam para os canais de drenagem e praias.
+> De acordo com o planejamento do **Anexo 5 · Relatório R4 (Ações para Emergências e Contingências)** do PMISB e balanços municipais recentes (que apontam índice de atendimento total de esgoto de 98,43% entre 2020 e 2024 e metas de universalização superiores a 99% na área urbana), o desafio central da cidade **não reside na ausência de infraestrutura na área urbana consolidada**, mas sim na **manutenção preventiva e corretiva de uma malha subterrânea centenária**, sujeita a abatimentos asfálticos, refluxos prediais e rompimentos de coletores que extravasam para os canais de drenagem e praias.
 
 ### As 4 Ocorrências Críticas Catalogadas no PMISB (Pág. 85):
 O plano municipal mapeia formalmente as 4 situações críticas de esgotamento que exigem resposta imediata da concessionária:
@@ -123,7 +123,7 @@ Um sistema de fiscalização de serviços públicos só é completo quando conec
 
 ### 🏦 FMSBA · Fundo Municipal de Saneamento Básico e Ambiental de Santos
 * **Base Legal:** Instituído pela **Lei Municipal nº 4.525, de 19 de agosto de 2024**, e regulamentado pelo **Decreto nº 10.687/2025** (com atualizações pelos Decretos nº 11.170/2026 e 11.256/2026).
-* **Finalidade e Destinação das Multas:** Conforme o **Art. 4º, Inciso VII da Lei 4.525/2024**, o FMSBA tem como regra geral a destinação de receitas de **“arrecadação de multas e juros de mora por infração”** aplicadas a concessionárias de serviços públicos. Essa vinculação descreve a previsão legal orçamentária geral do fundo, não constituindo confirmação de liquidação ou repasse efetivo de multas pretéritas específicas, que podem tramitar em instâncias recursais ou judiciais.
+* **Fontes de Recursos e Multas:** Conforme o **Art. 4º, Inciso VII da Lei Municipal nº 4.525/2024**, constituem fontes de receitas do FMSBA os valores oriundos da **“arrecadação de multas e juros de mora por infração aos contratos e convênios celebrados pelo Município de Santos para a prestação de serviços públicos de água e esgoto”**. Essa previsão descreve as fontes orçamentárias expressas na norma, não constituindo confirmação de liquidação ou repasse efetivo de sanções pretéritas específicas (como a autuação de 2023), que podem tramitar em instâncias recursais ou judiciais.
 * **Subsídeo Social:** O **Art. 3º, Parágrafo Único (Incisos V e VI)** estipula expressamente que o fundo financia as ligações domiciliares de água e esgoto para **usuários de baixa renda**, conectando os valores arrecadados em autuações a projetos reais como o do Parque Palafitas (Vila Gilda).
 
 ### 👥 CMSBS · Conselho Municipal de Saneamento Básico de Santos
