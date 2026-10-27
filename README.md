@@ -1,3 +1,4 @@
+<a id="topo"></a>
 # 💧 Sabesp & Prefeitura de Santos
 ### Gestão inteligente e auditoria pública na rede de esgoto municipal
 
@@ -181,3 +182,9 @@ Projeto concebido e desenvolvido para o Trabalho de Conclusão de Curso (TCC) po
 
 Este projeto é desenvolvido para fins acadêmicos e educacionais sob os termos da **[Licença MIT](LICENSE)**. Consulte o arquivo para maiores detalhes.  
 &copy; 2026 Nathan Carvalho & Andrey Celestino.
+
+---
+
+<p align="center">
+  <a href="#topo">↑ Voltar ao topo</a>
+</p>
