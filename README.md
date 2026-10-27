@@ -1,6 +1,8 @@
 <a id="topo"></a>
-# 💧 Sabesp & Prefeitura de Santos
-### Gestão inteligente e auditoria pública na rede de esgoto municipal
+<h1 align="center">💧 Sabesp &amp; Prefeitura de Santos</h1>
+<p align="center">
+  <b>Auditoria pública e esteira digital para fiscalização da rede de esgoto municipal</b>
+</p>
 
 <p align="center">
   <a href="https://dev.java/" target="_blank"><img src="https://img.shields.io/badge/Java_17-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java" /></a>
@@ -13,7 +15,7 @@
 
 <p align="center">
   <a href="https://www.figma.com/design/Tb4SDE9A4oEpLaXfN7aAhe/Projeto-%7C-Sabesp?node-id=0-1&t=yQExxpGpTtvoIWHk-1" target="_blank">
-    <img src="assets/preview-mockup.svg" alt="Preview da Interface no Figma" width="850px" />
+    <img src="assets/preview-mockup.svg" alt="Preview da Interface do Sistema" width="900px" />
   </a>
 </p>
 
@@ -26,8 +28,6 @@
     <img src="https://img.shields.io/badge/📚_Explorar_Documentação-Docs_Hub-00ADD8?style=for-the-badge" alt="Docs Hub" />
   </a>
 </p>
-
-> **A Visão:** Transformar a fiscalização urbana do município de Santos substituindo a lentidão e fragmentação da ouvidoria tradicional (onde chamados levam de 30 a 60 dias) por uma **esteira digital única, transparente e auditável**, garantindo o cumprimento do prazo legal de 15 dias da Lei Complementar nº 852/2014 e conectando o munícipe, a Prefeitura (Sepref / Semam / Seserp) e a Sabesp em tempo real.
 
 ---
 

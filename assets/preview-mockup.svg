@@ -1,59 +1,186 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="100%" height="auto">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="100%" height="auto">
   <defs>
+    <!-- Background Gradients -->
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0F172A" />
-      <stop offset="50%" stop-color="#1E293B" />
-      <stop offset="100%" stop-color="#0F172A" />
-    </linearGradient>
-    <linearGradient id="btnGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#004B87" />
-      <stop offset="100%" stop-color="#0072CE" />
+      <stop offset="0%" stop-color="#0B0F17" />
+      <stop offset="50%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#0B0F17" />
     </linearGradient>
     <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#3ECF8E" />
-      <stop offset="100%" stop-color="#0072CE" />
+      <stop offset="0%" stop-color="#0072CE" />
+      <stop offset="50%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#34D399" />
     </linearGradient>
-    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.4" />
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.9" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.6" />
     </filter>
   </defs>
 
-  <!-- Background Frame -->
-  <rect width="1200" height="480" rx="16" fill="url(#bgGrad)" stroke="#334155" stroke-width="2" />
+  <!-- Outer Window Container -->
+  <rect x="0" y="0" width="1200" height="640" rx="16" fill="url(#bgGrad)" stroke="#1E293B" stroke-width="2" filter="url(#shadow)" />
 
-  <!-- Window Header / Browser Dots -->
-  <rect x="0" y="0" width="1200" height="48" rx="16" fill="#1E293B" />
-  <rect x="0" y="32" width="1200" height="16" fill="#1E293B" />
-  <circle cx="28" cy="24" r="6" fill="#EF4444" />
-  <circle cx="48" cy="24" r="6" fill="#F59E0B" />
-  <circle cx="68" cy="24" r="6" fill="#10B981" />
-  <text x="600" y="29" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#94A3B8" text-anchor="middle" font-weight="500">sabesp.santos.sp.gov.br · Ambiente de Gestão e Triagem</text>
+  <!-- Window Header (macOS style) -->
+  <rect x="0" y="0" width="1200" height="44" rx="16" fill="#131C2E" />
+  <rect x="0" y="28" width="1200" height="16" fill="#131C2E" />
+  <line x1="0" y1="44" x2="1200" y2="44" stroke="#1E293B" stroke-width="1" />
+  
+  <circle cx="28" cy="22" r="6" fill="#EF4444" />
+  <circle cx="48" cy="22" r="6" fill="#F59E0B" />
+  <circle cx="68" cy="22" r="6" fill="#10B981" />
+  
+  <!-- Address Bar -->
+  <rect x="360" y="10" width="480" height="24" rx="6" fill="#0B0F17" stroke="#1E293B" stroke-width="1" />
+  <text x="600" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#64748B" text-anchor="middle" font-weight="500">
+    🔒 https://sabesp.santos.sp.gov.br · Painel Unificado de Fiscalização &amp; SLA
+  </text>
 
-  <!-- Central Preview Graphic -->
-  <g transform="translate(100, 80)">
-    <!-- Decorative Grid / Glow -->
-    <rect x="0" y="0" width="1000" height="340" rx="12" fill="#0B1120" stroke="#1E293B" stroke-width="1.5" filter="url(#shadow)" />
+  <!-- App Top Navigation -->
+  <g transform="translate(0, 44)">
+    <rect x="0" y="0" width="1200" height="56" fill="#0E1626" />
+    <line x1="0" y1="56" x2="1200" y2="56" stroke="#1E293B" stroke-width="1" />
     
-    <!-- Top Accent Line -->
-    <rect x="0" y="0" width="1000" height="3" fill="url(#accentGrad)" />
+    <!-- Logo & Brand -->
+    <text x="32" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" fill="#FFFFFF" font-weight="700" letter-spacing="-0.3">
+      💧 Sabesp <tspan fill="#64748B">&amp;</tspan> Santos
+    </text>
+    
+    <!-- Nav Items -->
+    <rect x="220" y="14" width="104" height="28" rx="6" fill="#1E293B" />
+    <text x="272" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#38BDF8" text-anchor="middle" font-weight="600">Visão Geral</text>
+    <text x="375" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#94A3B8" text-anchor="middle" font-weight="500">Chamados Ativos</text>
+    <text x="495" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#94A3B8" text-anchor="middle" font-weight="500">Auditoria Sepref</text>
+    <text x="605" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#94A3B8" text-anchor="middle" font-weight="500">Mapa das 5 Zonas</text>
 
-    <!-- Badges in Mockup -->
-    <rect x="40" y="35" width="180" height="32" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1" />
-    <text x="130" y="56" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#38BDF8" text-anchor="middle" font-weight="600">💧 Sabesp · Operação</text>
+    <!-- User / Status Badge -->
+    <rect x="1000" y="14" width="168" height="28" rx="14" fill="#131C2E" stroke="#1E293B" stroke-width="1" />
+    <circle cx="1016" cy="28" r="4" fill="#34D399" />
+    <text x="1090" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#E2E8F0" text-anchor="middle" font-weight="500">Fiscal Sepref · Santos</text>
+  </g>
 
-    <rect x="235" y="35" width="220" height="32" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1" />
-    <text x="345" y="56" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#34D399" text-anchor="middle" font-weight="600">🏛️ Semam · Fiscalização</text>
+  <!-- Dashboard Body -->
+  <g transform="translate(32, 120)">
+    
+    <!-- Section Header -->
+    <text x="0" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" fill="#FFFFFF" font-weight="700">
+      Monitoramento Operacional da Rede de Esgoto
+    </text>
+    <text x="0" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#64748B" font-weight="400">
+      Controle automatizado do prazo legal de 15 dias corridos (Lei Complementar Municipal nº 852/2014)
+    </text>
 
-    <!-- Main Heading inside Mockup -->
-    <text x="500" y="145" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" fill="#FFFFFF" text-anchor="middle" font-weight="700" letter-spacing="-0.5">Interface em Prototipagem no Figma</text>
-    <text x="500" y="185" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" fill="#94A3B8" text-anchor="middle" font-weight="400">Design System oficial, fluxos do munícipe, painel de triagem e controle de ordens de serviço</text>
+    <rect x="940" y="6" width="196" height="30" rx="6" fill="#131C2E" stroke="#1E293B" stroke-width="1" />
+    <text x="1038" y="25" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#38BDF8" text-anchor="middle" font-weight="600">
+      ⚡ SLA Máximo: 15 Dias
+    </text>
 
-    <!-- CTA Button in Mockup -->
-    <g transform="translate(370, 225)">
-      <rect x="0" y="0" width="260" height="52" rx="10" fill="url(#btnGrad)" />
-      <text x="130" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" fill="#FFFFFF" text-anchor="middle" font-weight="600">🎨 Acessar Protótipo Interativo →</text>
+    <!-- 4 KPI Cards -->
+    <!-- Card 1 -->
+    <g transform="translate(0, 60)">
+      <rect width="268" height="90" rx="10" fill="url(#cardGrad)" stroke="#1E293B" stroke-width="1" />
+      <text x="18" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94A3B8" font-weight="500">Intimações Emitidas (Sepref)</text>
+      <text x="18" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="26" fill="#FFFFFF" font-weight="700">194</text>
+      <text x="80" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#34D399" font-weight="600">↑ 83 Sabesp</text>
+      <text x="18" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#64748B">Média mensal nas 5 Zonas</text>
     </g>
 
-    <text x="500" y="315" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#64748B" text-anchor="middle">Clique para abrir o projeto oficial diretamente no Figma</text>
+    <!-- Card 2 -->
+    <g transform="translate(288, 60)">
+      <rect width="268" height="90" rx="10" fill="url(#cardGrad)" stroke="#1E293B" stroke-width="1" />
+      <text x="18" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94A3B8" font-weight="500">SLA Médio de Reparo Sabesp</text>
+      <text x="18" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="26" fill="#38BDF8" font-weight="700">9.4 d</text>
+      <text x="96" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#34D399" font-weight="600">✓ Em conformidade</text>
+      <text x="18" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#64748B">Meta: ≤ 15 dias corridos</text>
+    </g>
+
+    <!-- Card 3 -->
+    <g transform="translate(576, 60)">
+      <rect width="268" height="90" rx="10" fill="url(#cardGrad)" stroke="#1E293B" stroke-width="1" />
+      <text x="18" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94A3B8" font-weight="500">Universalização Vila Gilda</text>
+      <text x="18" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="26" fill="#FFFFFF" font-weight="700">2.500</text>
+      <text x="100" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#34D399" font-weight="600">Ligações</text>
+      <text x="18" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#64748B">Parceria Prefeitura / Sabesp</text>
+    </g>
+
+    <!-- Card 4 -->
+    <g transform="translate(864, 60)">
+      <rect width="272" height="90" rx="10" fill="url(#cardGrad)" stroke="#1E293B" stroke-width="1" />
+      <text x="18" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94A3B8" font-weight="500">Fundo Saneamento (FMSBA)</text>
+      <text x="18" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="26" fill="#34D399" font-weight="700">R$ 818k</text>
+      <text x="18" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#64748B">Auditoria CMSBS · Lei 4.525</text>
+    </g>
+
+    <!-- Table of Occurrences -->
+    <g transform="translate(0, 170)">
+      <rect width="1136" height="270" rx="10" fill="#0E1626" stroke="#1E293B" stroke-width="1" />
+      
+      <!-- Table Header -->
+      <rect width="1136" height="38" rx="10" fill="#131C2E" />
+      <rect y="24" width="1136" height="14" fill="#131C2E" />
+      <line x1="0" y1="38" x2="1136" y2="38" stroke="#1E293B" stroke-width="1" />
+
+      <text x="24" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#64748B" font-weight="600">PROTOCOLO</text>
+      <text x="140" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#64748B" font-weight="600">LOCALIZAÇÃO / ZONA</text>
+      <text x="400" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#64748B" font-weight="600">TIPOLOGIA DA OCORRÊNCIA</text>
+      <text x="680" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#64748B" font-weight="600">PRAZO LEGAL (LEI 852)</text>
+      <text x="940" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#64748B" font-weight="600">STATUS OPERACIONAL</text>
+
+      <!-- Row 1 -->
+      <g transform="translate(0, 48)">
+        <text x="24" y="20" font-family="ui-monospace, monospace" font-size="12" fill="#94A3B8">#SNT-2026-089</text>
+        <text x="140" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#FFFFFF" font-weight="500">Rua Goiás, 50 · Boqueirão</text>
+        <text x="400" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#CBD5E1">Rompimento Coletor / Solapamento</text>
+        <text x="680" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#F59E0B" font-weight="600">Dia 4 de 15 corridos</text>
+        
+        <rect x="940" y="4" width="168" height="24" rx="12" fill="#0369A1" fill-opacity="0.25" stroke="#0284C7" stroke-width="1" />
+        <text x="1024" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#38BDF8" text-anchor="middle" font-weight="600">💧 Em Execução Sabesp</text>
+        <line x1="20" y1="36" x2="1116" y2="36" stroke="#1E293B" stroke-width="1" />
+      </g>
+
+      <!-- Row 2 -->
+      <g transform="translate(0, 94)">
+        <text x="24" y="20" font-family="ui-monospace, monospace" font-size="12" fill="#94A3B8">#SNT-2026-092</text>
+        <text x="140" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#FFFFFF" font-weight="500">Dique da Vila Gilda · Z. Noroeste</text>
+        <text x="400" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#CBD5E1">Extravasamento em Palafitas</text>
+        <text x="680" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#38BDF8" font-weight="600">Dia 2 de 15 corridos</text>
+        
+        <rect x="940" y="4" width="168" height="24" rx="12" fill="#065F46" fill-opacity="0.25" stroke="#059669" stroke-width="1" />
+        <text x="1024" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#34D399" text-anchor="middle" font-weight="600">🏛️ Vistoria Sepref</text>
+        <line x1="20" y1="36" x2="1116" y2="36" stroke="#1E293B" stroke-width="1" />
+      </g>
+
+      <!-- Row 3 -->
+      <g transform="translate(0, 140)">
+        <text x="24" y="20" font-family="ui-monospace, monospace" font-size="12" fill="#94A3B8">#SNT-2026-095</text>
+        <text x="140" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#FFFFFF" font-weight="500">Av. Martins Fontes · Saboó</text>
+        <text x="400" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#CBD5E1">Rebaixamento de Poço de Visita (PV)</text>
+        <text x="680" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#EF4444" font-weight="600">Dia 13 de 15 (Alerta SLA)</text>
+        
+        <rect x="940" y="4" width="168" height="24" rx="12" fill="#7F1D1D" fill-opacity="0.3" stroke="#DC2626" stroke-width="1" />
+        <text x="1024" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#F87171" text-anchor="middle" font-weight="600">🚨 Prazo Próximo do Limite</text>
+        <line x1="20" y1="36" x2="1116" y2="36" stroke="#1E293B" stroke-width="1" />
+      </g>
+
+      <!-- Row 4 -->
+      <g transform="translate(0, 186)">
+        <text x="24" y="20" font-family="ui-monospace, monospace" font-size="12" fill="#94A3B8">#SNT-2026-081</text>
+        <text x="140" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#FFFFFF" font-weight="500">Rua Amador Bueno · Centro</text>
+        <text x="400" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#CBD5E1">Desobstrução Coletora e Repavimentação</text>
+        <text x="680" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#10B981" font-weight="600">Concluído em 8 dias</text>
+        
+        <rect x="940" y="4" width="168" height="24" rx="12" fill="#064E3B" fill-opacity="0.3" stroke="#047857" stroke-width="1" />
+        <text x="1024" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#6EE7B7" text-anchor="middle" font-weight="600">✅ Laudo Homologado</text>
+      </g>
+    </g>
   </g>
+
+  <!-- Bottom Accent / Interactive Footer -->
+  <rect x="0" y="616" width="1200" height="24" rx="4" fill="url(#accentGrad)" />
+  <rect x="0" y="608" width="1200" height="8" fill="#0B0F17" />
+  <text x="600" y="628" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#FFFFFF" text-anchor="middle" font-weight="600" letter-spacing="0.5">
+    ARQUITETURA DE TELAS &amp; DESIGN SYSTEM OFICIAL · CLIQUE PARA ACESSAR O PROTÓTIPO NO FIGMA →
+  </text>
 </svg>
