@@ -42,6 +42,8 @@ Os vetores oficiais da Prefeitura de Santos foram padronizados e organizados na 
 | **`logo-santos-fundo-branco-horizontal.svg`** | Horizontal | Caixa Branca | Aplicação sobreposta a mapas, fotografias ou banners coloridos. |
 | **`logo-santos-fundo-branco-vertical.svg`** | Vertical | Caixa Branca | Aplicação em formato de selo em documentos ou laudos técnicos. |
 
+> ⚖️ **Ressalva de Propriedade Intelectual e Uso:** Os brasões, logotipos e símbolos oficiais da Prefeitura Municipal de Santos e da concessionária Sabesp são elementos visuais de propriedade exclusiva de seus respectivos titulares de direito público e privado. Sua inclusão neste projeto possui finalidade estritamente acadêmica, ilustrativa e de contextualização do protótipo de TCC, não implicando concessão de licença patrimonial pela Licença MIT do repositório, que se restringe ao código-fonte e documentação autoral desenvolvidos.
+
 ---
 
 ## 🎨 Diretrizes de Cores e UI Digital

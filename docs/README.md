@@ -27,7 +27,7 @@ Aborda o ecossistema da cidade de Santos, os episódios reais de contaminação 
 | :--- | :--- | :---: |
 | [`contexto-e-legislacao.md`](institucional/contexto-e-legislacao.md) | Diagnóstico territorial de Santos, caso Rua Goiás (multa de R$ 818 mil), projeto na Vila Gilda, FMSBA (Lei nº 4.525/2024), CMSBS e Lei nº 852/2014. | [Abrir Documento →](institucional/contexto-e-legislacao.md) |
 | [`triagem-inteligente.md`](institucional/triagem-inteligente.md) | Árvore lógica de decisão para distinguir vazamentos de esgoto da Sabesp de águas pluviais/chuva da Prefeitura (Seserp/Saturnino de Brito). | [Abrir Documento →](institucional/triagem-inteligente.md) |
-| [`glossario.md`](institucional/glossario.md) | Glossário formal (ABNT NBR 14724) contendo a definição técnica e jurídica de siglas e termos de saneamento (PV, EEE, EPC, FMSBA, etc.). | [Abrir Documento →](institucional/glossario.md) |
+| [`glossario.md`](institucional/glossario.md) | Glossário formal estruturado para monografias acadêmicas com definição técnica e jurídica de siglas e termos de saneamento (PV, EEE, EPC, FMSBA, etc.). | [Abrir Documento →](institucional/glossario.md) |
 
 ---
 
@@ -62,7 +62,7 @@ Direcionado aos critérios de rigor metodológico acadêmico exigidos para a apr
 
 | Documento | Descrição e Finalidade | Acesso |
 | :--- | :--- | :---: |
-| [`metodologia-tcc.md`](academico/metodologia-tcc.md) | Delimitação temática, problema de pesquisa, objetivos gerais e específicos, justificativa tríplice e mapeamento direto dos capítulos para ABNT. | [Abrir Documento →](academico/metodologia-tcc.md) |
+| [`metodologia-tcc.md`](academico/metodologia-tcc.md) | Estrutura do TCC, procedimentos metodológicos, objetivos, justificativa tríplice e apresentação acadêmica conforme normas aplicáveis (ABNT NBR 14724). | [Abrir Documento →](academico/metodologia-tcc.md) |
 
 ---
 

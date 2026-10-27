@@ -3,7 +3,7 @@
 # 📖 Glossário Técnico, Jurídico e Institucional
 ### Terminologia padronizada de engenharia sanitária e governança municipal de Santos
 
-> 💡 **Em Resumo:** Este documento estabelece o vocabulário técnico e normativo adotado no projeto, em conformidade com as recomendações da norma **ABNT NBR 14724** para monografias acadêmicas. Serve como fonte de consulta rápida para munícipes, desenvolvedores e avaliadores da banca examinadora.
+> 💡 **Em Resumo:** Este documento estabelece o vocabulário técnico e normativo adotado no projeto, estruturado para apresentação de monografias acadêmicas e normas aplicáveis, incluindo a **ABNT NBR 14724**. Serve como fonte de consulta rápida para munícipes, desenvolvedores e avaliadores da banca examinadora.
 
 ---
 

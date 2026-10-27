@@ -8,7 +8,7 @@
   <a href="#-roadmap-de-desenvolvimento"><img src="https://img.shields.io/badge/Status-Concep%C3%A7%C3%A3o%20e%20prototipagem-0072CE?style=flat-square" alt="Status: Concepção e prototipagem" /></a>
   <a href="https://www.figma.com/design/Tb4SDE9A4oEpLaXfN7aAhe/Projeto-%7C-Sabesp?node-id=0-1&t=yQExxpGpTtvoIWHk-1" target="_blank"><img src="https://img.shields.io/badge/Prot%C3%B3tipo-Figma-F24E1E?style=flat-square&logo=figma&logoColor=white" alt="Protótipo no Figma" /></a>
   <a href="docs/README.md"><img src="https://img.shields.io/badge/Documenta%C3%A7%C3%A3o-11%20m%C3%B3dulos-00ADD8?style=flat-square" alt="Documentação: 11 módulos" /></a>
-  <a href="docs/academico/metodologia-tcc.md"><img src="https://img.shields.io/badge/Metodologia-ABNT%20NBR%2014724-475569?style=flat-square" alt="Metodologia: ABNT NBR 14724" /></a>
+  <a href="docs/academico/metodologia-tcc.md"><img src="https://img.shields.io/badge/Normas-Acad%C3%AAmicas-475569?style=flat-square" alt="Normas Acadêmicas" /></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/Licen%C3%A7a-MIT-10B981?style=flat-square" alt="Licença MIT" /></a>
 </p>
 
@@ -35,7 +35,7 @@ O trabalho reúne pesquisa de contexto, diagnóstico territorial, levantamento d
 
 * **Facilitar o registro de ocorrências** pelos munícipes por meio de interface mobile simples, com upload de fotos e geolocalização.
 * **Melhorar a visibilidade do andamento dos chamados**, substituindo protocolos lentos por uma linha do tempo visual (*stepper*).
-* **Apoiar a triagem e o encaminhamento ágil**, diferenciando com precisão águas pluviais (drenagem municipal) de esgotamento sanitário (concessionária).
+* **Apoiar a triagem e o encaminhamento adequado**, utilizando regras de negócio para diferenciar ocorrências potencialmente relacionadas à drenagem pluvial e ao esgotamento sanitário, com encaminhamento para análise quando a classificação não for conclusiva.
 * **Centralizar evidências e registros de fiscalização**, municiando os fiscais das Prefeituras Regionais para cobrança formal de prazos.
 * **Auditar prazos e histórico de ações**, acompanhando o cumprimento dos prazos e obrigações legais de recomposição do pavimento urbano.
 
@@ -68,7 +68,7 @@ Santos possui desafios de saneamento e zeladoria urbana que envolvem a manutenç
 | Perfil / Ator | Responsabilidade Proposta | Contribuição Proposta pelo Sistema |
 | :--- | :--- | :--- |
 | **📱 Cidadão / Munícipe** | Registrar ocorrências e acompanhar o andamento dos chamados. | [Abertura ágil em 3 passos](docs/design-ux/jornada-e-ux.md#-fluxo-mobile-do-munícipe-3-passos) com fotos e geolocalização, e [linha do tempo visual (stepper)](docs/design-ux/jornada-e-ux.md#-linha-do-tempo-de-acompanhamento-stepper-visual) sem depender de ligações no `162`. |
-| **🏛️ Prefeitura (`Sepref` / `Semam`)** | Acompanhar ocorrências, fiscalizar prazos de reparos e gerenciar pendências viárias. | Proposta de painel centralizado de triagem nas [cinco regiões administrativas](docs/institucional/contexto-e-legislacao.md#%EF%B8%8F-regionaliza%C3%A7%C3%A3o-administrativa-as-5-zonas-de-santos), despacho de intimações e monitoramento do cumprimento do prazo de `15 dias` da [Lei nº 852/2014](docs/institucional/contexto-e-legislacao.md#-marco-regulat%C3%B3rio-lei-complementar-municipal-n%C2%BA-8522014). |
+| **🏛️ Prefeitura (`Sepref` / `Semam`)** | Acompanhar ocorrências, fiscalizar prazos de reparos e gerenciar pendências viárias. | Proposta de painel centralizado de triagem nas [cinco regiões administrativas](docs/institucional/contexto-e-legislacao.md#%EF%B8%8F-regionaliza%C3%A7%C3%A3o-administrativa-as-5-zonas-de-santos), despacho de intimações e acompanhamento do prazo legal aplicável à recomposição viária ([Lei nº 852/2014](docs/institucional/contexto-e-legislacao.md#-marco-regulat%C3%B3rio-lei-complementar-municipal-n%C2%BA-8522014)). |
 | **💧 Sabesp (Concessionária)** | Receber ocorrências pertinentes, documentar o atendimento operacional e atualizar informações de campo. | Recepção de chamados [pré-validados na triagem](docs/institucional/triagem-inteligente.md), com proposta de registro de laudo de campo e comprovação fotográfica da recomposição viária. |
 
 > ℹ️ *Essas responsabilidades e benefícios descrevem o desenho da solução proposta, respeitando as atribuições e os limites institucionais de cada órgão. A disponibilidade efetiva de cada recurso depende da implementação técnica e de validações institucionais.*
@@ -78,7 +78,7 @@ Santos possui desafios de saneamento e zeladoria urbana que envolvem a manutenç
 ```mermaid
 flowchart LR
     A["📱 1. Munícipe<br/>Abre chamado com foto"] --> B["🏛️ 2. Prefeitura (Sepref)<br/>Triagem & Intimação"]
-    B --> C["💧 3. Concessionária<br/>Execução da obra viária<br/>(Prazo conforme legislação aplicável)"]
+    B --> C["💧 3. Concessionária<br/>Execução do serviço e recomposição viária<br/>(conforme responsabilidade aplicável)"]
     C --> D["✅ 4. Conclusão<br/>Laudo & Asfalto recomposto"]
 ```
 
@@ -86,7 +86,7 @@ flowchart LR
 
 #### 📋 Exemplo de Registro de Ocorrência (Campos Previstos na Proposta)
 * **Tipologia do Incidente:** Extravasamento de esgoto em via pública (conforme catálogo técnico do PMISB).
-* **Localização Espacial:** Coordenadas geográficas e identificação por logradouro/bairro (adotando agregação para proteção de dados).
+* **Localização Espacial:** Coordenadas geográficas coletadas para uso operacional das equipes e identificação pública agregada por logradouro/bairro.
 * **Registro de Evidências:** Fotos do dano viário ou extravasamento anexadas no momento da abertura.
 * **Marcação Temporal:** Data e hora registradas automaticamente pelo sistema (*timestamp* de abertura).
 * **Descrição do Munícipe:** Breve relato sobre o problema (ex.: retorno em poço de visita, odor intenso, solapamento).
@@ -105,7 +105,7 @@ Para garantir clareza e transparência no ciclo de vida do software, as capacida
 | Acompanhamento transparente do chamado via Stepper visual | Munícipe | `Em prototipagem (Figma)` |
 | Triagem lógica inteligente (segregação de drenagem pluvial vs. rede de esgoto) | Prefeitura (Sepref) | `Especificada na documentação` |
 | Painel administrativo de triagem e despacho por Prefeituras Regionais (5 zonas) | Prefeitura (Sepref) | `Em prototipagem (Figma)` |
-| Contagem regressiva e auditoria do prazo de 15 dias da Lei nº 852/2014 | Prefeitura / Sabesp | `Especificada na documentação` |
+| Controle e auditoria do prazo legal de recomposição viária, quando aplicável | Prefeitura / Sabesp | `Especificada na documentação` |
 | Recepção de ordens de serviço, registro de parecer de campo e laudo fotográfico | Sabesp (Operação) | `Especificada na documentação` |
 | Trilha de auditoria cronológica com modelo Append-Only para mudanças de status | Sistema / Auditoria | `Modelada conceitualmente (Proto SQL)` |
 | API RESTful documentada (Swagger), controle RBAC e banco relacional em nuvem | Core Backend | `Planejada para implementação (Fases 6/7)` |
@@ -139,7 +139,7 @@ A documentação completa do projeto é categorizada em **4 pilares temáticos**
 | ⚙️ **Engenharia** | [**Arquitetura & Banco**](docs/engenharia/arquitetura-e-banco.md) | Ciclo de vida do chamado, matriz de status, modelo ER (`Proto SQL`), `Soft Delete` e auditoria `Append-Only`. |
 | ⚙️ **Engenharia** | [**Regras de Negócio & API**](docs/engenharia/regras-e-api.md) | Controle de acesso por papéis (`RBAC`), validações de domínio e catálogo de rotas `RESTful` documentadas com `Swagger UI`. |
 | ⚙️ **Engenharia** | [**Gestão de Riscos**](docs/engenharia/matriz-de-riscos.md) | Matriz de riscos `ISO 31000` / `PMBOK`: mitigação de trotes, conformidade `LGPD`, interferências de concessionárias e maré. |
-| 🎓 **Acadêmico** | [**Metodologia TCC**](docs/academico/metodologia-tcc.md) | Tema, problema de pesquisa, objetivos, justificativa tríplice e mapeamento metodológico padrão `ABNT NBR 14724`. |
+| 🎓 **Acadêmico** | [**Metodologia TCC**](docs/academico/metodologia-tcc.md) | Estrutura do TCC, procedimentos metodológicos, apresentação acadêmica e normas aplicáveis, incluindo a `ABNT NBR 14724`. |
 
 ---
 
@@ -161,7 +161,7 @@ Por se tratar de uma proposta acadêmica em evolução por etapas, o projeto del
 
 * **Validação Normativa Contínua:** As regras de negócio e os prazos operacionais devem ser constantemente confrontados com eventuais atualizações de decretos municipais e da agência reguladora estadual (ARSESP).
 * **Delimitação de Procedimentos:** Definição clara das responsabilidades e limites de atuação entre as Secretarias Municipais (`Sepref`, `Seserp`, `Semam`) e a concessionária para cada tipologia de ocorrência.
-* **Privacidade, Minimização de Dados e LGPD:** O projeto prevê a aplicação do princípio da minimização de dados, conforme a [Lei Federal nº 13.709/2018 (LGPD)](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm). As consultas públicas deverão restringir a exposição de informações pessoais e de localização exata (adotando agregação por logradouro/bairro), e a definição dos controles de acesso, da retenção e das medidas de proteção será aprofundada durante a implementação, considerando a necessidade de Relatório de Impacto à Proteção de Dados (RIPD).
+* **Privacidade, Minimização de Dados e LGPD:** O projeto prevê a aplicação do princípio da minimização de dados, conforme a [Lei Federal nº 13.709/2018 (LGPD)](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm). A localização precisa, quando necessária para o atendimento e a fiscalização, deverá ter acesso restrito aos perfis autorizados. Consultas públicas deverão limitar a exposição de dados pessoais e, quando adequado, apresentar a localização de forma agregada por logradouro ou bairro. Os critérios de acesso, retenção, segurança e eventual necessidade de Relatório de Impacto à Proteção de Dados Pessoais (RIPD) serão aprofundados durante a implementação.
 * **Ausência de Integração Legada:** O sistema não possui integração em tempo real com os sistemas internos da Sabesp ou da Prefeitura; opera como arquitetura de referência aberta (RESTful/OpenAPI) simulando a interoperabilidade. Não deve ser considerado canal oficial de atendimento.
 
 ---
