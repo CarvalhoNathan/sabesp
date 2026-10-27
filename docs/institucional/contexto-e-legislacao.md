@@ -3,12 +3,13 @@
 # 🏛️ Contexto Institucional, Regionalização e Marco Legal
 ### Fundamentação real e respaldo jurídico no município de Santos
 
-> 💡 **Em Resumo:** Este documento apresenta o diagnóstico territorial de Santos, o descompasso entre as faixas de acompanhamento da Ouvidoria (SOM Web / 162) e os prazos legais, a atuação da **Sepref**, da **Seserp (Urgência Urbana)** e da **SEMAM**, o **Estudo de Caso da Rua Goiás (multa de R$ 818 mil)**, o projeto no **Dique da Vila Gilda (Parque Palafitas)**, o plano de contingências do **PMISB (Relatório R4)** e a governança financeira do **FMSBA (Lei 4.525/2024)** e do **CMSBS**.
+> 💡 **Em Resumo:** Este documento apresenta o diagnóstico territorial de Santos, o benchmark municipal com o **SigSantosWeb (Santos Mapeada)** e o **Portal da Transparência**, o descompasso entre as faixas de acompanhamento da Ouvidoria (SOM Web / 162) e os prazos legais, a atuação da **Sepref**, da **Seserp (Urgência Urbana)** e da **SEMAM**, o **Estudo de Caso da Rua Goiás (multa de R$ 818 mil)**, o projeto no **Dique da Vila Gilda (Parque Palafitas)**, o plano de contingências do **PMISB (Relatório R4)** e a governança financeira do **FMSBA (Lei 4.525/2024)** e do **CMSBS**.
 
 ---
 
 ## 📌 Navegação Rápida
 - [O Problema Real vs. Solução Proposta](#-o-problema-real-vs-solução-proposta)
+- [Benchmark Municipal: O Ecossistema SigSantosWeb e o Diferencial da Proposta](#-benchmark-municipal-o-ecossistema-sigsantosweb-e-o-diferencial-da-proposta)
 - [O Descompasso entre Faixas de Acompanhamento da Ouvidoria e Prazos da Lei nº 852/2014](#-o-descompasso-entre-faixas-de-acompanhamento-da-ouvidoria-e-prazos-da-lei-nº-8522014)
 - [Estudo de Caso Real: O Incidente da Rua Goiás (2023)](#-estudo-de-caso-real-o-incidente-da-rua-goiás-2023)
 - [Universalização e Vulnerabilidade: O Caso do Dique da Vila Gilda (2025–2026)](#-universalização-e-vulnerabilidade-o-caso-do-dique-da-vila-gilda-20252026)
@@ -34,6 +35,35 @@ Historicamente no município de Santos, solicitações sobre vazamentos na rede 
 | **Comunicação com a Sabesp** | Notificações e intimações impressas em papel (uma média de 197 intimações mensais emitidas pela Sepref). | **Acesso Operacional Dedicado:** A Sabesp recebe as ordens já pré-validadas tecnicamente em sua fila de trabalho em tempo real. |
 | **Controle de Prazos (SLA)** | A Ouvidoria tradicional adota faixas informativas de até 30 dias e acima de 60 dias para acompanhamento interno. | **Monitoramento Automatizado:** Acompanhamento dos prazos de recomposição viária previstos na Lei nº 852/2014 conforme as condições e marcos legais aplicáveis. |
 | **Transparência ao Cidadão** | O munícipe precisa consultar protocolos complexos no SOM Web sem laudo técnico do reparo. | **Transparência Total:** Acompanhamento do status em tempo real com histórico e parecer técnico conclusivo com foto da concessionária. |
+
+---
+
+## 🗺️ Benchmark Municipal: O Ecossistema SigSantosWeb e o Diferencial da Proposta
+
+A análise do [Portal da Transparência da Prefeitura de Santos](https://www.santos.sp.gov.br/?q=portal/transparencia) e das ferramentas oficiais em produção no município revela que a administração pública já dispõe de iniciativas de georreferenciamento e dados abertos. Contudo, o diagnóstico técnico evidencia lacunas operacionais significativas quando o assunto é a fiscalização do saneamento básico e as intervenções em vias públicas:
+
+### As Soluções Municipais Existentes no Portal da Transparência
+
+1. **[Santos Mapeada · Mapa da Ouvidoria (SigSantosWeb)](https://egov.santos.sp.gov.br/santosmapeada/Ouvidoria/MapaOuvidoria/):**
+   * **Concepção:** Sistema de Informações Geográficas (SIG) municipal que plota espacialmente as ocorrências cadastradas pelo cidadão no canal SOM Web (Ouvidoria Digital) e pelo telefone 162.
+   * **Limitações:** Interface desktop legada (complexa para navegação móvel pelo munícipe na via pública), ausência de triagem especializada entre rede de esgoto e drenagem pluvial, e falta de mecanismos automatizados para acompanhamento de prazos de recomposição asfáltica.
+2. **[Portal de Dados Abertos de Santos](https://egov.santos.sp.gov.br/dadosabertos/):**
+   * **Concepção:** Plataforma em formato de Single Page Application (SPA) voltada à transparência ativa em áreas como Saúde (*Remédio Fácil*), Educação (*Vagas Escolares*) e Finanças Públicas (*Receitas e Despesas*).
+   * **Lacuna (*Open Data Gap*):** Não disponibiliza conjuntos de dados estruturados para vazamentos de esgoto, vistorias de pavimentação ou valas de concessionárias, reforçando a pertinência de um sistema independente de transparência cidadã.
+3. **[SIGECON · Sistema de Gerenciamento de Contratos](https://egov.santos.sp.gov.br/sigecon/transparencia/contrato.xhtml):**
+   * Repositório onde são publicados os contratos formais e termos aditivos celebrados pelo Município com concessionárias e prestadores de serviços essenciais.
+
+### Análise de Similares: SigSantosWeb vs. Nova Plataforma Web de Fiscalização
+
+Para fins de fundamentação acadêmica (TCC) e análise comparativa de sistemas similares, o quadro abaixo sintetiza as distinções entre o ecossistema municipal existente e a solução web proposta:
+
+| Critério de Avaliação | Sistema Atual da Prefeitura (*SigSantosWeb / SOM Web*) | Nova Solução Web Proposta (*TCC FATEC Rubens Lara*) |
+| :--- | :--- | :--- |
+| **Abordagem de Interface (UX)** | SIG técnico projetado para ambiente desktop, com visualização densa de tabelas e filtros operacionais complexos. | **Mobile-First & PWA:** Interface responsiva, limpa e intuitiva, permitindo registro de chamados na via pública em menos de 2 minutos. |
+| **Triagem do Tipo de Efluente** | Não assistida. O munícipe preenche formulários livres, gerando frequente confusão entre galerias de chuva e redes de esgoto. | **Assistente de Triagem Guiada:** Fluxo de 3 passos que distingue extravasamentos de esgoto da Sabesp de drenagem pluvial da Seserp. |
+| **Controle de Prazos (SLA)** | Faixas informativas de tempo decorrido da Ouvidoria (até 30 dias e acima de 60 dias) para trâmites burocráticos internos. | **Cronômetro Legal Automatizado:** Acompanhamento estrito do prazo de **15 dias** previsto na Lei Complementar nº 852/2014. |
+| **Evidência Probatória** | Descrições textuais genéricas sem histórico fotográfico comparativo aberto ao cidadão. | **Auditoria Fotográfica Bidirecional:** Registro fotográfico da anomalia na abertura e foto obrigatória da via recomposta no fechamento pela Sabesp. |
+| **Integração com Órgãos e Fundos** | Tramitação interna fragmentada entre pastas via processos administrativos tradicionais. | **Visão Integrada de Governança:** Painéis dedicados para Sepref, Semam e Sabesp, com geração de relatórios para o CMSBS e apoio ao FMSBA. |
 
 ---
 
@@ -213,6 +243,10 @@ Para fins de comprovação documental e referencial bibliográfico oficial:
 * [Legis Santos · Repositório Oficial de Atos Municipais sobre a Sabesp](https://egov.santos.sp.gov.br/legis/search?query=sabesp&page=1) — Acervo de leis, decretos de servidão de passagem e normas da concessão em Santos.
 * [Plano Municipal Integrado de Saneamento Básico de Santos (PMISB)](https://www.santos.sp.gov.br/?q=servico/plano-municipal-de-saneamento-basico) — Serviço e legislação oficial do plano de saneamento.
 * [Anexo 5 · Relatório R4 do PMISB (Ações para Emergências e Contingências)](https://www.santos.sp.gov.br/static/files_www/conteudo/13%20Anexo%205%20-%20Plano%20Municipal%20Integrado%20de%20Saneamento%20B%C3%A1sico.pdf) — Relatório técnico municipal de contingências sanitárias.
+* [Prefeitura de Santos · Portal da Transparência](https://www.santos.sp.gov.br/?q=portal/transparencia) — Hub central de transparência ativa, ouvidoria e serviços municipais.
+* [Santos Mapeada · Mapa da Ouvidoria (SigSantosWeb)](https://egov.santos.sp.gov.br/santosmapeada/Ouvidoria/MapaOuvidoria/) — Sistema geográfico oficial de visualização de ocorrências registradas no SOM Web / 162.
+* [Prefeitura de Santos · Portal de Dados Abertos](https://egov.santos.sp.gov.br/dadosabertos/) — Catálogo municipal de dados governamentais abertos.
+* [SIGECON · Sistema de Gerenciamento de Contratos de Santos](https://egov.santos.sp.gov.br/sigecon/transparencia/contrato.xhtml) — Consulta de contratos e termos aditivos firmados pelo poder público municipal.
 * [Manual de Identidade Visual da Prefeitura de Santos](https://www.santos.sp.gov.br/?q=hotsite/manual-de-identidade) — Diretrizes oficiais de tipografia e brasões vetoriais.
 
 ---

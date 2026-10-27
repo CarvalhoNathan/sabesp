@@ -40,7 +40,7 @@
 Desenvolver e validar uma plataforma web centralizada em arquitetura Java Spring Boot e PostgreSQL que digitalize a esteira de requisições de manutenção na rede de esgoto de Santos, integrando a denúncia cidadã, a triagem fiscalizatória da Secretaria de Meio Ambiente (SEMAM/Sepref) e a execução operacional da concessionária Sabesp.
 
 ### Objetivos Específicos
-1. **Mapear a esteira atual** de requisições municipais via Ouvidoria 162 e identificar os gargalos de comunicação entre os órgãos com base no **PMISB (Relatório R4 / Ações de Emergência)**, no caso emblemático da **Rua Goiás (2023)** e nos projetos de universalização periférica no **Dique da Vila Gilda (2025–2026)**.
+1. **Mapear a esteira atual** de requisições municipais via Ouvidoria 162 e realizar a **análise de similares (benchmark)** com o sistema **SigSantosWeb / Santos Mapeada** e o Portal de Dados Abertos, identificando gargalos de comunicação com base no **PMISB (Relatório R4 / Ações de Emergência)**, no caso emblemático da **Rua Goiás (2023)** e nos projetos de universalização periférica no **Dique da Vila Gilda (2025–2026)**.
 2. **Aplicar práticas de Design Thinking**, mapeando as personas de munícipes, fiscais e operadores, detalhando suas jornadas e criando um assistente de triagem inteligente (esgoto vs. água de chuva).
 3. **Estruturar uma matriz de riscos formal** (ISO 31000 / PMBOK) cobrindo riscos de trotes, LGPD, interferências de rede e contingências de maré.
 4. **Modelar um banco de dados relacional** com padrões de *Soft Delete* e tabelas de auditoria imutáveis (*Append-Only*).
@@ -82,7 +82,7 @@ Os documentos técnicos do repositório correspondem diretamente à estrutura de
 | Capítulo da Monografia | Conteúdo Acadêmico | Documento Fonte no Repositório |
 | :--- | :--- | :---: |
 | **Capítulo 1 · Introdução** | Contextualização, caso Rua Goiás, caso Vila Gilda, problema, justificativa e objetivos. | [`metodologia-tcc.md`](metodologia-tcc.md) |
-| **Capítulo 2 · Referencial Teórico** | Saneamento em Santos, Sabesp (privatização), SEMAM/Sepref, PMISB R4, Lei 852/2014, FMSBA, CMSBS e Glossário ABNT. | [`contexto-e-legislacao.md`](../institucional/contexto-e-legislacao.md) • [`glossario.md`](../institucional/glossario.md) |
+| **Capítulo 2 · Referencial Teórico & Trabalhos Correlatos** | Saneamento em Santos, Sabesp (privatização), SEMAM/Sepref, PMISB R4, Lei 852/2014, FMSBA, CMSBS, benchmark com o SigSantosWeb e Glossário ABNT. | [`contexto-e-legislacao.md`](../institucional/contexto-e-legislacao.md) • [`glossario.md`](../institucional/glossario.md) |
 | **Capítulo 3 · Engenharia de Requisitos & Design Thinking** | Personas, cenários, árvore de triagem inteligente, matriz MoSCoW (RF/RNF) e RBAC. | [`personas-e-cenarios.md`](../design-ux/personas-e-cenarios.md) • [`triagem-inteligente.md`](../institucional/triagem-inteligente.md) • [`requisitos-do-sistema.md`](../engenharia/requisitos-do-sistema.md) • [`regras-e-api.md`](../engenharia/regras-e-api.md) |
 | **Capítulo 4 · Modelagem, Arquitetura & Gestão de Riscos** | Modelo ER (Proto SQL), Soft Delete, Auditoria, camadas Spring e Matriz de Riscos ISO 31000. | [`arquitetura-e-banco.md`](../engenharia/arquitetura-e-banco.md) • [`matriz-de-riscos.md`](../engenharia/matriz-de-riscos.md) |
 | **Capítulo 5 · Design de Interação e Prototipagem (UI/UX)** | Arquitetura de telas (Sitemap), wireframe textual, stepper de acompanhamento, tipografia Montserrat e Figma. | [`jornada-e-ux.md`](../design-ux/jornada-e-ux.md) • [`design-system.md`](../design-ux/design-system.md) |
