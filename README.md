@@ -44,13 +44,13 @@
 Este projeto está alinhado à **Agenda 2030 da Organização das Nações Unidas (ONU)**, contribuindo diretamente para 4 metas globais:
 
 <p align="center">
-  <img src="assets/ods/ods-6.png" alt="ODS 6 · Água Potável e Saneamento" width="120px" />
+  <img src="assets/ods/ods-6.svg" alt="ODS 6 · Água Potável e Saneamento" width="120px" />
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="assets/ods/ods-9.png" alt="ODS 9 · Indústria, Inovação e Infraestrutura" width="120px" />
+  <img src="assets/ods/ods-9.svg" alt="ODS 9 · Indústria, Inovação e Infraestrutura" width="120px" />
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="assets/ods/ods-11.png" alt="ODS 11 · Cidades e Comunidades Sustentáveis" width="120px" />
+  <img src="assets/ods/ods-11.svg" alt="ODS 11 · Cidades e Comunidades Sustentáveis" width="120px" />
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="assets/ods/ods-16.png" alt="ODS 16 · Paz, Justiça e Instituições Eficazes" width="120px" />
+  <img src="assets/ods/ods-16.svg" alt="ODS 16 · Paz, Justiça e Instituições Eficazes" width="120px" />
 </p>
 
 * **ODS 6 · Água Potável e Saneamento:** Assegurar a disponibilidade e manejo sustentável da água e esgotamento para todos, mitigando a contaminação de canais urbanos e praias de Santos.
