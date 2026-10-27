@@ -49,6 +49,9 @@ Plataforma Sabesp & Prefeitura de Santos
 
 ---
 
+<a id="fluxo-mobile-municipe"></a>
+<a id="-fluxo-mobile-do-munícipe-3-passos"></a>
+<a id="fluxo-mobile-do-munícipe-3-passos"></a>
 ## 📱 Jornada do Munícipe (Mobile-First)
 
 Projetada para que qualquer cidadão, como a **Dona Helena (62 anos)**, consiga registrar um problema na rua em menos de 2 minutos:
@@ -126,6 +129,9 @@ Focada na praticidade de campo para **Roberto (Encarregado Sabesp)**:
 
 ---
 
+<a id="stepper-visual"></a>
+<a id="-linha-do-tempo-de-acompanhamento-stepper-visual"></a>
+<a id="linha-do-tempo-de-acompanhamento-stepper-visual"></a>
 ## 🚦 Design dos Estados e Linha do Tempo (Stepper)
 
 A experiência do munícipe é orientada por uma linha do tempo vertical visual que traz transparência absoluta e elimina a necessidade de ligar para a ouvidoria:

@@ -70,6 +70,9 @@ Para fins de fundamentação acadêmica (TCC) e análise comparativa de sistemas
 
 ---
 
+<a id="descompasso-ouvidoria-prazos"></a>
+<a id="-o-descompasso-entre-faixas-de-acompanhamento-da-ouvidoria-e-prazos-da-lei-nº-8522014"></a>
+<a id="o-descompasso-entre-faixas-de-acompanhamento-da-ouvidoria-e-prazos-da-lei-nº-8522014"></a>
 ## ⏱️ O Descompasso entre Faixas de Acompanhamento da Ouvidoria e Prazos da Lei nº 852/2014
 
 A pesquisa do projeto identifica um descompasso temporal relevante entre os canais de atendimento ao cidadão e a legislação viária no município de Santos:
@@ -135,6 +138,9 @@ O plano municipal mapeia formalmente as 4 situações críticas de esgotamento q
 
 ---
 
+<a id="marco-regulatorio-lei-852"></a>
+<a id="-marco-regulatório-lei-complementar-municipal-nº-8522014"></a>
+<a id="marco-regulatório-lei-complementar-municipal-nº-8522014"></a>
 ## 📜 Marco Regulatório: Lei Complementar Municipal nº 852/2014
 
 No âmbito municipal de Santos, a relação entre a Prefeitura e as concessionárias prestadoras de serviços públicos essenciais é regida por instrumentos legais específicos de fiscalização urbana:
@@ -178,6 +184,9 @@ A relação jurídica entre o Município de Santos e a concessionária é estrut
 
 ---
 
+<a id="regionalizacao-5-zonas"></a>
+<a id="-regionalização-administrativa-as-5-zonas-de-santos"></a>
+<a id="regionalização-administrativa-as-5-zonas-de-santos"></a>
 ## 🏙️ Regionalização Administrativa: As 5 Zonas de Santos
 
 Para assegurar uma gestão territorial eficiente, as demandas no sistema são categorizadas conforme as **5 Prefeituras Regionais de Santos**, permitindo triagens direcionadas:
