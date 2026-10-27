@@ -1,27 +1,43 @@
 <a id="topo"></a>
 <h1 align="center">💧 Sabesp &amp; Prefeitura de Santos</h1>
 <p align="center">
-  <b>Plataforma digital e esteira de auditoria pública para a fiscalização da rede de esgoto e recomposição viária</b>
+  <b>Proposta de plataforma digital para registro, acompanhamento e fiscalização de ocorrências relacionadas à rede de esgoto e à recomposição de vias públicas em Santos (SP).</b>
 </p>
 
 <p align="center">
-  <a href="#-roadmap-de-desenvolvimento"><img src="https://img.shields.io/badge/Fase-Concep%C3%A7%C3%A3o_%26_UX-0072CE?style=flat-square" alt="Fase: Concepção &amp; UX" /></a>
+  <a href="#-roadmap-de-desenvolvimento"><img src="https://img.shields.io/badge/Status-Concep%C3%A7%C3%A3o%20e%20prototipagem-0072CE?style=flat-square" alt="Status: Concepção e prototipagem" /></a>
   <a href="https://www.figma.com/design/Tb4SDE9A4oEpLaXfN7aAhe/Projeto-%7C-Sabesp?node-id=0-1&t=yQExxpGpTtvoIWHk-1" target="_blank"><img src="https://img.shields.io/badge/Prot%C3%B3tipo-Figma-F24E1E?style=flat-square&logo=figma&logoColor=white" alt="Protótipo no Figma" /></a>
-  <a href="docs/README.md"><img src="https://img.shields.io/badge/Documenta%C3%A7%C3%A3o-11_M%C3%B3dulos-00ADD8?style=flat-square" alt="Documentação: 11 Módulos" /></a>
-  <a href="docs/academico/metodologia-tcc.md"><img src="https://img.shields.io/badge/Metodologia-ABNT_NBR_14724-475569?style=flat-square" alt="Metodologia: ABNT NBR 14724" /></a>
+  <a href="docs/README.md"><img src="https://img.shields.io/badge/Documenta%C3%A7%C3%A3o-11%20m%C3%B3dulos-00ADD8?style=flat-square" alt="Documentação: 11 módulos" /></a>
+  <a href="docs/academico/metodologia-tcc.md"><img src="https://img.shields.io/badge/Metodologia-ABNT%20NBR%2014724-475569?style=flat-square" alt="Metodologia: ABNT NBR 14724" /></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/Licen%C3%A7a-MIT-10B981?style=flat-square" alt="Licença MIT" /></a>
 </p>
+
+<p align="center">
+  <a href="https://www.figma.com/design/Tb4SDE9A4oEpLaXfN7aAhe/Projeto-%7C-Sabesp?node-id=0-1&t=yQExxpGpTtvoIWHk-1" target="_blank">
+    <img src="assets/preview-mockup.svg" alt="Prévia da interface proposta para a plataforma no Figma" width="900px" />
+  </a>
+</p>
+
+> ℹ️ **Aviso de Natureza Acadêmica:**  
+> Este é um projeto acadêmico independente desenvolvido para o Trabalho de Conclusão de Curso (TCC). A menção à Sabesp e à Prefeitura de Santos contextualiza o problema estudado e os atores considerados na proposta; não implica parceria, vínculo institucional, aprovação ou integração oficial com esses órgãos. Enquanto as funcionalidades não forem implementadas e validadas, a plataforma não deve ser considerada um canal oficial de atendimento.
 
 ---
 
 ## 📌 Sobre o Projeto
 
-Este projeto propõe uma **plataforma digital e esteira de auditoria pública** para registrar, acompanhar e fiscalizar ocorrências relacionadas a vazamentos na rede de esgoto, abatimentos de solo e danos ao pavimento urbano no município de **Santos (SP)**.
+O projeto propõe uma plataforma digital para registrar, acompanhar e fiscalizar ocorrências relacionadas a vazamentos na rede de esgoto, abatimentos de pavimento e desobstruções no município de **Santos (SP)**.
 
-A solução busca conectar **munícipes**, **fiscalização municipal (`Sepref` / `Semam`)** e a **operação da concessionária (`Sabesp`)** em um fluxo único, auditável e transparente, visando reduzir o descompasso histórico entre a tramitação lenta dos canais convencionais de ouvidoria e os prazos legais de recomposição das vias públicas.
+A proposta busca organizar o fluxo entre **munícipes**, **fiscalização municipal (`Sepref` / `Semam`)** e **operação da concessionária (`Sabesp`)**, reunindo informações do chamado, evidências fotográficas, encaminhamentos, prazos legais e histórico de ações em um processo transparente e auditável.
 
-> ℹ️ **Nota de Natureza Acadêmica:**  
-> Este projeto é uma **proposta acadêmica independente** desenvolvida no âmbito do Trabalho de Conclusão de Curso (TCC). Não possui vínculo formal, convênio operacional ou homologação direta com a Prefeitura Municipal de Santos ou com a Sabesp. Todas as regras de negócio e integrações refletem a legislação pública vigente e o planejamento municipal documentado no PMISB.
+O trabalho reúne pesquisa de contexto, diagnóstico territorial, levantamento de requisitos, modelagem de processos, documentação técnica e prototipagem de interface. A implementação do banco de dados e do backend está prevista para as próximas etapas do roadmap.
+
+### 🎯 Objetivos da Proposta
+
+* **Facilitar o registro de ocorrências** pelos munícipes por meio de interface mobile simples, com upload de fotos e geolocalização.
+* **Melhorar a visibilidade do andamento dos chamados**, substituindo protocolos lentos por uma linha do tempo visual (*stepper*).
+* **Apoiar a triagem e o encaminhamento ágil**, diferenciando com precisão águas pluviais (drenagem municipal) de esgotamento sanitário (concessionária).
+* **Centralizar evidências e registros de fiscalização**, municiando os fiscais das Prefeituras Regionais para cobrança formal de prazos.
+* **Auditar prazos e histórico de ações**, acompanhando o cumprimento das metas legais de recomposição do pavimento urbano.
 
 ---
 
@@ -29,27 +45,44 @@ A solução busca conectar **munícipes**, **fiscalização municipal (`Sepref` 
 
 * 🎨 **[Explorar o Protótipo no Figma](https://www.figma.com/design/Tb4SDE9A4oEpLaXfN7aAhe/Projeto-%7C-Sabesp?node-id=0-1&t=yQExxpGpTtvoIWHk-1):** Conheça a proposta visual, sitemap, wireframes e fluxos interativos de uso.
 * 📚 **[Consultar a Documentação Técnica (Docs Hub)](docs/README.md):** Requisitos (`MoSCoW`), modelo relacional (`Proto SQL`), regras de negócio (`RBAC`) e marco legal de Santos.
-* 🗺️ **[Acompanhar o Roadmap](#-roadmap-de-desenvolvimento):** Veja as entregas conceituais concluídas e os próximos passos de implementação de banco e código.
-
----
-
-## 🖥️ Demonstração da Interface (Protótipo Figma)
-
-<p align="center">
-  <a href="https://www.figma.com/design/Tb4SDE9A4oEpLaXfN7aAhe/Projeto-%7C-Sabesp?node-id=0-1&t=yQExxpGpTtvoIWHk-1" target="_blank">
-    <img src="assets/preview-mockup.svg" alt="Preview da Interface do Sistema no Figma" width="900px" />
-  </a>
-</p>
+* 🗺️ **[Acompanhar o Roadmap](#-roadmap-de-desenvolvimento):** Veja as etapas conceituais concluídas e os próximos passos previstos no projeto.
 
 ---
 
 ## 📊 O Cenário Real em Números
 
-* **99% de Cobertura Urbana (2020):** Conforme o [PMISB (Relatório R4)](https://www.santos.sp.gov.br/static/files_www/conteudo/13%20Anexo%205%20-%20Plano%20Municipal%20Integrado%20de%20Saneamento%20B%C3%A1sico.pdf), a área urbana de Santos já dispõe de rede coletora quase universalizada; o desafio central reside na manutenção da malha centenária e no atendimento de áreas de vulnerabilidade, como as 2.500 ligações no [Dique da Vila Gilda](https://www.santos.sp.gov.br/?q=noticia/parceria-garante-regularizacao-da-rede-de-agua-e-esgoto-para-a-vila-gilda-em-santos) (2025–2026).
-* **15 Dias Corridos para Recomposição Viária:** Prazo legal máximo improrrogável estabelecido pela [Lei Complementar Municipal nº 852/2014](https://egov.santos.sp.gov.br/legis/documents/5195) para a concessionária concluir o reparo do pavimento e calçadas após notificação de abertura de vala na via pública.
-* **30 a 60 Dias na Tramitação da Ouvidoria:** Prazos observados nos canais convencionais de atendimento ([SOM Web / 162](https://egov.santos.sp.gov.br/somweb/)), que toleram até 30 dias de triagem e até 60 dias de tramitação, evidenciando o descompasso operacional frente à celeridade exigida pela legislação viária. ([Ver diagnóstico](docs/institucional/contexto-e-legislacao.md#-a-disparidade-crítica-de-slas-ouvidoria-som-web-vs-lei-nº-8522014))
-* **+190 Intimações / Mês:** Média documentada em operações de fiscalização das Prefeituras Regionais ([Sepref](https://www.santos.sp.gov.br/?q=noticia/santos-aplica-197-intimacoes-e-notificacoes-a-prestadoras-de-servico-em-janeiro)), compreendendo intimações e notificações formais a concessionárias nas 5 Zonas da cidade.
-* **R$ 818 Mil em Sanção Administrativa (2023):** Multa aplicada pela SEMAM contra a Sabesp após vazamento que solapou a Rua Goiás ([Notícia Oficial PMS](https://www.santos.sp.gov.br/?q=noticia/santos-multa-sabesp-em-r-818-mil-reais-devido-a-contaminacao-de-solo-na-rua-goias) • [G1](https://g1.globo.com/sp/santos-regiao/noticia/2023/03/07/sabesp-e-multada-em-r-818-mil-apos-contaminacao-de-solo-na-rua-goias-em-santos-sp.ghtml)), valor destinado por lei municipal ao fundo de saneamento ([FMSBA](https://egov.santos.sp.gov.br/legis/documents/10840)) auditado pelo conselho municipal ([CMSBS](https://egov.santos.sp.gov.br/legis/documents/12103)).
+Santos possui desafios de saneamento e zeladoria urbana que envolvem manutenção de uma malha subterrânea centenária, fiscalização de prestadoras de serviço e coordenação entre diferentes órgãos públicos:
+
+* **99% de Cobertura Urbana (2020):** Conforme o [PMISB (Relatório R4)](https://www.santos.sp.gov.br/static/files_www/conteudo/13%20Anexo%205%20-%20Plano%20Municipal%20Integrado%20de%20Saneamento%20B%C3%A1sico.pdf), a área urbana de Santos já dispõe de rede coletora quase universalizada; o déficit residual concentra-se em palafitas, demandando intervenções específicas como as 2.500 ligações no [Dique da Vila Gilda](https://www.santos.sp.gov.br/?q=noticia/parceria-garante-regularizacao-da-rede-de-agua-e-esgoto-para-a-vila-gilda-em-santos) (2025–2026).
+* **15 Dias Corridos para Recomposição Viária:** Prazo legal máximo estabelecido pela [Lei Complementar Municipal nº 852/2014](https://egov.santos.sp.gov.br/legis/documents/5195) para a concessionária concluir o reparo do pavimento e calçadas após notificação de intervenção em via pública.
+* **30 a 60 Dias na Tramitação da Ouvidoria:** Prazos informados nos canais convencionais de atendimento ([SOM Web / 162](https://egov.santos.sp.gov.br/somweb/)), que toleram até 30 dias de triagem e até 60 dias de tramitação, evidenciando o descompasso operacional frente à celeridade exigida pela legislação viária. ([Ver diagnóstico](docs/institucional/contexto-e-legislacao.md#-a-disparidade-crítica-de-slas-ouvidoria-som-web-vs-lei-nº-8522014))
+* **+190 Intimações / Mês:** Média documentada em operações de fiscalização das Prefeituras Regionais ([Sepref](https://www.santos.sp.gov.br/?q=noticia/santos-aplica-197-intimacoes-e-notificacoes-a-prestadoras-de-servico-em-janeiro)), compreendendo notificações formais a concessionárias de serviços públicos nas 5 Zonas da cidade.
+* **R$ 818 Mil em Sanção Administrativa (2023):** Multa aplicada pela SEMAM contra a Sabesp após vazamento que solapou a Rua Goiás ([Notícia Oficial PMS](https://www.santos.sp.gov.br/?q=noticia/santos-multa-sabesp-em-r-818-mil-reais-devido-a-contaminacao-de-solo-na-rua-goias) • [G1](https://g1.globo.com/sp/santos-regiao/noticia/2023/03/07/sabesp-e-multada-em-r-818-mil-apos-contaminacao-de-solo-na-rua-goias-em-santos-sp.ghtml)), valor revertido ao fundo municipal de saneamento ([FMSBA](https://egov.santos.sp.gov.br/legis/documents/10840)) auditado pelo conselho municipal ([CMSBS](https://egov.santos.sp.gov.br/legis/documents/12103)).
+
+> ⚠️ **Nota Metodológica:** Os dados acima são referências de contextualização territorial, não indicadores de desempenho da plataforma. Antes de utilizar os números em apresentações ou entregas acadêmicas, recomenda-se confirmar no documento original a data de referência, a definição do indicador e o contexto da informação. A documentação reúne mais detalhes em [Contexto e Legislação](docs/institucional/contexto-e-legislacao.md).
+
+---
+
+## 💎 Públicos e Benefícios Esperados
+
+| Público | Necessidade Considerada | Contribuição Proposta pelo Sistema |
+| :--- | :--- | :--- |
+| **📱 Munícipe** | Registrar ocorrências com rapidez e acompanhar o andamento sem burocracia. | [Abertura em 3 passos](docs/design-ux/jornada-e-ux.md#-fluxo-mobile-do-munícipe-3-passos) com fotos e geolocalização, e [linha do tempo visual (stepper)](docs/design-ux/jornada-e-ux.md#-linha-do-tempo-de-acompanhamento-stepper-visual) sem depender de ligações no `162`. |
+| **🏛️ Prefeitura (`Sepref` / `Semam`)** | Triar ocorrências, encaminhar demandas ao órgão correto e auditar prazos legais. | Painel centralizado de triagem nas [5 Zonas](docs/institucional/contexto-e-legislacao.md#%EF%B8%8F-regionaliza%C3%A7%C3%A3o-administrativa-as-5-zonas-de-santos), despacho de intimações e auditoria do prazo de `15 dias` da [Lei nº 852/2014](docs/institucional/contexto-e-legislacao.md#-marco-regulat%C3%B3rio-lei-complementar-municipal-n%C2%BA-8522014). |
+| **💧 Concessionária (`Sabesp`)** | Receber demandas tecnicamente qualificadas e comprovar a execução do reparo. | Recepção de chamados [pré-validados na triagem](docs/institucional/triagem-inteligente.md), registro de laudo de campo e comprovação fotográfica da recomposição viária. |
+
+> ℹ️ *Esses benefícios descrevem o desenho da solução proposta. A disponibilidade efetiva de cada recurso depende da implementação técnica e de eventuais validações institucionais.*
+
+### 🔄 Fluxo Operacional Integrado
+
+```mermaid
+flowchart LR
+    A["📱 1. Munícipe<br/>Abre chamado com foto"] --> B["🏛️ 2. Prefeitura (Sepref)<br/>Triagem & Intimação"]
+    B --> C["💧 3. Sabesp<br/>Execução (SLA 15 dias)"]
+    C --> D["✅ 4. Conclusão<br/>Laudo & Asfalto recomposto"]
+```
+
+> *O fluxo acima é conceitual. A atribuição de responsabilidades, os prazos e os critérios de encaminhamento seguem as normas municipais e as regras de negócio documentadas no projeto.*
 
 ---
 
@@ -67,24 +100,6 @@ Para garantir clareza e transparência no ciclo de vida do software, as capacida
 | Recepção de ordens de serviço, registro de parecer de campo e laudo fotográfico | Sabesp (Operação) | `Especificada nos Docs` |
 | Trilha de auditoria cronológica e imutável (*Append-Only*) para mudanças de status | Sistema / Auditoria | `Modelada (Proto SQL)` |
 | API RESTful documentada (Swagger), controle RBAC e banco relacional em nuvem | Core Backend | `A Implementar (Fases 6/7)` |
-
----
-
-## 💎 Os Três Pilares da Solução
-
-| 📱 Para o Munícipe | 🏛️ Para a Prefeitura ([Sepref / Semam](docs/institucional/contexto-e-legislacao.md#-atuação-e-papel-dos-órgãos-públicos-municipais)) | 💧 Para a Sabesp |
-| :--- | :--- | :--- |
-| **Voz Ativa & Agilidade** | **Controle & Fiscalização** | **Operação & Rastreabilidade** |
-| [Abertura em 3 passos](docs/design-ux/jornada-e-ux.md#-fluxo-mobile-do-munícipe-3-passos) com upload de fotos e localização. [Linha do tempo visual](docs/design-ux/jornada-e-ux.md#-linha-do-tempo-de-acompanhamento-stepper-visual) sem depender de ligações no `162` ou prazos lentos de `60 dias`. | Painel centralizado com triagem nas [5 Zonas](docs/institucional/contexto-e-legislacao.md#%EF%B8%8F-regionaliza%C3%A7%C3%A3o-administrativa-as-5-zonas-de-santos) de Santos, despacho automatizado e auditoria do prazo de `15 dias` da [Lei nº 852/2014](docs/institucional/contexto-e-legislacao.md#-marco-regulat%C3%B3rio-lei-complementar-municipal-n%C2%BA-8522014). | Recepção de ordens [pré-validadas na triagem](docs/institucional/triagem-inteligente.md), laudo técnico com parecer de campo e comprovação fotográfica do reparo viário. |
-
-### 🔄 Fluxo Operacional Integrado
-
-```mermaid
-flowchart LR
-    A["📱 1. Munícipe<br/>Abre chamado com foto"] --> B["🏛️ 2. Prefeitura (Sepref)<br/>Triagem & Intimação"]
-    B --> C["💧 3. Sabesp<br/>Execução (SLA 15 dias)"]
-    C --> D["✅ 4. Conclusão<br/>Laudo & Asfalto recomposto"]
-```
 
 ---
 
@@ -131,13 +146,14 @@ A documentação completa do projeto é categorizada em **4 pilares temáticos**
 
 ---
 
-## ⚖️ Decisões de Projeto & Limitações de Escopo
+## ⚖️ Limitações de Escopo & Próximos Cuidados
 
-Para assegurar clareza metodológica e integridade acadêmica, o projeto estabelece os seguintes limites:
+Por se tratar de uma proposta acadêmica em evolução por etapas, o projeto delimita os seguintes cuidados técnicos e normativos:
 
-* **Natureza da Proposta vs. Sistemas Legados:** O sistema não possui integração técnica em tempo real com os sistemas internos legados da Sabesp ou da Prefeitura de Santos. As rotas de API e modelos relacionais foram desenhados como arquitetura de referência aberta (RESTful/OpenAPI) simulando tal interoperabilidade.
-* **Delimitação Temática:** O escopo do sistema concentra-se exclusivamente em ocorrências na **rede coletora de esgoto e na recomposição do pavimento viário**, não abrangendo serviços de água tratada, leitura de hidrômetros ou faturamento comercial.
-* **Privacidade e Proteção de Dados (LGPD):** O modelo prevê anonimização pública dos dados cadastrais dos munícipes em consultas externas, disponibilizando publicamente apenas o código do chamado, o tipo da anomalia e a localização para fins de fiscalização comunitária.
+* **Validação Normativa Contínua:** As regras de negócio e os prazos operacionais devem ser constantemente confrontados com eventuais atualizações de decretos municipais e da agência reguladora estadual (ARSESP).
+* **Delimitação de Procedimentos:** Definição clara das responsabilidades e limites de atuação entre as Secretarias Municipais (`Sepref`, `Seserp`, `Semam`) e a concessionária para cada tipologia de ocorrência.
+* **Segurança e Privacidade (LGPD):** O modelo prevê anonimização pública dos dados cadastrais dos munícipes em consultas externas, garantindo tratamento, acesso controlado e política de retenção para registros com fotos e geolocalização, em conformidade com a Lei Federal nº 13.709/2018.
+* **Ausência de Integração Legada:** O sistema não possui integração em tempo real com os sistemas internos da Sabesp ou da Prefeitura; opera como arquitetura de referência aberta (RESTful/OpenAPI) simulando a interoperabilidade. Não deve ser considerado canal oficial de atendimento.
 
 ---
 
@@ -151,13 +167,13 @@ Projeto concebido e desenvolvido para o Trabalho de Conclusão de Curso (TCC) po
       <a href="https://github.com/CarvalhoNathan">
         <img src="https://github.com/CarvalhoNathan.png" width="85px" alt="Nathan Carvalho" style="border-radius: 50%;" /><br />
         <sub><b>Nathan Carvalho</b></sub>
-      </a><br />
+      </a>
     </td>
     <td align="center" width="160px">
       <a href="https://github.com/DreyCelestino">
         <img src="https://github.com/DreyCelestino.png" width="85px" alt="Andrey Celestino" style="border-radius: 50%;" /><br />
         <sub><b>Andrey Celestino</b></sub>
-      </a><br />
+      </a>
     </td>
   </tr>
 </table>
