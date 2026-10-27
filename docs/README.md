@@ -62,7 +62,7 @@ Direcionado aos critérios de rigor metodológico acadêmico exigidos para a apr
 
 | Documento | Descrição e Finalidade | Acesso |
 | :--- | :--- | :---: |
-| [`metodologia-tcc.md`](academico/metodologia-tcc.md) | Estrutura do TCC, procedimentos metodológicos, objetivos, justificativa tríplice e apresentação acadêmica conforme normas aplicáveis (ABNT NBR 14724). | [Abrir Documento →](academico/metodologia-tcc.md) |
+| [`metodologia-tcc.md`](academico/metodologia-tcc.md) | Estrutura do TCC (FATEC Rubens Lara · Sistemas para Internet), procedimentos metodológicos, objetivos, justificativa e normas aplicáveis (ABNT NBR 14724). | [Abrir Documento →](academico/metodologia-tcc.md) |
 
 ---
 

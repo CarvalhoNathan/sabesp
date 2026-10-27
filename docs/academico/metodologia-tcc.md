@@ -19,6 +19,8 @@
 
 ## 🏷️ Delimitação do Tema e Título Proposto
 
+* **Instituição de Ensino:** Faculdade de Tecnologia da Baixada Santista Rubens Lara — FATEC Rubens Lara (Santos/SP).
+* **Curso:** Curso Superior de Tecnologia em Sistemas para Internet.
 * **Área de Concentração:** Engenharia de Software, Governança Pública Digital (GovTech) e Cidades Inteligentes.
 * **Tema:** Auditoria e gestão digital de serviços públicos essenciais de saneamento básico.
 * **Título Acadêmico:**  

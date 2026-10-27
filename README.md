@@ -19,7 +19,7 @@
 </p>
 
 > ℹ️ **Aviso de Natureza Acadêmica:**  
-> Este é um projeto acadêmico independente desenvolvido para o Trabalho de Conclusão de Curso (TCC). A menção à Sabesp e à Prefeitura de Santos contextualiza o problema estudado e os atores considerados na proposta; não implica parceria, vínculo institucional, aprovação ou integração oficial com esses órgãos. Enquanto as funcionalidades não forem implementadas e validadas, a plataforma não deve ser considerada um canal oficial de atendimento.
+> Este é um projeto acadêmico independente desenvolvido para o Trabalho de Conclusão de Curso (TCC) no curso de **Tecnologia em Sistemas para Internet** da **Faculdade de Tecnologia da Baixada Santista Rubens Lara (FATEC Rubens Lara)**. A menção à Sabesp e à Prefeitura de Santos contextualiza o problema territorial estudado e os atores considerados na proposta; não implica parceria, vínculo institucional, aprovação ou integração oficial com esses órgãos. Enquanto as funcionalidades não forem implementadas e validadas, a plataforma não deve ser considerada um canal oficial de atendimento.
 
 ---
 
@@ -168,7 +168,7 @@ Por se tratar de uma proposta acadêmica em evolução por etapas, o projeto del
 
 ## 👥 Autoria
 
-Projeto concebido e desenvolvido para o Trabalho de Conclusão de Curso (TCC) por:
+Projeto concebido e desenvolvido para o Trabalho de Conclusão de Curso (TCC) no curso de **Tecnologia em Sistemas para Internet** da **Faculdade de Tecnologia da Baixada Santista Rubens Lara (FATEC Rubens Lara)** por:
 
 <table align="center">
   <tr>
