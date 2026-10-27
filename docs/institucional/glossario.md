@@ -73,6 +73,12 @@ Fenômeno geotécnico crítico provocado por vazamentos subterrâneos contínuos
 
 ## 3. Termos Jurídicos, Regulatórios e de Zeladoria
 
+### 📜 Lei Complementar Municipal nº 707/2010
+Marco contratual originário que autorizou o Poder Executivo santista a firmar o convênio de cooperação e o Contrato de Programa de 30 anos com a Sabesp e a ARSESP para a prestação dos serviços públicos de abastecimento de água e esgotamento sanitário no município de Santos.
+
+### 📑 Decreto Municipal nº 9.753/2022
+Ato normativo do Poder Executivo de Santos que formalizou a revisão oficial do Plano Municipal Integrado de Saneamento Básico (PMISB), consolidando os diagnósticos e os anexos técnicos cartográficos das redes de água e esgoto do município.
+
 ### 📜 Lei Complementar Municipal nº 852/2014
 Marco legal santista que regulamenta as intervenções das concessionárias de serviços públicos nas vias municipais. Fixa o prazo de **15 dias** para a recomposição do pavimento e reparos nas vias públicas nas situações e condições previstas na norma após notificação municipal, prevendo penalidades em caso de descumprimento.
 

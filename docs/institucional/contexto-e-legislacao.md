@@ -15,7 +15,7 @@
 - [O Plano Municipal Integrado de Saneamento Básico (PMISB · Relatório R4)](#-o-plano-municipal-integrado-de-saneamento-básico-pmisb--relatório-r4)
 - [Marco Regulatório: Lei Complementar Municipal nº 852/2014](#-marco-regulatório-lei-complementar-municipal-nº-8522014)
 - [Governança Financeira e Controle Social: FMSBA e CMSBS](#-governança-financeira-e-controle-social-fmsba-e-cmsbs)
-- [O Novo Cenário da Concessão: Lei Estadual nº 17.853/2023](#-o-novo-cenário-da-concessão-lei-estadual-nº-178532023)
+- [O Histórico Contratual e o Novo Cenário da Concessão: LC 707/2010 e Lei Estadual 17.853/2023](#-o-histórico-contratual-e-o-novo-cenário-da-concessão-lc-7072010-e-lei-estadual-178532023)
 - [Regionalização Administrativa: As 5 Zonas de Santos](#-regionalização-administrativa-as-5-zonas-de-santos)
 - [Atuação e Papel dos Órgãos Públicos Municipais](#-atuação-e-papel-dos-órgãos-públicos-municipais)
 - [Alinhamento com os Objetivos de Desenvolvimento Sustentável (ODS)](#-alinhamento-com-os-objetivos-de-desenvolvimento-sustentável-ods)
@@ -85,7 +85,7 @@ Se o incidente da Rua Goiás ilustra o risco em áreas consolidadas, o **Dique d
 
 ## 📑 O Plano Municipal Integrado de Saneamento Básico (PMISB · Relatório R4)
 
-O planejamento de saneamento de Santos é consolidado no **Plano Municipal Integrado de Saneamento Básico (PMISB)**, em cumprimento à Lei Federal nº 11.445/2007 e ao Novo Marco Legal do Saneamento (Lei Federal nº 14.026/2020).
+O planejamento de saneamento de Santos é consolidado no **Plano Municipal Integrado de Saneamento Básico (PMISB)**, em cumprimento à Lei Federal nº 11.445/2007 e ao Novo Marco Legal do Saneamento (Lei Federal nº 14.026/2020), tendo sua revisão formalizada no âmbito municipal pelo **[Decreto nº 9.753/2022](https://egov.santos.sp.gov.br/legis/documents/10888)**, acompanhado dos anexos técnicos e cartográficos das redes de água e esgotamento sanitário.
 
 > 🔍 **O Paradoxo do Saneamento Santista:**  
 > Segundo o balanço municipal de saneamento referente ao período de 2020–2024 (que registrou 98,43% de atendimento total de esgoto e 81,91% de tratamento total) e o planejamento do **Anexo 5 · Relatório R4 (Ações para Emergências e Contingências)** do PMISB, o desafio central da cidade **não reside na ausência de infraestrutura na área urbana consolidada**, mas sim na **manutenção preventiva e corretiva de uma malha subterrânea centenária**, sujeita a abatimentos asfálticos, refluxos prediais e rompimentos de coletores que extravasam para os canais de drenagem e praias.
@@ -133,12 +133,15 @@ Um sistema de fiscalização de serviços públicos só é completo quando conec
 
 ---
 
-## 🏛️ O Novo Cenário da Concessão: Lei Estadual nº 17.853/2023
+## 🏛️ O Histórico Contratual e o Novo Cenário da Concessão: LC 707/2010 e Lei Estadual 17.853/2023
 
-A promulgação da **Lei Estadual nº 17.853/2023**, que autorizou a desestatização da Sabesp, alterou a governança das concessões de saneamento no Estado de São Paulo:
+A relação jurídica entre o Município de Santos e a concessionária é estruturada por um histórico de instrumentos normativos de cooperação, obras e regulação:
 
-* **Necessidade de Fiscalização Municipal Robusta:** Com a transição da concessionária para o modelo privado de gestão, os municípios assumem papel ainda mais crítico de **poder concedente regulador**, exigindo indicadores transparentes, controle de tempo de resposta e capacidade de aplicação de penalidades contratuais.
-* **Autonomia e Transparência Pública:** O sistema assegura que a Prefeitura de Santos não dependa de relatórios unilaterais da empresa, mas possua sua **própria esteira de auditoria pública e independente**, fortalecendo o controle social e a governança urbana.
+* **O Marco Contratual Originário ([Lei Complementar Municipal nº 707/2010](https://egov.santos.sp.gov.br/legis/documents/3188)):** Autorizou o Poder Executivo a celebrar convênio de cooperação com o Estado de São Paulo e o Contrato de Programa com a Sabesp para a prestação de serviços públicos de água e esgoto por 30 anos (2010–2040), sob regulação e fiscalização da ARSESP.
+* **Normas Complementares de Convênios e Obras ([Lei Complementar nº 822/2014](https://egov.santos.sp.gov.br/legis/documents/4692)):** Disciplina diretrizes e critérios para a celebração de convênios, execução de obras e intervenções da concessionária em infraestrutura municipal.
+* **O Novo Cenário da Desestatização ([Lei Estadual nº 17.853/2023](https://www.al.sp.gov.br/repositorio/legislacao/lei/2023/lei-17853-08.12.2023.html)):** A promulgação da legislação estadual de desestatização da Sabesp alterou a governança das concessões de saneamento em São Paulo:
+  * **Necessidade de Fiscalização Municipal Robusta:** Com a transição da concessionária para o modelo privado de gestão, o Município assume papel ainda mais crítico de **poder concedente regulador**, exigindo indicadores transparentes, controle de tempo de resposta e capacidade de aplicação de penalidades contratuais.
+  * **Autonomia e Transparência Pública:** O sistema assegura que a Prefeitura de Santos não dependa de relatórios unilaterais da empresa, mas possua sua **própria esteira de auditoria pública e independente**, fortalecendo o controle social e a governança urbana.
 
 ---
 
@@ -204,6 +207,10 @@ Para fins de comprovação documental e referencial bibliográfico oficial:
 * [G1 Santos · Sabesp é multada em R$ 818 mil após contaminação de solo na Rua Goiás](https://g1.globo.com/sp/santos-regiao/noticia/2023/03/07/sabesp-e-multada-em-r-818-mil-apos-contaminacao-de-solo-na-rua-goias-em-santos-sp.ghtml)
 * [ALESP · Lei Estadual nº 17.853/2023 (Desestatização e Governança da Sabesp)](https://www.al.sp.gov.br/repositorio/legislacao/lei/2023/lei-17853-08.12.2023.html)
 * [Secretaria Municipal de Meio Ambiente, Desenvolvimento Urbano e Sustentabilidade (SEMAM)](https://www.santos.sp.gov.br/?q=institucional/secretaria-de-meio-ambiente-desenvolvimento-urbano-e-sustentabilidade) — Página oficial institucional da pasta.
+* [Legis Santos · Lei Complementar nº 707/2010](https://egov.santos.sp.gov.br/legis/documents/3188) — Autoriza o Município a celebrar convênio de cooperação com o Estado, a Arsesp e o contrato de programa com a Sabesp.
+* [Legis Santos · Decreto Municipal nº 9.753/2022 (Revisão do PMISB e Anexos)](https://egov.santos.sp.gov.br/legis/documents/10888) — Formaliza a revisão do Plano Municipal Integrado de Saneamento Básico de Santos e os mapas técnicos das redes.
+* [Legis Santos · Lei Complementar nº 822/2014](https://egov.santos.sp.gov.br/legis/documents/4692) — Dispõe sobre diretrizes para convênios e obras da Sabesp no município de Santos.
+* [Legis Santos · Repositório Oficial de Atos Municipais sobre a Sabesp](https://egov.santos.sp.gov.br/legis/search?query=sabesp&page=1) — Acervo de leis, decretos de servidão de passagem e normas da concessão em Santos.
 * [Plano Municipal Integrado de Saneamento Básico de Santos (PMISB)](https://www.santos.sp.gov.br/?q=servico/plano-municipal-de-saneamento-basico) — Serviço e legislação oficial do plano de saneamento.
 * [Anexo 5 · Relatório R4 do PMISB (Ações para Emergências e Contingências)](https://www.santos.sp.gov.br/static/files_www/conteudo/13%20Anexo%205%20-%20Plano%20Municipal%20Integrado%20de%20Saneamento%20B%C3%A1sico.pdf) — Relatório técnico municipal de contingências sanitárias.
 * [Manual de Identidade Visual da Prefeitura de Santos](https://www.santos.sp.gov.br/?q=hotsite/manual-de-identidade) — Diretrizes oficiais de tipografia e brasões vetoriais.
