@@ -46,7 +46,7 @@
 | 📱 Para o Munícipe | 🏛️ Para a Prefeitura (Sepref / Semam) | 💧 Para a Sabesp |
 | :--- | :--- | :--- |
 | **Voz Ativa & Agilidade** | **Controle & Fiscalização** | **Operação & Rastreabilidade** |
-| Abertura em segundos com upload de fotos e localização. Acompanhamento transparente do status sem depender de ligações no 162 ou prazos lentos de 60 dias. | Painel centralizado com triagem nas 5 Zonas de Santos, despacho automático de intimações e auditoria do prazo de 15 dias da Lei nº 852/2014. | Recepção de ordens já pré-validadas tecnicamente, registro de pareceres de campo e comprovação fotográfica das intervenções na via. |
+| Abertura em segundos com upload de fotos e localização. Acompanhamento transparente do status sem depender de ligações no 162 ou prazos lentos de 60 dias. | Painel centralizado com triagem nas [5 Zonas](/docs/institucional/contexto-e-legislacao.md#%EF%B8%8F-regionaliza%C3%A7%C3%A3o-administrativa-as-5-zonas-de-santos) de Santos, despacho automático de intimações e auditoria do prazo de 15 dias da [Lei nº 852/2014](/docs/institucional/contexto-e-legislacao.md#-marco-regulat%C3%B3rio-lei-complementar-municipal-n%C2%BA-8522014). | Recepção de ordens já pré-validadas tecnicamente, registro de pareceres de campo e comprovação fotográfica das intervenções na via. |
 
 ### 🔄 Fluxo Operacional Integrado
 
@@ -158,7 +158,7 @@ mvn spring-boot:run
 
 ---
 
-## 👥 Engenharia & Autoria
+## 👥 Autoria
 
 Projeto concebido e desenvolvido para o Trabalho de Conclusão de Curso (TCC) por:
 
