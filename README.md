@@ -41,12 +41,13 @@
 
 ## 🧭 Central de Documentação (Docs Hub)
 
-A documentação é categorizada em **4 pilares temáticos** para facilitar a navegação:
+A documentação é categorizada em **4 pilares temáticos** (consulte também o **[Portal da Documentação (docs/README.md)](docs/README.md)**):
 
 | Categoria | Módulo | Foco & Conteúdo | Link |
 | :---: | :--- | :--- | :---: |
 | 🏛️ **Institucional** | **Contexto & Legislação** | Diagnóstico real de Santos, caso Rua Goiás, Vila Gilda, FMSBA (Lei 4.525), CMSBS, Sepref/Semam e ODS. | [Explorar →](docs/institucional/contexto-e-legislacao.md) |
 | 🏛️ **Institucional** | **Triagem Inteligente** | Árvore de decisão lógica: diferenciação entre esgoto (Sabesp) e águas pluviais/chuva (Prefeitura/Seserp). | [Explorar →](docs/institucional/triagem-inteligente.md) |
+| 🏛️ **Institucional** | **Glossário Terminológico** | Dicionário técnico e jurídico de saneamento santista (PV, EEE, EPC, FMSBA, CMSBS) padrão ABNT. | [Explorar →](docs/institucional/glossario.md) |
 | 🎨 **Design & UX** | **Personas & Cenários** | Design Thinking: perfis de Dona Helena (Munícipe), Carlos (Fiscal Sepref), Roberto (Sabesp) e Dra. Renata (Semam). | [Explorar →](docs/design-ux/personas-e-cenarios.md) |
 | 🎨 **Design & UX** | **Jornada & Arquitetura** | Arquitetura de telas, sitemap completo, wireframe textual e linha do tempo de acompanhamento (Stepper). | [Explorar →](docs/design-ux/jornada-e-ux.md) |
 | 🎨 **Design & UX** | **Design System & UI** | Tipografia Montserrat, catálogo de logos vetoriais SVG da Prefeitura de Santos e acesso ao protótipo no Figma. | [Explorar →](docs/design-ux/design-system.md) |
