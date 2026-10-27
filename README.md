@@ -39,6 +39,27 @@
 
 ---
 
+## 🌍 Compromisso com os Objetivos de Desenvolvimento Sustentável (ODS)
+
+Este projeto está alinhado à **Agenda 2030 da Organização das Nações Unidas (ONU)**, contribuindo diretamente para 4 metas globais:
+
+<p align="center">
+  <img src="assets/ods/ods-6.png" alt="ODS 6 · Água Potável e Saneamento" width="120px" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/ods/ods-9.png" alt="ODS 9 · Indústria, Inovação e Infraestrutura" width="120px" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/ods/ods-11.png" alt="ODS 11 · Cidades e Comunidades Sustentáveis" width="120px" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/ods/ods-16.png" alt="ODS 16 · Paz, Justiça e Instituições Eficazes" width="120px" />
+</p>
+
+* **ODS 6 · Água Potável e Saneamento:** Assegurar a disponibilidade e manejo sustentável da água e esgotamento para todos, mitigando a contaminação de canais urbanos e praias de Santos.
+* **ODS 9 · Indústria, Inovação e Infraestrutura:** Modernizar a infraestrutura de zeladoria com tecnologia digital e esteira auditada de ordens de serviço.
+* **ODS 11 · Cidades e Comunidades Sustentáveis:** Fortalecer a resiliência urbana e a universalização em áreas vulneráveis de palafitas (Dique da Vila Gilda).
+* **ODS 16 · Paz, Justiça e Instituições Eficazes:** Assegurar transparência pública, responsabilização regulatória da concessionária e destinação das multas ao fundo municipal (FMSBA).
+
+---
+
 ## 🧭 Central de Documentação (Docs Hub)
 
 A documentação é categorizada em **4 pilares temáticos** (consulte também o **[Portal da Documentação (docs/README.md)](docs/README.md)**):
@@ -70,6 +91,15 @@ A documentação é categorizada em **4 pilares temáticos** (consulte também o
 
 ## ⚡ Início Rápido (Quickstart)
 
+> ℹ️ **Fase Atual do Projeto (Concepção & Prototipagem):**  
+> O projeto encontra-se atualmente na fase de modelagem de requisitos e prototipagem interativa no Figma. Os comandos de execução abaixo referem-se à inicialização do ambiente que será ativada nas **fases 6 e 7** do roadmap.
+
+### 📋 Pré-requisitos de Ambiente (Fases Futuras)
+* **Java Development Kit (JDK):** Versão 17 ou superior instalada
+* **Apache Maven:** Versão 3.8+ instalada
+* **PostgreSQL / Supabase:** Instância relacional ativa
+* **Git:** Para versionamento e controle de branches
+
 ```bash
 # 1. Clone o repositório
 git clone https://github.com/CarvalhoNathan/sabesp.git
@@ -80,11 +110,11 @@ cd sabesp
 # spring.datasource.username=postgres
 # spring.datasource.password=<SUA_SENHA>
 
-# 3. Execute a aplicação
+# 3. Execute a aplicação (Previsto para Fase 7)
 mvn spring-boot:run
 ```
 
-> Acesse a aplicação em `http://localhost:8080` e a documentação interativa em `http://localhost:8080/swagger-ui.html`.
+> Quando ativo, acesse a aplicação em `http://localhost:8080` e a documentação interativa em `http://localhost:8080/swagger-ui.html`.
 
 ---
 
