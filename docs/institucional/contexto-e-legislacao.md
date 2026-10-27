@@ -32,7 +32,7 @@ Historicamente no município de Santos, solicitações sobre vazamentos na rede 
 | **Abertura do Chamado** | O munícipe precisa escolher entre ligar no 162, navegar na plataforma genérica *Santos Digital* (aba Tapa-Buraco) ou ligar para o plantão da Urgência Urbana (3216-2065). | **Digital, Centralizado e 24/7:** Abertura via web em segundos com endereço, tipo da ocorrência e evidência fotográfica. |
 | **Triagem e Despacho** | Tramitação burocrática via ofícios e planilhas entre a Sepref (Prefeituras Regionais), Seserp e Semam. | **Painel Integrado:** Triagem centralizada e filtros pelas cinco Prefeituras Regionais (5 zonas de Santos) para despacho imediato. |
 | **Comunicação com a Sabesp** | Notificações e intimações impressas em papel (uma média de 197 intimações mensais emitidas pela Sepref). | **Acesso Operacional Dedicado:** A Sabesp recebe as ordens já pré-validadas tecnicamente em sua fila de trabalho em tempo real. |
-| **Controle de Prazos (SLA)** | A Ouvidoria tradicional considera prazo "Verde" até 30 dias e tolera mais de 60 dias, em desacordo com a legislação. | **Auditoria Automatizada:** Contagem rigorosa do prazo legal improrrogável de **15 dias corridos** da Lei nº 852/2014. |
+| **Controle de Prazos (SLA)** | A Ouvidoria tradicional adota faixas informativas de até 30 dias e acima de 60 dias para acompanhamento interno. | **Monitoramento Automatizado:** Acompanhamento dos prazos de recomposição viária previstos na Lei nº 852/2014 conforme as condições e marcos legais aplicáveis. |
 | **Transparência ao Cidadão** | O munícipe precisa consultar protocolos complexos no SOM Web sem laudo técnico do reparo. | **Transparência Total:** Acompanhamento do status em tempo real com histórico e parecer técnico conclusivo com foto da concessionária. |
 
 ---
@@ -88,7 +88,7 @@ Se o incidente da Rua Goiás ilustra o risco em áreas consolidadas, o **Dique d
 O planejamento de saneamento de Santos é consolidado no **Plano Municipal Integrado de Saneamento Básico (PMISB)**, em cumprimento à Lei Federal nº 11.445/2007 e ao Novo Marco Legal do Saneamento (Lei Federal nº 14.026/2020).
 
 > 🔍 **O Paradoxo do Saneamento Santista:**  
-> De acordo com o planejamento do **Anexo 5 · Relatório R4 (Ações para Emergências e Contingências)** do PMISB e balanços municipais recentes (que apontam índice de atendimento total de esgoto de 98,43% entre 2020 e 2024 e metas de universalização superiores a 99% na área urbana), o desafio central da cidade **não reside na ausência de infraestrutura na área urbana consolidada**, mas sim na **manutenção preventiva e corretiva de uma malha subterrânea centenária**, sujeita a abatimentos asfálticos, refluxos prediais e rompimentos de coletores que extravasam para os canais de drenagem e praias.
+> Segundo o balanço municipal de saneamento referente ao período de 2020–2024 (que registrou 98,43% de atendimento total de esgoto e 81,91% de tratamento total) e o planejamento do **Anexo 5 · Relatório R4 (Ações para Emergências e Contingências)** do PMISB, o desafio central da cidade **não reside na ausência de infraestrutura na área urbana consolidada**, mas sim na **manutenção preventiva e corretiva de uma malha subterrânea centenária**, sujeita a abatimentos asfálticos, refluxos prediais e rompimentos de coletores que extravasam para os canais de drenagem e praias.
 
 ### As 4 Ocorrências Críticas Catalogadas no PMISB (Pág. 85):
 O plano municipal mapeia formalmente as 4 situações críticas de esgotamento que exigem resposta imediata da concessionária:

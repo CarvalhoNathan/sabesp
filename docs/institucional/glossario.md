@@ -74,7 +74,7 @@ Fenômeno geotécnico crítico provocado por vazamentos subterrâneos contínuos
 ## 3. Termos Jurídicos, Regulatórios e de Zeladoria
 
 ### 📜 Lei Complementar Municipal nº 852/2014
-Marco legal santista que regulamenta as intervenções das concessionárias de serviços públicos nas vias municipais. Fixa o **prazo máximo e improrrogável de 15 dias corridos** para a conclusão de reparos e recapeamento asfáltico, sujeitando a Sabesp a multas a partir de **R$ 17.045,05** por descumprimento.
+Marco legal santista que regulamenta as intervenções das concessionárias de serviços públicos nas vias municipais. Fixa o prazo de **15 dias** para a recomposição do pavimento e reparos nas vias públicas nas situações e condições previstas na norma após notificação municipal, prevendo penalidades em caso de descumprimento.
 
 ### 📨 Intimação Formal
 Ato administrativo coercitivo expedido pela Secretaria de Prefeituras Regionais (Sepref) que formaliza a existência do defeito na via, abrindo a contagem jurídica do prazo da Lei nº 852/2014.
@@ -83,7 +83,7 @@ Ato administrativo coercitivo expedido pela Secretaria de Prefeituras Regionais 
 Documento formal lavrado por autoridade fiscalizatória (SEMAM ou Sepref) quando expirado o prazo legal sem atendimento ou constatado dano ambiental (como na Rua Goiás - R$ 818 mil), dando início ao processo sancionatório e cobrança de multa vinculada ao FMSBA.
 
 ### ⏱️ SLA (Service Level Agreement)
-Nível de serviço contratual e legal. No sistema, é o cronômetro automatizado que fiscaliza o cumprimento dos 15 dias corridos a partir do despacho da Prefeitura.
+Nível de serviço e monitoramento temporal. No sistema, é o mecanismo que acompanha os prazos legais de recomposição viária a partir do marco aplicável da notificação municipal.
 
 ---
 
