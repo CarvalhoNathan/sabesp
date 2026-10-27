@@ -51,13 +51,13 @@ O trabalho reúne pesquisa de contexto, diagnóstico territorial, levantamento d
 
 ## 📊 O Cenário Real em Números
 
-Santos possui desafios de saneamento e zeladoria urbana que envolvem manutenção de uma malha subterrânea centenária, fiscalização de prestadoras de serviço e coordenação entre diferentes órgãos públicos:
+Santos possui desafios de saneamento e zeladoria urbana que envolvem a manutenção da infraestrutura subterrânea histórica e consolidada do município, a fiscalização de prestadoras de serviço e a coordenação entre diferentes órgãos públicos:
 
 * **99% de Cobertura Urbana (2020):** Conforme o [PMISB (Relatório R4)](https://www.santos.sp.gov.br/static/files_www/conteudo/13%20Anexo%205%20-%20Plano%20Municipal%20Integrado%20de%20Saneamento%20B%C3%A1sico.pdf), a área urbana de Santos já dispõe de rede coletora quase universalizada; o déficit residual concentra-se em palafitas, demandando intervenções específicas como as 2.500 ligações no [Dique da Vila Gilda](https://www.santos.sp.gov.br/?q=noticia/parceria-garante-regularizacao-da-rede-de-agua-e-esgoto-para-a-vila-gilda-em-santos) (2025–2026).
-* **15 Dias Corridos para Recomposição Viária:** Prazo legal máximo estabelecido pela [Lei Complementar Municipal nº 852/2014](https://egov.santos.sp.gov.br/legis/documents/5195) para a concessionária concluir o reparo do pavimento e calçadas após notificação de intervenção em via pública.
-* **30 a 60 Dias na Tramitação da Ouvidoria:** Prazos informados nos canais convencionais de atendimento ([SOM Web / 162](https://egov.santos.sp.gov.br/somweb/)), que toleram até 30 dias de triagem e até 60 dias de tramitação, evidenciando o descompasso operacional frente à celeridade exigida pela legislação viária. ([Ver diagnóstico](docs/institucional/contexto-e-legislacao.md#-a-disparidade-crítica-de-slas-ouvidoria-som-web-vs-lei-nº-8522014))
-* **+190 Intimações / Mês:** Média documentada em operações de fiscalização das Prefeituras Regionais ([Sepref](https://www.santos.sp.gov.br/?q=noticia/santos-aplica-197-intimacoes-e-notificacoes-a-prestadoras-de-servico-em-janeiro)), compreendendo notificações formais a concessionárias de serviços públicos nas 5 Zonas da cidade.
-* **R$ 818 Mil em Sanção Administrativa (2023):** Multa aplicada pela SEMAM contra a Sabesp após vazamento que solapou a Rua Goiás ([Notícia Oficial PMS](https://www.santos.sp.gov.br/?q=noticia/santos-multa-sabesp-em-r-818-mil-reais-devido-a-contaminacao-de-solo-na-rua-goias) • [G1](https://g1.globo.com/sp/santos-regiao/noticia/2023/03/07/sabesp-e-multada-em-r-818-mil-apos-contaminacao-de-solo-na-rua-goias-em-santos-sp.ghtml)), valor revertido ao fundo municipal de saneamento ([FMSBA](https://egov.santos.sp.gov.br/legis/documents/10840)) auditado pelo conselho municipal ([CMSBS](https://egov.santos.sp.gov.br/legis/documents/12103)).
+* **15 Dias Corridos para Recomposição Viária:** Prazo máximo improrrogável fixado pela [Lei Complementar Municipal nº 852/2014](https://egov.santos.sp.gov.br/legis/documents/5195) para que prestadoras de serviços públicos e concessionárias concluam a recomposição do pavimento e das calçadas após aberturas de valas ou intervenções em vias públicas, contados a partir da notificação oficial da Prefeitura (não se tratando de um tempo de atendimento operacional garantido pela concessionária).
+* **30 a 60 Dias na Tramitação da Ouvidoria:** Prazos de tramitação informados nos canais convencionais de atendimento ([SOM Web / 162](https://egov.santos.sp.gov.br/somweb/)), cujos fluxos de encaminhamento administrativo podem levar de 30 a 60 dias conforme a tipologia da manifestação, contrastando com o prazo de 15 dias estipulado pela legislação municipal para reparos no pavimento viário. ([Ver diagnóstico](docs/institucional/contexto-e-legislacao.md#-a-disparidade-crítica-de-slas-ouvidoria-som-web-vs-lei-nº-8522014))
+* **+190 Intimações em Balanço Oficial:** Volume registrado em balanço oficial da Prefeitura de Santos ([janeiro/2024](https://www.santos.sp.gov.br/?q=noticia/santos-aplica-197-intimacoes-e-notificacoes-a-prestadoras-de-servico-em-janeiro)), no qual a Secretaria de Prefeituras Regionais (Sepref) contabilizou 197 intimações e notificações a prestadoras de serviço (sendo 83 direcionadas à concessionária de saneamento) por pendências ou danos nas vias públicas das 5 Zonas.
+* **R$ 818 Mil em Sanção Administrativa (2023):** Multa aplicada pela Secretaria Municipal de Meio Ambiente (SEMAM) em março de 2023 após vazamento que solapou a Rua Goiás ([Notícia Oficial PMS](https://www.santos.sp.gov.br/?q=noticia/santos-multa-sabesp-em-r-818-mil-reais-devido-a-contaminacao-de-solo-na-rua-goias) • [G1](https://g1.globo.com/sp/santos-regiao/noticia/2023/03/07/sabesp-e-multada-em-r-818-mil-apos-contaminacao-de-solo-na-rua-goias-em-santos-sp.ghtml)). A legislação municipal posterior ([Lei nº 4.525/2024](https://egov.santos.sp.gov.br/legis/documents/10840)) prevê que receitas de sanções aplicadas a concessionárias sejam vinculadas ao Fundo Municipal de Saneamento Básico e Ambiental (FMSBA), sob controle social do conselho municipal ([CMSBS](https://egov.santos.sp.gov.br/legis/documents/12103)).
 
 > ⚠️ **Nota Metodológica:** Os dados acima são referências de contextualização territorial, não indicadores de desempenho da plataforma. Antes de utilizar os números em apresentações ou entregas acadêmicas, recomenda-se confirmar no documento original a data de referência, a definição do indicador e o contexto da informação. A documentação reúne mais detalhes em [Contexto e Legislação](docs/institucional/contexto-e-legislacao.md).
 
@@ -67,9 +67,9 @@ Santos possui desafios de saneamento e zeladoria urbana que envolvem manutençã
 
 | Público | Necessidade Considerada | Contribuição Proposta pelo Sistema |
 | :--- | :--- | :--- |
-| **📱 Munícipe** | Registrar ocorrências com rapidez e acompanhar o andamento sem burocracia. | [Abertura em 3 passos](docs/design-ux/jornada-e-ux.md#-fluxo-mobile-do-munícipe-3-passos) com fotos e geolocalização, e [linha do tempo visual (stepper)](docs/design-ux/jornada-e-ux.md#-linha-do-tempo-de-acompanhamento-stepper-visual) sem depender de ligações no `162`. |
-| **🏛️ Prefeitura (`Sepref` / `Semam`)** | Triar ocorrências, encaminhar demandas ao órgão correto e auditar prazos legais. | Painel centralizado de triagem nas [5 Zonas](docs/institucional/contexto-e-legislacao.md#%EF%B8%8F-regionaliza%C3%A7%C3%A3o-administrativa-as-5-zonas-de-santos), despacho de intimações e auditoria do prazo de `15 dias` da [Lei nº 852/2014](docs/institucional/contexto-e-legislacao.md#-marco-regulat%C3%B3rio-lei-complementar-municipal-n%C2%BA-8522014). |
-| **💧 Concessionária (`Sabesp`)** | Receber demandas tecnicamente qualificadas e comprovar a execução do reparo. | Recepção de chamados [pré-validados na triagem](docs/institucional/triagem-inteligente.md), registro de laudo de campo e comprovação fotográfica da recomposição viária. |
+| **📱 Munícipe** | Registrar ocorrências com rapidez e acompanhar o andamento sem burocracia. | [Proposta de abertura em 3 passos](docs/design-ux/jornada-e-ux.md#-fluxo-mobile-do-munícipe-3-passos) com fotos e geolocalização, e [linha do tempo visual (stepper)](docs/design-ux/jornada-e-ux.md#-linha-do-tempo-de-acompanhamento-stepper-visual) sem depender de ligações no `162`. |
+| **🏛️ Prefeitura (`Sepref` / `Semam`)** | Triar ocorrências, encaminhar demandas ao órgão correto e auditar prazos legais. | Proposta de painel centralizado de triagem nas [5 Zonas](docs/institucional/contexto-e-legislacao.md#%EF%B8%8F-regionaliza%C3%A7%C3%A3o-administrativa-as-5-zonas-de-santos), despacho de intimações e monitoramento do cumprimento do prazo de `15 dias` da [Lei nº 852/2014](docs/institucional/contexto-e-legislacao.md#-marco-regulat%C3%B3rio-lei-complementar-municipal-n%C2%BA-8522014). |
+| **💧 Concessionária (`Sabesp`)** | Receber demandas tecnicamente qualificadas e comprovar a execução do reparo. | Recepção de chamados [pré-validados na triagem](docs/institucional/triagem-inteligente.md), com proposta de registro de laudo de campo e comprovação fotográfica da recomposição viária. |
 
 > ℹ️ *Esses benefícios descrevem o desenho da solução proposta. A disponibilidade efetiva de cada recurso depende da implementação técnica e de eventuais validações institucionais.*
 
@@ -78,7 +78,7 @@ Santos possui desafios de saneamento e zeladoria urbana que envolvem manutençã
 ```mermaid
 flowchart LR
     A["📱 1. Munícipe<br/>Abre chamado com foto"] --> B["🏛️ 2. Prefeitura (Sepref)<br/>Triagem & Intimação"]
-    B --> C["💧 3. Sabesp<br/>Execução (SLA 15 dias)"]
+    B --> C["💧 3. Concessionária<br/>Execução da obra viária<br/>(Prazo legal: até 15 dias)"]
     C --> D["✅ 4. Conclusão<br/>Laudo & Asfalto recomposto"]
 ```
 
@@ -107,10 +107,10 @@ Para garantir clareza e transparência no ciclo de vida do software, as capacida
 
 Este projeto está alinhado à **[Agenda 2030 da Organização das Nações Unidas (ONU)](https://brasil.un.org/pt-br/sdgs)**, colaborando com metas de saneamento, infraestrutura e governança urbana:
 
-* **[ODS 6 · Água Potável e Saneamento](https://brasil.un.org/pt-br/sdgs/6):** Redução de extravasamentos que poluem canais de drenagem e praias de Santos.
-* **[ODS 9 · Indústria, Inovação e Infraestrutura](https://brasil.un.org/pt-br/sdgs/9):** Modernização da gestão urbana por meio de esteira digital e processos rastreáveis.
-* **[ODS 11 · Cidades e Comunidades Sustentáveis](https://brasil.un.org/pt-br/sdgs/11):** Fortalecimento da resiliência urbana e suporte a áreas vulneráveis (Dique da Vila Gilda).
-* **[ODS 16 · Paz, Justiça e Instituições Eficazes](https://brasil.un.org/pt-br/sdgs/16):** Promoção de transparência ativa, controle social e destinação de sanções ao fundo municipal (`FMSBA`).
+* **[ODS 6 · Água Potável e Saneamento](https://brasil.un.org/pt-br/sdgs/6):** Contribuição para a mitigação de impactos decorrentes de extravasamentos em canais de drenagem e praias de Santos.
+* **[ODS 9 · Indústria, Inovação e Infraestrutura](https://brasil.un.org/pt-br/sdgs/9):** Proposta de modernização da gestão urbana por meio de esteira digital e processos rastreáveis.
+* **[ODS 11 · Cidades e Comunidades Sustentáveis](https://brasil.un.org/pt-br/sdgs/11):** Apoio à resiliência urbana e suporte a áreas vulneráveis (Dique da Vila Gilda).
+* **[ODS 16 · Paz, Justiça e Instituições Eficazes](https://brasil.un.org/pt-br/sdgs/16):** Apoio à transparência ativa, controle social e destinação regulatória de sanções ao fundo municipal (`FMSBA`).
 
 ---
 
@@ -152,7 +152,7 @@ Por se tratar de uma proposta acadêmica em evolução por etapas, o projeto del
 
 * **Validação Normativa Contínua:** As regras de negócio e os prazos operacionais devem ser constantemente confrontados com eventuais atualizações de decretos municipais e da agência reguladora estadual (ARSESP).
 * **Delimitação de Procedimentos:** Definição clara das responsabilidades e limites de atuação entre as Secretarias Municipais (`Sepref`, `Seserp`, `Semam`) e a concessionária para cada tipologia de ocorrência.
-* **Segurança e Privacidade (LGPD):** O modelo prevê anonimização pública dos dados cadastrais dos munícipes em consultas externas, garantindo tratamento, acesso controlado e política de retenção para registros com fotos e geolocalização, em conformidade com a Lei Federal nº 13.709/2018.
+* **Privacidade, Minimização de Dados e LGPD:** Como o sistema prevê envio de fotografias e coordenadas geográficas que podem expor fachadas residenciais, transeuntes ou placas de veículos, o desenho da solução adota o princípio da minimização (Lei Federal nº 13.709/2018): consultas públicas devem restringir a exibição a dados agregados por logradouro/bairro (sem identificação de munícipes ou numeração residencial exata), prevendo-se a elaboração de Relatório de Impacto à Proteção de Dados (RIPD) durante as etapas de implementação do software.
 * **Ausência de Integração Legada:** O sistema não possui integração em tempo real com os sistemas internos da Sabesp ou da Prefeitura; opera como arquitetura de referência aberta (RESTful/OpenAPI) simulando a interoperabilidade. Não deve ser considerado canal oficial de atendimento.
 
 ---
