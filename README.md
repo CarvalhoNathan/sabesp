@@ -34,7 +34,7 @@ O trabalho reúne pesquisa de contexto, diagnóstico territorial, levantamento d
 ### 🎯 Objetivos da Proposta
 
 * **Facilitar o registro de ocorrências** pelos munícipes por meio de interface mobile simples, com upload de fotos e geolocalização.
-* **Melhorar a visibilidade do andamento dos chamados**, substituindo protocolos lentos por uma linha do tempo visual (*stepper*).
+* **Melhorar a visibilidade do andamento dos chamados**, oferecendo uma linha do tempo visual (*stepper*) complementar aos protocolos convencionais.
 * **Apoiar a triagem e o encaminhamento adequado**, utilizando regras de negócio para diferenciar ocorrências potencialmente relacionadas à drenagem pluvial e ao esgotamento sanitário, com encaminhamento para análise quando a classificação não for conclusiva.
 * **Centralizar evidências e registros de fiscalização**, municiando os fiscais das Prefeituras Regionais para cobrança formal de prazos.
 * **Auditar prazos e histórico de ações**, acompanhando o cumprimento dos prazos e obrigações legais de recomposição do pavimento urbano.
@@ -68,7 +68,7 @@ Santos possui desafios de saneamento e zeladoria urbana que envolvem a manutenç
 | Perfil / Ator | Responsabilidade Proposta | Contribuição Proposta pelo Sistema |
 | :--- | :--- | :--- |
 | **📱 Cidadão / Munícipe** | Registrar ocorrências e acompanhar o andamento dos chamados. | [Abertura ágil em 3 passos](docs/design-ux/jornada-e-ux.md#-fluxo-mobile-do-munícipe-3-passos) com fotos e geolocalização, e [linha do tempo visual (stepper)](docs/design-ux/jornada-e-ux.md#-linha-do-tempo-de-acompanhamento-stepper-visual) sem depender de ligações no `162`. |
-| **🏛️ Prefeitura (`Sepref` / `Semam`)** | Acompanhar ocorrências, fiscalizar prazos de reparos e gerenciar pendências viárias. | Proposta de painel centralizado de triagem nas [cinco regiões administrativas](docs/institucional/contexto-e-legislacao.md#%EF%B8%8F-regionaliza%C3%A7%C3%A3o-administrativa-as-5-zonas-de-santos), despacho de intimações e acompanhamento do prazo legal aplicável à recomposição viária ([Lei nº 852/2014](docs/institucional/contexto-e-legislacao.md#-marco-regulat%C3%B3rio-lei-complementar-municipal-n%C2%BA-8522014)). |
+| **🏛️ Prefeitura (`Sepref` / `Semam`)** | Acompanhar ocorrências, fiscalizar prazos de reparos e gerenciar pendências viárias. | Proposta de painel centralizado de triagem nas [cinco regiões administrativas](docs/institucional/contexto-e-legislacao.md#%EF%B8%8F-regionaliza%C3%A7%C3%A3o-administrativa-as-5-zonas-de-santos), despacho de intimações e acompanhamento do prazo legal aplicável à recomposição viária ([Lei Complementar nº 852/2014](docs/institucional/contexto-e-legislacao.md#-marco-regulat%C3%B3rio-lei-complementar-municipal-n%C2%BA-8522014)). |
 | **💧 Sabesp (Concessionária)** | Receber ocorrências pertinentes, documentar o atendimento operacional e atualizar informações de campo. | Recepção de chamados [pré-validados na triagem](docs/institucional/triagem-inteligente.md), com proposta de registro de laudo de campo e comprovação fotográfica da recomposição viária. |
 
 > ℹ️ *Essas responsabilidades e benefícios descrevem o desenho da solução proposta, respeitando as atribuições e os limites institucionais de cada órgão. A disponibilidade efetiva de cada recurso depende da implementação técnica e de validações institucionais.*
@@ -145,7 +145,7 @@ A documentação completa do projeto é categorizada em **4 pilares temáticos**
 
 ## 🗺️ Roadmap de Desenvolvimento
 
-- [x] **Fase 1 · Concepção e Marco Legal:** Diagnóstico municipal, [Lei 852/2014](https://egov.santos.sp.gov.br/legis/documents/5195), [FMSBA](https://egov.santos.sp.gov.br/legis/documents/10840), [PMISB R4](https://www.santos.sp.gov.br/static/files_www/conteudo/13%20Anexo%205%20-%20Plano%20Municipal%20Integrado%20de%20Saneamento%20B%C3%A1sico.pdf) e esteira de valor. ([Ver Documento](docs/institucional/contexto-e-legislacao.md))
+- [x] **Fase 1 · Concepção e Marco Legal:** Diagnóstico municipal, [Lei Complementar nº 852/2014](https://egov.santos.sp.gov.br/legis/documents/5195), [FMSBA](https://egov.santos.sp.gov.br/legis/documents/10840), [PMISB R4](https://www.santos.sp.gov.br/static/files_www/conteudo/13%20Anexo%205%20-%20Plano%20Municipal%20Integrado%20de%20Saneamento%20B%C3%A1sico.pdf) e esteira de valor. ([Ver Documento](docs/institucional/contexto-e-legislacao.md))
 - [x] **Fase 2 · Modelagem e Arquitetura:** [Proto SQL & Logs](docs/engenharia/arquitetura-e-banco.md), `Soft Delete` e [Matriz de Requisitos RF01–RF13](docs/engenharia/requisitos-do-sistema.md).
 - [x] **Fase 3 · Identidade Visual:** Padronização dos vetores oficiais `.svg` da Prefeitura de Santos e tipografia `Montserrat`. ([Ver Design System](docs/design-ux/design-system.md))
 - [x] **Fase 4 · Design Thinking & UX:** [Personas](docs/design-ux/personas-e-cenarios.md), [Triagem Inteligente](docs/institucional/triagem-inteligente.md), [Jornada do Usuário](docs/design-ux/jornada-e-ux.md) e [Matriz de Riscos](docs/engenharia/matriz-de-riscos.md).

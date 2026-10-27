@@ -25,7 +25,7 @@ Aborda o ecossistema da cidade de Santos, os episódios reais de contaminação 
 
 | Documento | Descrição e Finalidade | Acesso |
 | :--- | :--- | :---: |
-| [`contexto-e-legislacao.md`](institucional/contexto-e-legislacao.md) | Diagnóstico territorial de Santos, caso Rua Goiás (multa de R$ 818 mil), projeto na Vila Gilda, FMSBA (Lei nº 4.525/2024), CMSBS e Lei nº 852/2014. | [Abrir Documento →](institucional/contexto-e-legislacao.md) |
+| [`contexto-e-legislacao.md`](institucional/contexto-e-legislacao.md) | Diagnóstico territorial de Santos, caso Rua Goiás (multa de R$ 818 mil), projeto na Vila Gilda, FMSBA (Lei nº 4.525/2024), CMSBS e Lei Complementar nº 852/2014. | [Abrir Documento →](institucional/contexto-e-legislacao.md) |
 | [`triagem-inteligente.md`](institucional/triagem-inteligente.md) | Árvore lógica de decisão para distinguir vazamentos de esgoto da Sabesp de águas pluviais/chuva da Prefeitura (Seserp/Saturnino de Brito). | [Abrir Documento →](institucional/triagem-inteligente.md) |
 | [`glossario.md`](institucional/glossario.md) | Glossário formal estruturado para monografias acadêmicas com definição técnica e jurídica de siglas e termos de saneamento (PV, EEE, EPC, FMSBA, etc.). | [Abrir Documento →](institucional/glossario.md) |
 
