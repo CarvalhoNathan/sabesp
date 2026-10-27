@@ -86,17 +86,17 @@ A documentação é categorizada em **4 pilares temáticos** (consulte também o
 
 | Categoria | Módulo | Foco & Conteúdo | Link |
 | :---: | :--- | :--- | :---: |
-| 🏛️ **Institucional** | **Contexto & Legislação** | Diagnóstico real de Santos, caso Rua Goiás, Vila Gilda, FMSBA (Lei 4.525), CMSBS, Sepref/Semam e ODS. | [Explorar →](docs/institucional/contexto-e-legislacao.md) |
-| 🏛️ **Institucional** | **Triagem Inteligente** | Árvore de decisão lógica: diferenciação entre esgoto (Sabesp) e águas pluviais/chuva (Prefeitura/Seserp). | [Explorar →](docs/institucional/triagem-inteligente.md) |
-| 🏛️ **Institucional** | **Glossário Terminológico** | Dicionário técnico e jurídico de saneamento santista (PV, EEE, EPC, FMSBA, CMSBS) padrão ABNT. | [Explorar →](docs/institucional/glossario.md) |
-| 🎨 **Design & UX** | **Personas & Cenários** | Design Thinking: perfis de Dona Helena (Munícipe), Carlos (Fiscal Sepref), Roberto (Sabesp) e Dra. Renata (Semam). | [Explorar →](docs/design-ux/personas-e-cenarios.md) |
-| 🎨 **Design & UX** | **Jornada & Arquitetura** | Arquitetura de telas, sitemap completo, wireframe textual e linha do tempo de acompanhamento (Stepper). | [Explorar →](docs/design-ux/jornada-e-ux.md) |
-| 🎨 **Design & UX** | **Design System & UI** | Tipografia Montserrat, catálogo de logos vetoriais SVG da Prefeitura de Santos e acesso ao protótipo no Figma. | [Explorar →](docs/design-ux/design-system.md) |
-| ⚙️ **Engenharia** | **Requisitos do Sistema** | Matriz MoSCoW (RF01 a RF13, RNF01 a RNF07), regras de negócio e tipologias oficiais do PMISB (Relatório R4). | [Explorar →](docs/engenharia/requisitos-do-sistema.md) |
-| ⚙️ **Engenharia** | **Arquitetura & Banco** | Ciclo de vida do chamado, matriz de status, modelo ER (Proto SQL), Soft Delete e Logs imutáveis (*Append-Only*). | [Explorar →](docs/engenharia/arquitetura-e-banco.md) |
-| ⚙️ **Engenharia** | **Regras de Negócio & API** | Controle de acesso por papéis (RBAC), validações de domínio e catálogo de rotas RESTful com Swagger UI. | [Explorar →](docs/engenharia/regras-e-api.md) |
-| ⚙️ **Engenharia** | **Gestão de Riscos** | Matriz de riscos ISO 31000 / PMBOK: trotes, LGPD, conflitos entre concessionárias e condições de maré. | [Explorar →](docs/engenharia/matriz-de-riscos.md) |
-| 🎓 **Acadêmico** | **Metodologia TCC** | Tema, problema de pesquisa, objetivos, justificativa tríplice, metodologia científica e mapeamento para monografia ABNT. | [Explorar →](docs/academico/metodologia-tcc.md) |
+| 🏛️ **Institucional** | **Contexto & Legislação** | Diagnóstico real de Santos, caso Rua Goiás, Vila Gilda, FMSBA (Lei 4.525), CMSBS, Sepref/Semam e ODS. | [Explorar](docs/institucional/contexto-e-legislacao.md) |
+| 🏛️ **Institucional** | **Triagem Inteligente** | Árvore de decisão lógica: diferenciação entre esgoto (Sabesp) e águas pluviais/chuva (Prefeitura/Seserp). | [Explorar](docs/institucional/triagem-inteligente.md) |
+| 🏛️ **Institucional** | **Glossário Terminológico** | Dicionário técnico e jurídico de saneamento santista (PV, EEE, EPC, FMSBA, CMSBS) padrão ABNT. | [Explorar](docs/institucional/glossario.md) |
+| 🎨 **Design & UX** | **Personas & Cenários** | Design Thinking: perfis de Dona Helena (Munícipe), Carlos (Fiscal Sepref), Roberto (Sabesp) e Dra. Renata (Semam). | [Explorar](docs/design-ux/personas-e-cenarios.md) |
+| 🎨 **Design & UX** | **Jornada & Arquitetura** | Arquitetura de telas, sitemap completo, wireframe textual e linha do tempo de acompanhamento (Stepper). | [Explorar](docs/design-ux/jornada-e-ux.md) |
+| 🎨 **Design & UX** | **Design System & UI** | Tipografia Montserrat, catálogo de logos vetoriais SVG da Prefeitura de Santos e acesso ao protótipo no Figma. | [Explorar](docs/design-ux/design-system.md) |
+| ⚙️ **Engenharia** | **Requisitos do Sistema** | Matriz MoSCoW (RF01 a RF13, RNF01 a RNF07), regras de negócio e tipologias oficiais do PMISB (Relatório R4). | [Explorar](docs/engenharia/requisitos-do-sistema.md) |
+| ⚙️ **Engenharia** | **Arquitetura & Banco** | Ciclo de vida do chamado, matriz de status, modelo ER (Proto SQL), Soft Delete e Logs imutáveis (*Append-Only*). | [Explorar](docs/engenharia/arquitetura-e-banco.md) |
+| ⚙️ **Engenharia** | **Regras de Negócio & API** | Controle de acesso por papéis (RBAC), validações de domínio e catálogo de rotas RESTful com Swagger UI. | [Explorar](docs/engenharia/regras-e-api.md) |
+| ⚙️ **Engenharia** | **Gestão de Riscos** | Matriz de riscos ISO 31000 / PMBOK: trotes, LGPD, conflitos entre concessionárias e condições de maré. | [Explorar](docs/engenharia/matriz-de-riscos.md) |
+| 🎓 **Acadêmico** | **Metodologia TCC** | Tema, problema de pesquisa, objetivos, justificativa tríplice, metodologia científica e mapeamento para monografia ABNT. | [Explorar](docs/academico/metodologia-tcc.md) |
 
 ---
 
@@ -104,7 +104,7 @@ A documentação é categorizada em **4 pilares temáticos** (consulte também o
 
 * **Core Backend:** Java 17 • Spring Boot 3 (Data JPA, Security, Web, Validation) • Hibernate • Lombok
 * **Banco de Dados & Nuvem:** PostgreSQL • Supabase
-* **Design & Experiência:** Figma • Identidade Visual Oficial da Prefeitura de Santos (Montserrat)
+* **Design & Experiência:** Figma • Identidade Visual Oficial da Prefeitura de Santos
 * **Padronização:** RESTful API • OpenAPI 3 (Swagger UI) • Git & GitHub
 
 ---
@@ -161,20 +161,15 @@ Projeto concebido e desenvolvido para o Trabalho de Conclusão de Curso (TCC) po
         <img src="https://github.com/CarvalhoNathan.png" width="85px" alt="Nathan Carvalho" style="border-radius: 50%;" /><br />
         <sub><b>Nathan Carvalho</b></sub>
       </a><br />
-      <small>Engenharia & Software</small>
     </td>
     <td align="center" width="160px">
       <a href="https://github.com/DreyCelestino">
         <img src="https://github.com/DreyCelestino.png" width="85px" alt="Andrey Celestino" style="border-radius: 50%;" /><br />
         <sub><b>Andrey Celestino</b></sub>
       </a><br />
-      <small>Engenharia & Software</small>
     </td>
   </tr>
 </table>
-
-> 🎨 **Protótipo Interativo:** [Acessar Telas no Figma](https://www.figma.com/design/Tb4SDE9A4oEpLaXfN7aAhe/Projeto-%7C-Sabesp?node-id=0-1&t=yQExxpGpTtvoIWHk-1)  
-> 🤝 **Padrões de Desenvolvimento & Git:** [Consulte o Guia de Contribuição (CONTRIBUTING.md)](CONTRIBUTING.md)
 
 ---
 
