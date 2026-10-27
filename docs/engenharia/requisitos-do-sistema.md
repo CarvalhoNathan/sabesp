@@ -42,6 +42,7 @@ Os requisitos são classificados conforme a metodologia internacional **MoSCoW**
 | **RF11** | Auditoria e Contagem de SLA (Lei 852/2014) | Calcular automaticamente os dias decorridos a partir da aprovação da Prefeitura, alertando prazos próximos de 15 dias. | Sistema | **Must** |
 | **RF12** | Trilha Imutável de Auditoria | Registrar em log indelével toda alteração de status, inserção de parecer e dados de auditoria (*quem, quando e o que alterou*). | Sistema | **Must** |
 | **RF13** | Relatórios de Auditoria (CMSBS / FMSBA) | Gerar relatórios consolidados com taxa de cumprimento de SLA, reincidência por região e autuações potenciais para subsidiar o Conselho Municipal de Saneamento (CMSBS) e o FMSBA. | Prefeitura (SEMAM) | **Should** |
+| **RF14** | Telefiscalização e Auditoria por Câmeras CCO | Exibir no painel do fiscal a câmera do Centro de Controle Operacional (CCO / SigSantosWeb) mais próxima das coordenadas do chamado, permitindo a verificação remota imediata de vazamentos e a checagem da presença operacional da Sabesp. | Prefeitura (Sepref / Semam) | **Should** |
 
 ---
 
@@ -79,6 +80,11 @@ Os requisitos são classificados conforme a metodologia internacional **MoSCoW**
 
 > 🚫 **RN05 · Invisibilidade de Demandas não Triadas:**  
 > A Sabesp não tem acesso a chamados pendentes de análise ou rejeitados pela Prefeitura, assegurando a prerrogativa fiscalizatória exclusiva da SEMAM.
+
+> 📹 **RN06 · Telefiscalização e Auditoria Probatória por Câmeras (CCO):**  
+> O fiscal municipal tem a prerrogativa de consultar o link contextual da câmera pública do CCO mais próxima do logradouro para:
+> 1. Realizar vistoria visual instantânea (antitrote / pré-validação) antes de expedir a intimação ou enviar viatura municipal;
+> 2. Auditar o comparecimento da Sabesp, confrontando declarações de início ou conclusão de obras com os registros visuais de campo.
 
 ---
 

@@ -41,7 +41,7 @@ Desenvolver e validar uma plataforma web centralizada em arquitetura Java Spring
 
 ### Objetivos Específicos
 1. **Mapear a esteira atual** de requisições municipais via Ouvidoria 162 e realizar a **análise de similares (benchmark)** com o sistema **SigSantosWeb / Santos Mapeada** e o Portal de Dados Abertos, identificando gargalos de comunicação com base no **PMISB (Relatório R4 / Ações de Emergência)**, no caso emblemático da **Rua Goiás (2023)** e nos projetos de universalização periférica no **Dique da Vila Gilda (2025–2026)**.
-2. **Aplicar práticas de Design Thinking**, mapeando as personas de munícipes, fiscais e operadores, detalhando suas jornadas e criando um assistente de triagem inteligente (esgoto vs. água de chuva).
+2. **Aplicar práticas de Design Thinking e Cidades Inteligentes (Smart Cities)**, mapeando as personas de munícipes, fiscais e operadores, detalhando suas jornadas, criando um assistente de triagem inteligente (esgoto vs. chuva) e integrando mecanismos de **telefiscalização urbana via câmeras do CCO**.
 3. **Estruturar uma matriz de riscos formal** (ISO 31000 / PMBOK) cobrindo riscos de trotes, LGPD, interferências de rede e contingências de maré.
 4. **Modelar um banco de dados relacional** com padrões de *Soft Delete* e tabelas de auditoria imutáveis (*Append-Only*).
 5. **Projetar interfaces intuitivas e acessíveis no Figma** com base no manual de identidade visual de Santos para Munícipe, Fiscal e Operador.
@@ -56,7 +56,7 @@ Desenvolver e validar uma plataforma web centralizada em arquitetura Java Spring
 
 > ⚖️ **2. Relevância Jurídica, Fiscalizatória e Social:** Episódios reais como o incidente da Rua Goiás em 2023 (cratera e contaminação de solo que resultou em multa de R$ 818 mil da SEMAM contra a Sabesp), o controle do prazo de 15 dias da Lei Complementar nº 852/2014 e a governança de recursos do FMSBA (Lei nº 4.525/2024 e Decretos 10.687/2025 e 11.328/2026) evidenciam a necessidade de auditoria pública digital. Ademais, com o cenário de privatização da concessionária (Lei Estadual nº 17.853/2023), o poder municipal assume papel regulador mandatório.
 
-> 💻 **3. Relevância Tecnológica:** Demonstra a aplicação prática do ecossistema corporativo Java (Spring Boot) com persistência JPA, controle transacional e computação em nuvem com Supabase/PostgreSQL.
+> 💻 **3. Relevância Tecnológica e Inovação em Smart Cities:** Demonstra a aplicação prática do ecossistema corporativo Java (Spring Boot) com persistência JPA, controle transacional, computação em nuvem com Supabase/PostgreSQL e a proposta de **interoperabilidade GovTech** com a infraestrutura de sensores e câmeras de videomonitoramento urbano do CCO de Santos.
 
 ---
 

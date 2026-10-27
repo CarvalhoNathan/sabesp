@@ -52,6 +52,9 @@ A análise do [Portal da Transparência da Prefeitura de Santos](https://www.san
    * **Lacuna (*Open Data Gap*):** Não disponibiliza conjuntos de dados estruturados para vazamentos de esgoto, vistorias de pavimentação ou valas de concessionárias, reforçando a pertinência de um sistema independente de transparência cidadã.
 3. **[SIGECON · Sistema de Gerenciamento de Contratos](https://egov.santos.sp.gov.br/sigecon/transparencia/contrato.xhtml):**
    * Repositório onde são publicados os contratos formais e termos aditivos celebrados pelo Município com concessionárias e prestadores de serviços essenciais.
+4. **[SigSantosWeb · Mapa de Câmeras Urbanas do CCO](https://egov.santos.sp.gov.br/santosmapeada/Gestao/Cameras/MapaCamera/):**
+   * **Concepção:** Camada cartográfica oficial do **Centro de Controle Operacional (CCO)** de Santos, exibindo os pontos de videomonitoramento e trânsito da CET e Guarda Municipal.
+   * **Oportunidade de Integração Smart City:** O projeto incorpora essa infraestrutura para viabilizar a **telefiscalização preventiva** de vazamentos (verificação remota prévia de água jorrando ou asfalto cedendo sem deslocamento desnecessário de viatura) e a **auditoria de comparecimento da Sabesp**, verificando se as viaturas operacionais efetivamente compareceram ao local nos horários declarados.
 
 ### Análise de Similares: SigSantosWeb vs. Nova Plataforma Web de Fiscalização
 
@@ -247,6 +250,7 @@ Para fins de comprovação documental e referencial bibliográfico oficial:
 * [Santos Mapeada · Mapa da Ouvidoria (SigSantosWeb)](https://egov.santos.sp.gov.br/santosmapeada/Ouvidoria/MapaOuvidoria/) — Sistema geográfico oficial de visualização de ocorrências registradas no SOM Web / 162.
 * [Prefeitura de Santos · Portal de Dados Abertos](https://egov.santos.sp.gov.br/dadosabertos/) — Catálogo municipal de dados governamentais abertos.
 * [SIGECON · Sistema de Gerenciamento de Contratos de Santos](https://egov.santos.sp.gov.br/sigecon/transparencia/contrato.xhtml) — Consulta de contratos e termos aditivos firmados pelo poder público municipal.
+* [SigSantosWeb · Mapa de Câmeras do CCO](https://egov.santos.sp.gov.br/santosmapeada/Gestao/Cameras/MapaCamera/) — Mapeamento espacial das câmeras de videomonitoramento do Centro de Controle Operacional da Prefeitura de Santos.
 * [Manual de Identidade Visual da Prefeitura de Santos](https://www.santos.sp.gov.br/?q=hotsite/manual-de-identidade) — Diretrizes oficiais de tipografia e brasões vetoriais.
 
 ---

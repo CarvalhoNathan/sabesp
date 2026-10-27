@@ -99,10 +99,14 @@ Projetada para atender a demanda de **Carlos (Fiscal da Sepref)**, processando c
 Ao clicar em uma ocorrência pendente, o fiscal visualiza:
 * A foto enviada pelo munícipe ampliada em alta resolução;
 * As respostas dadas no quiz de triagem;
-* O histórico de vazamentos anteriores no mesmo trecho da rua.
+* O histórico de vazamentos anteriores no mesmo trecho da rua;
+* **Câmera CCO Mais Próxima (Telefiscalização):** Atalho contextual para a câmera do Centro de Controle Operacional (CCO / SigSantosWeb) mais próxima do cruzamento, permitindo inspecionar o local ao vivo antes de despachar equipes ou intimar a Sabesp;
 * **Ações Disponíveis:**
   * **Botão "Aprovar & Intimar Sabesp":** Gera a intimação formal instantânea, dispara e-mail/notificação para a concessionária e inicia o cronômetro do prazo legal de 15 dias.
   * **Botão "Rejeitar":** Abre obrigatoriamente um campo de texto para justificativa técnica (visível ao munícipe) para evitar decisões arbitrárias.
+
+### 3. Auditoria de Presença da Concessionária
+* Durante a vigência do chamado em execução (`EM_EXECUCAO`), o fiscal pode utilizar a consulta às câmeras do CCO para verificar a efetiva presença das viaturas operacionais da Sabesp no endereço, eliminando divergências sobre comparecimento ou atraso no início das obras.
 
 ---
 

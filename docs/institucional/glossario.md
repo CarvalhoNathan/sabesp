@@ -39,7 +39,10 @@ Secretaria municipal que coordena as 5 prefeituras regionais de Santos. Seus fis
 Agência estadual responsável pela regulação e fiscalização tarifária e contratual dos serviços de água e esgotamento prestados pela Sabesp no território paulista.
 
 ### 🗺️ SigSantosWeb (Santos Mapeada)
-Sistema de Informações Geográficas (SIG) da Prefeitura Municipal de Santos que permite a visualização espacial e o mapeamento temático de ocorrências registradas pela Ouvidoria Municipal (SOM Web) e pelo telefone 162.
+Sistema de Informações Geográficas (SIG) da Prefeitura Municipal de Santos que permite a visualização espacial e o mapeamento temático de ocorrências da Ouvidoria Municipal (SOM Web / 162) e da rede de videomonitoramento urbano ([Mapa de Câmeras](https://egov.santos.sp.gov.br/santosmapeada/Gestao/Cameras/MapaCamera/)).
+
+### 📹 CCO · Centro de Controle Operacional de Santos
+Central de inteligência, segurança e videomonitoramento integrada da Prefeitura de Santos localizada no Paço Municipal (Praça Mauá). Reúne milhares de câmeras urbanas interligando a CET-Santos, Guarda Civil Municipal, Defesa Civil e serviços de zeladoria pública. No contexto do sistema, suas câmeras georreferenciadas viabilizam a **telefiscalização preventiva** de vazamentos e a **auditoria de presença e deslocamento** das equipes da Sabesp.
 
 ### 📊 Portal de Dados Abertos de Santos
 Iniciativa governamental da Ouvidoria, Transparência e Controle de Santos voltada à disponibilização de bases públicas em formato aberto (SPA), cobrindo prioritariamente saúde, educação e finanças.
