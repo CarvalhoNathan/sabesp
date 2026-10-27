@@ -5,12 +5,11 @@
 </p>
 
 <p align="center">
-  <a href="https://dev.java/" target="_blank"><img src="https://img.shields.io/badge/Java_17-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java" /></a>
-  <a href="https://spring.io/projects/spring-boot" target="_blank"><img src="https://img.shields.io/badge/Spring_Boot_3-6DB33F?style=flat-square&logo=spring-boot&logoColor=white" alt="Spring Boot" /></a>
-  <a href="https://www.postgresql.org/" target="_blank"><img src="https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" /></a>
-  <a href="https://supabase.com/" target="_blank"><img src="https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white" alt="Supabase" /></a>
-  <a href="https://www.figma.com/design/Tb4SDE9A4oEpLaXfN7aAhe/Projeto-%7C-Sabesp?node-id=0-1&t=yQExxpGpTtvoIWHk-1" target="_blank"><img src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white" alt="Figma" /></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/Licen%C3%A7a-MIT-blue?style=flat-square" alt="Licença MIT" /></a>
+  <a href="#-roadmap-de-entrega"><img src="https://img.shields.io/badge/Fase-Concep%C3%A7%C3%A3o_%26_UX-0072CE?style=flat-square" alt="Fase: Concepção &amp; UX" /></a>
+  <a href="https://www.figma.com/design/Tb4SDE9A4oEpLaXfN7aAhe/Projeto-%7C-Sabesp?node-id=0-1&t=yQExxpGpTtvoIWHk-1" target="_blank"><img src="https://img.shields.io/badge/Prot%C3%B3tipo-Figma-F24E1E?style=flat-square&logo=figma&logoColor=white" alt="Protótipo no Figma" /></a>
+  <a href="docs/README.md"><img src="https://img.shields.io/badge/Documenta%C3%A7%C3%A3o-11_M%C3%B3dulos-00ADD8?style=flat-square" alt="Documentação: 11 Módulos" /></a>
+  <a href="docs/academico/metodologia-tcc.md"><img src="https://img.shields.io/badge/Metodologia-ABNT_NBR_14724-475569?style=flat-square" alt="Metodologia: ABNT NBR 14724" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/Licen%C3%A7a-MIT-10B981?style=flat-square" alt="Licença MIT" /></a>
 </p>
 
 <p align="center">
@@ -111,12 +110,12 @@ A documentação é categorizada em **4 pilares temáticos** (consulte também o
 ## 🗺️ Roadmap de Entrega
 
 - [x] **Fase 1 · Concepção e Marco Legal:** Diagnóstico municipal, [Lei 852/2014](https://egov.santos.sp.gov.br/legis/documents/5195), [FMSBA](https://egov.santos.sp.gov.br/legis/documents/10840), [PMISB R4](https://www.santos.sp.gov.br/static/files_www/conteudo/13%20Anexo%205%20-%20Plano%20Municipal%20Integrado%20de%20Saneamento%20B%C3%A1sico.pdf) e esteira de valor. ([Ver Documento](docs/institucional/contexto-e-legislacao.md))
-- [x] **Fase 2 · Modelagem e Arquitetura:** [Proto SQL & Logs](docs/engenharia/arquitetura-e-banco.md), Soft Delete e [Matriz de Requisitos RF01–RF13](docs/engenharia/requisitos-do-sistema.md).
-- [x] **Fase 3 · Identidade Visual:** Padronização dos vetores oficiais `.svg` da Prefeitura de Santos e tipografia Montserrat. ([Ver Design System](docs/design-ux/design-system.md))
+- [x] **Fase 2 · Modelagem e Arquitetura:** [Proto SQL & Logs](docs/engenharia/arquitetura-e-banco.md), `Soft Delete` e [Matriz de Requisitos RF01–RF13](docs/engenharia/requisitos-do-sistema.md).
+- [x] **Fase 3 · Identidade Visual:** Padronização dos vetores oficiais `.svg` da Prefeitura de Santos e tipografia `Montserrat`. ([Ver Design System](docs/design-ux/design-system.md))
 - [x] **Fase 4 · Design Thinking & UX:** [Personas](docs/design-ux/personas-e-cenarios.md), [Triagem Inteligente](docs/institucional/triagem-inteligente.md), [Jornada do Usuário](docs/design-ux/jornada-e-ux.md) e [Matriz de Riscos](docs/engenharia/matriz-de-riscos.md).
-- [ ] **Fase 5 · Prototipagem UI/UX:** Telas interativas no [Figma](https://www.figma.com/design/Tb4SDE9A4oEpLaXfN7aAhe/Projeto-%7C-Sabesp?node-id=0-1&t=yQExxpGpTtvoIWHk-1) (Munícipe, Fiscalização Municipal e Operação Sabesp).
-- [ ] **Fase 6 · Banco em Nuvem:** Implementação do schema relacional no PostgreSQL ([Supabase](https://supabase.com/)).
-- [ ] **Fase 7 · Backend Spring Boot:** Desenvolvimento da API RESTful em [Spring Boot 3](https://spring.io/projects/spring-boot) com autenticação, validações e RBAC.
+- [ ] **Fase 5 · Prototipagem UI/UX (Em Andamento):** Telas interativas no [Figma](https://www.figma.com/design/Tb4SDE9A4oEpLaXfN7aAhe/Projeto-%7C-Sabesp?node-id=0-1&t=yQExxpGpTtvoIWHk-1) (Munícipe, Fiscalização Municipal e Operação Sabesp).
+- [ ] **Fase 6 · Banco em Nuvem:** Implementação do schema relacional no `PostgreSQL` ([Supabase](https://supabase.com/)).
+- [ ] **Fase 7 · Backend Spring Boot:** Desenvolvimento da API `RESTful` em [Spring Boot 3](https://spring.io/projects/spring-boot) com autenticação, validações e `RBAC`.
 
 ---
 
