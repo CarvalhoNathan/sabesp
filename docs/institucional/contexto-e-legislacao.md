@@ -3,13 +3,13 @@
 # 🏛️ Contexto Institucional, Regionalização e Marco Legal
 ### Fundamentação real e respaldo jurídico no município de Santos
 
-> 💡 **Em Resumo:** Este documento apresenta o diagnóstico territorial de Santos, a disparidade entre a Ouvidoria Tradicional (SOM Web / 162) e os prazos legais, a atuação da **Sepref**, da **Seserp (Urgência Urbana)** e da **SEMAM**, o **Estudo de Caso da Rua Goiás (multa de R$ 818 mil)**, o projeto no **Dique da Vila Gilda (Parque Palafitas)**, o plano de contingências do **PMISB (Relatório R4)** e a governança financeira do **FMSBA (Lei 4.525/2024)** e do **CMSBS**.
+> 💡 **Em Resumo:** Este documento apresenta o diagnóstico territorial de Santos, o descompasso entre as faixas de acompanhamento da Ouvidoria (SOM Web / 162) e os prazos legais, a atuação da **Sepref**, da **Seserp (Urgência Urbana)** e da **SEMAM**, o **Estudo de Caso da Rua Goiás (multa de R$ 818 mil)**, o projeto no **Dique da Vila Gilda (Parque Palafitas)**, o plano de contingências do **PMISB (Relatório R4)** e a governança financeira do **FMSBA (Lei 4.525/2024)** e do **CMSBS**.
 
 ---
 
 ## 📌 Navegação Rápida
 - [O Problema Real vs. Solução Proposta](#-o-problema-real-vs-solução-proposta)
-- [A Disparidade Crítica de SLAs: Ouvidoria SOM Web vs. Lei nº 852/2014](#-a-disparidade-crítica-de-slas-ouvidoria-som-web-vs-lei-nº-8522014)
+- [O Descompasso entre Faixas de Acompanhamento da Ouvidoria e Prazos da Lei nº 852/2014](#-o-descompasso-entre-faixas-de-acompanhamento-da-ouvidoria-e-prazos-da-lei-nº-8522014)
 - [Estudo de Caso Real: O Incidente da Rua Goiás (2023)](#-estudo-de-caso-real-o-incidente-da-rua-goiás-2023)
 - [Universalização e Vulnerabilidade: O Caso do Dique da Vila Gilda (2025–2026)](#-universalização-e-vulnerabilidade-o-caso-do-dique-da-vila-gilda-20252026)
 - [O Plano Municipal Integrado de Saneamento Básico (PMISB · Relatório R4)](#-o-plano-municipal-integrado-de-saneamento-básico-pmisb--relatório-r4)
@@ -37,23 +37,23 @@ Historicamente no município de Santos, solicitações sobre vazamentos na rede 
 
 ---
 
-## ⏱️ A Disparidade Crítica de SLAs: Ouvidoria SOM Web vs. Lei nº 852/2014
+## ⏱️ O Descompasso entre Faixas de Acompanhamento da Ouvidoria e Prazos da Lei nº 852/2014
 
-A maior justificativa técnica e acadêmica para a existência deste sistema reside no **conflito de prazos** verificado na máquina pública de Santos:
+A pesquisa do projeto identifica um descompasso temporal relevante entre os canais de atendimento ao cidadão e a legislação viária no município de Santos:
 
 ```text
-Prazo Atual da Ouvidoria Municipal (SOM Web / 162):
-🟢 Verde:   Até 30 dias de tramitação
-🟡 Amarelo: De 31 a 60 dias de tramitação
-🔴 Vermelho: Acima de 60 dias de tramitação
+Faixas de Acompanhamento por Tempo Decorrido (SOM Web / Ouvidoria 162):
+🟢 Verde:   Até 30 dias de tramitação administrativa
+🟡 Amarelo: De 31 a 60 dias de tramitação administrativa
+🔴 Vermelho: Acima de 60 dias de tramitação administrativa
 
-Prazo Legal Improrrogável (Lei Complementar nº 852/2014):
-⚡ Prazo Máximo: 15 dias corridos para conclusão e recomposição viária
-🚨 Penalidade: Multa a partir de R$ 17.045,05 por descumprimento
+Prazo Legal para Recomposição Viária (Lei Complementar nº 852/2014):
+⚡ Prazo: 15 dias para recomposição do pavimento nas situações previstas na norma
+🚨 Penalidade: Sanção pecuniária prevista em lei pelo descumprimento após notificação
 ```
 
-> ⚠️ **A Falha Estrutural:**  
-> Quando um munícipe reporta um vazamento de esgoto que abre um buraco na via, a Ouvidoria tradicional considera o chamado **"dentro da normalidade (Verde)" mesmo após 29 dias**. No entanto, sob a ótica regulatória, a Sabesp já **estourou o prazo legal em quase 100%**, gerando risco de acidentes e ensejando auto de infração que hoje muitas vezes não é cobrado por falta de integração entre a Ouvidoria e a fiscalização.
+> ⚠️ **A Análise do Descompasso:**  
+> O canal do SOM Web adota faixas informativas de tempo decorrido para acompanhamento interno das demandas. Contudo, em ocorrências que exigem abertura de valas e recomposição asfáltica, a legislação municipal prevê prazo específico de 15 dias após notificação, demonstrando a necessidade de um sistema especializado que monitore esses prazos de forma estruturada.
 
 ---
 
@@ -107,7 +107,7 @@ O plano municipal mapeia formalmente as 4 situações críticas de esgotamento q
 No âmbito municipal de Santos, a relação entre a Prefeitura e as concessionárias prestadoras de serviços públicos essenciais é regida por instrumentos legais específicos de fiscalização urbana:
 
 > ⚖️ **A Regra dos 15 Dias (Artigo Regulatório):**  
-> De acordo com a **Lei Complementar nº 852/2014**, a Sabesp possui o prazo máximo improrrogável de **15 dias corridos** para concluir reparos na via pública após notificação formal. O descumprimento sujeita a concessionária a multas a partir de **R$ 17.045,05** por ocorrência decorrente de riscos à segurança e à mobilidade urbana.
+> De acordo com a **Lei Complementar nº 852/2014**, a legislação estabelece o prazo de **15 dias** para que prestadoras de serviços concluam a recomposição do pavimento e reparos na via pública após notificação formal nas situações e condições previstas na norma, prevendo penalidades em caso de inobservância.
 
 ### A Função Probatória do Sistema
 A plataforma digital opera como um **instrumento de auditoria e fé pública**, registrando cronologicamente:
@@ -123,7 +123,7 @@ Um sistema de fiscalização de serviços públicos só é completo quando conec
 
 ### 🏦 FMSBA · Fundo Municipal de Saneamento Básico e Ambiental de Santos
 * **Base Legal:** Instituído pela **Lei Municipal nº 4.525, de 19 de agosto de 2024**, e regulamentado pelo **Decreto nº 10.687/2025** (com atualizações pelos Decretos nº 11.170/2026 e 11.256/2026).
-* **Finalidade e Destinação das Multas:** Conforme o **Art. 4º, Inciso VII da Lei 4.525/2024**, o FMSBA centraliza os recursos oriundos de **“arrecadação de multas e juros de mora por infração”** aplicadas contra a concessionária (tais como as infrações da Lei 852/2014 e a sanção de R$ 818 mil da Rua Goiás).
+* **Finalidade e Destinação das Multas:** Conforme o **Art. 4º, Inciso VII da Lei 4.525/2024**, o FMSBA tem como regra geral a destinação de receitas de **“arrecadação de multas e juros de mora por infração”** aplicadas a concessionárias de serviços públicos. Essa vinculação descreve a previsão legal orçamentária geral do fundo, não constituindo confirmação de liquidação ou repasse efetivo de multas pretéritas específicas, que podem tramitar em instâncias recursais ou judiciais.
 * **Subsídeo Social:** O **Art. 3º, Parágrafo Único (Incisos V e VI)** estipula expressamente que o fundo financia as ligações domiciliares de água e esgoto para **usuários de baixa renda**, conectando os valores arrecadados em autuações a projetos reais como o do Parque Palafitas (Vila Gilda).
 
 ### 👥 CMSBS · Conselho Municipal de Saneamento Básico de Santos

@@ -32,7 +32,7 @@
 * **Visão Panorâmica:** Acompanhamento centralizado de todas as demandas das 5 Zonas de Santos.
 * **Filtros Avançados:** Gestão e triagem por status, tipo de chamado, prefeitura regional (Sepref), criticidade (Seserp / Urgência Urbana) e período cronológico.
 * **Triagem Técnica:** Aprovação oficial (emissão automática de intimação/ordem de serviço para a Sabesp) ou rejeição formal com justificativa técnica registrada.
-* **Fiscalização de SLA e Autuação:** Auditoria rigorosa e contagem dos 15 dias de prazo da Lei Complementar nº 852/2014, subsidiando a aplicação de multas pela SEMAM e alimentação de receitas do FMSBA (Lei nº 4.525/2024).
+* **Monitoramento de Prazos Legais:** Acompanhamento do prazo de 15 dias previsto na Lei Complementar Municipal nº 852/2014 para recomposição viária após notificação formal, subsidiando a atuação fiscalizatória nos termos das normas aplicáveis.
 
 ### 💧 Sabesp (Operação Técnica em Campo)
 * **Visualização Restrita:** Acesso exclusivo a demandas já validadas e aprovadas pela Prefeitura.

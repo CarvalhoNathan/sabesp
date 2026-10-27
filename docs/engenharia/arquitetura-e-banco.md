@@ -112,8 +112,8 @@ erDiagram
 > 💡 **Padrão 1 · Soft Delete (`excluido: Boolean, default false`):**  
 > Aplicado em todas as entidades cadastrais (`Cliente`, `Funcionario`, `Chamado` e `ComentarioChamado`). Nenhuma informação pública é apagada fisicamente do banco de dados (`DELETE FROM`). As consultas aplicam filtros automáticos (`WHERE excluido = false`), garantindo a preservação histórica e a recuperação de registros em caso de necessidade de auditoria.
 
-> 🔒 **Padrão 2 · Imutabilidade de Auditoria (`Logs` - Append-Only):**  
-> A tabela `Logs` opera estritamente no modelo **Append-Only** (aceita apenas `INSERT` e `SELECT`, sem `UPDATE` ou `DELETE`). Por esse motivo, **não possui o campo `excluido`**, impedindo que operadores ou administradores ocultem alterações de status, garantindo a idoneidade do rastreamento de ações no sistema.
+> 🔒 **Padrão 2 · Trilha de Auditoria com Modelo Append-Only (`Logs`):**  
+> A modelagem da tabela `Logs` adota o padrão **Append-Only** (registros sequenciais de inclusão `INSERT` e consulta `SELECT`, sem operações convencionais de `UPDATE` ou `DELETE`). Por esse motivo, **não possui o campo `excluido`**, estruturando o desenho relacional para que o histórico de transições de status seja preservado cronologicamente, cabendo às regras de aplicação e permissões de acesso do banco a garantia efetiva dessa integridade.
 
 ---
 

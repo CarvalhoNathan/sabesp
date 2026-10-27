@@ -53,11 +53,11 @@ O trabalho reúne pesquisa de contexto, diagnóstico territorial, levantamento d
 
 Santos possui desafios de saneamento e zeladoria urbana que envolvem a manutenção da infraestrutura subterrânea histórica e consolidada do município, a fiscalização de prestadoras de serviço e a coordenação entre diferentes órgãos públicos:
 
-* **99% de Cobertura Urbana (2020):** Conforme o [PMISB (Relatório R4)](https://www.santos.sp.gov.br/static/files_www/conteudo/13%20Anexo%205%20-%20Plano%20Municipal%20Integrado%20de%20Saneamento%20B%C3%A1sico.pdf), a área urbana de Santos já dispõe de rede coletora quase universalizada; o déficit residual concentra-se em palafitas, demandando intervenções específicas como as 2.500 ligações no [Dique da Vila Gilda](https://www.santos.sp.gov.br/?q=noticia/parceria-garante-regularizacao-da-rede-de-agua-e-esgoto-para-a-vila-gilda-em-santos) (2025–2026).
-* **15 Dias Corridos para Recomposição Viária:** Prazo máximo improrrogável fixado pela [Lei Complementar Municipal nº 852/2014](https://egov.santos.sp.gov.br/legis/documents/5195) para que prestadoras de serviços públicos e concessionárias concluam a recomposição do pavimento e das calçadas após aberturas de valas ou intervenções em vias públicas, contados a partir da notificação oficial da Prefeitura (não se tratando de um tempo de atendimento operacional garantido pela concessionária).
-* **30 a 60 Dias na Tramitação da Ouvidoria:** Prazos de tramitação informados nos canais convencionais de atendimento ([SOM Web / 162](https://egov.santos.sp.gov.br/somweb/)), cujos fluxos de encaminhamento administrativo podem levar de 30 a 60 dias conforme a tipologia da manifestação, contrastando com o prazo de 15 dias estipulado pela legislação municipal para reparos no pavimento viário. ([Ver diagnóstico](docs/institucional/contexto-e-legislacao.md#-a-disparidade-crítica-de-slas-ouvidoria-som-web-vs-lei-nº-8522014))
+* **Cobertura Urbana de Esgotamento (PMISB):** Conforme o [PMISB (Relatório R4)](https://www.santos.sp.gov.br/static/files_www/conteudo/13%20Anexo%205%20-%20Plano%20Municipal%20Integrado%20de%20Saneamento%20B%C3%A1sico.pdf), a área urbana consolidada de Santos apresenta índice de atendimento por rede coletora próximo a 99%; o trabalho cita iniciativas voltadas a áreas de vulnerabilidade, a exemplo do termo de cooperação para implantação de redes e atendimento de até 2.500 domicílios no [Dique da Vila Gilda](https://www.santos.sp.gov.br/?q=noticia/parceria-garante-regularizacao-da-rede-de-agua-e-esgoto-para-a-vila-gilda-em-santos) (2025–2026).
+* **Prazo Legal para Recomposição Viária:** A legislação municipal ([Lei Complementar nº 852/2014](https://egov.santos.sp.gov.br/legis/documents/5195)) prevê prazo de 15 dias para a recomposição do pavimento nas situações e condições previstas na norma, contado conforme o marco legal aplicável (não se tratando de um tempo de atendimento operacional garantido pela concessionária).
+* **Faixas de Acompanhamento na Ouvidoria:** O [SOM Web / 162](https://egov.santos.sp.gov.br/somweb/) apresenta categorias de ocorrências em tramitação por tempo decorrido, incluindo faixas de até 30 dias, de 31 a 60 dias e acima de 60 dias. Essas faixas contextualizam o acompanhamento das demandas nos canais convencionais, mas não devem ser interpretadas isoladamente como prazos oficiais de resolução. ([Ver diagnóstico](docs/institucional/contexto-e-legislacao.md#-o-descompasso-entre-faixas-de-acompanhamento-da-ouvidoria-e-prazos-da-lei-nº-8522014))
 * **+190 Intimações em Balanço Oficial:** Volume registrado em balanço oficial da Prefeitura de Santos ([janeiro/2024](https://www.santos.sp.gov.br/?q=noticia/santos-aplica-197-intimacoes-e-notificacoes-a-prestadoras-de-servico-em-janeiro)), no qual a Secretaria de Prefeituras Regionais (Sepref) contabilizou 197 intimações e notificações a prestadoras de serviço (sendo 83 direcionadas à concessionária de saneamento) por pendências ou danos nas vias públicas das 5 Zonas.
-* **R$ 818 Mil em Sanção Administrativa (2023):** Multa aplicada pela Secretaria Municipal de Meio Ambiente (SEMAM) em março de 2023 após vazamento que solapou a Rua Goiás ([Notícia Oficial PMS](https://www.santos.sp.gov.br/?q=noticia/santos-multa-sabesp-em-r-818-mil-reais-devido-a-contaminacao-de-solo-na-rua-goias) • [G1](https://g1.globo.com/sp/santos-regiao/noticia/2023/03/07/sabesp-e-multada-em-r-818-mil-apos-contaminacao-de-solo-na-rua-goias-em-santos-sp.ghtml)). A legislação municipal posterior ([Lei nº 4.525/2024](https://egov.santos.sp.gov.br/legis/documents/10840)) prevê que receitas de sanções aplicadas a concessionárias sejam vinculadas ao Fundo Municipal de Saneamento Básico e Ambiental (FMSBA), sob controle social do conselho municipal ([CMSBS](https://egov.santos.sp.gov.br/legis/documents/12103)).
+* **Sanção Administrativa Ambiental (2023):** Multa de R$ 818 mil aplicada pela Secretaria Municipal de Meio Ambiente (SEMAM) em março de 2023 após vazamento que solapou a Rua Goiás ([Notícia Oficial PMS](https://www.santos.sp.gov.br/?q=noticia/santos-multa-sabesp-em-r-818-mil-reais-devido-a-contaminacao-de-solo-na-rua-goias) • [G1](https://g1.globo.com/sp/santos-regiao/noticia/2023/03/07/sabesp-e-multada-em-r-818-mil-apos-contaminacao-de-solo-na-rua-goias-em-santos-sp.ghtml)). A legislação municipal posterior ([Lei nº 4.525/2024](https://egov.santos.sp.gov.br/legis/documents/10840)) estabelece como regra geral a vinculação de receitas de multas de saneamento ao Fundo Municipal de Saneamento Básico e Ambiental (FMSBA), sob controle do [CMSBS](https://egov.santos.sp.gov.br/legis/documents/12103), não constituindo confirmação de liquidação ou repasse efetivo daquele valor específico.
 
 > ⚠️ **Nota Metodológica:** Os dados acima são referências de contextualização territorial, não indicadores de desempenho da plataforma. Antes de utilizar os números em apresentações ou entregas acadêmicas, recomenda-se confirmar no documento original a data de referência, a definição do indicador e o contexto da informação. A documentação reúne mais detalhes em [Contexto e Legislação](docs/institucional/contexto-e-legislacao.md).
 
@@ -73,12 +73,12 @@ Santos possui desafios de saneamento e zeladoria urbana que envolvem a manutenç
 
 > ℹ️ *Esses benefícios descrevem o desenho da solução proposta. A disponibilidade efetiva de cada recurso depende da implementação técnica e de eventuais validações institucionais.*
 
-### 🔄 Fluxo Operacional Integrado
+### 🔄 Fluxo Operacional Proposto
 
 ```mermaid
 flowchart LR
     A["📱 1. Munícipe<br/>Abre chamado com foto"] --> B["🏛️ 2. Prefeitura (Sepref)<br/>Triagem & Intimação"]
-    B --> C["💧 3. Concessionária<br/>Execução da obra viária<br/>(Prazo legal: até 15 dias)"]
+    B --> C["💧 3. Concessionária<br/>Execução da obra viária<br/>(Prazo conforme legislação aplicável)"]
     C --> D["✅ 4. Conclusão<br/>Laudo & Asfalto recomposto"]
 ```
 
@@ -98,7 +98,7 @@ Para garantir clareza e transparência no ciclo de vida do software, as capacida
 | Painel administrativo de triagem e despacho categorizado pelas 5 Zonas | Prefeitura (Sepref) | `Em Prototipagem (Figma)` |
 | Contagem regressiva e auditoria do prazo de 15 dias da Lei nº 852/2014 | Prefeitura / Sabesp | `Especificada nos Docs` |
 | Recepção de ordens de serviço, registro de parecer de campo e laudo fotográfico | Sabesp (Operação) | `Especificada nos Docs` |
-| Trilha de auditoria cronológica e imutável (*Append-Only*) para mudanças de status | Sistema / Auditoria | `Modelada (Proto SQL)` |
+| Trilha de auditoria cronológica com modelo Append-Only para mudanças de status | Sistema / Auditoria | `Modelada (Proto SQL)` |
 | API RESTful documentada (Swagger), controle RBAC e banco relacional em nuvem | Core Backend | `A Implementar (Fases 6/7)` |
 
 ---
