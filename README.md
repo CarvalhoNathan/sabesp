@@ -16,6 +16,16 @@
   </a>
 </p>
 
+<p align="center">
+  <a href="https://www.figma.com/design/Tb4SDE9A4oEpLaXfN7aAhe/Projeto-%7C-Sabesp?node-id=0-1&t=yQExxpGpTtvoIWHk-1" target="_blank">
+    <img src="https://img.shields.io/badge/🎨_Acessar_Protótipo-Figma-F24E1E?style=for-the-badge" alt="Protótipo no Figma" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="docs/README.md">
+    <img src="https://img.shields.io/badge/📚_Explorar_Documentação-Docs_Hub-00ADD8?style=for-the-badge" alt="Docs Hub" />
+  </a>
+</p>
+
 > **A Visão:** Transformar a fiscalização urbana do município de Santos substituindo a lentidão e fragmentação da ouvidoria tradicional (onde chamados levam de 30 a 60 dias) por uma **esteira digital única, transparente e auditável**, garantindo o cumprimento do prazo legal de 15 dias da Lei Complementar nº 852/2014 e conectando o munícipe, a Prefeitura (Sepref / Semam / Seserp) e a Sabesp em tempo real.
 
 ---
@@ -36,6 +46,15 @@
 | :--- | :--- | :--- |
 | **Voz Ativa & Agilidade** | **Controle & Fiscalização** | **Operação & Rastreabilidade** |
 | Abertura em segundos com upload de fotos e localização. Acompanhamento transparente do status sem depender de ligações no 162 ou prazos lentos de 60 dias. | Painel centralizado com triagem nas 5 Zonas de Santos, despacho automático de intimações e auditoria do prazo de 15 dias da Lei nº 852/2014. | Recepção de ordens já pré-validadas tecnicamente, registro de pareceres de campo e comprovação fotográfica das intervenções na via. |
+
+### 🔄 Fluxo Operacional Integrado
+
+```mermaid
+flowchart LR
+    A["📱 1. Munícipe<br/>Abre chamado com foto"] --> B["🏛️ 2. Prefeitura (Sepref)<br/>Triagem & Intimação"]
+    B --> C["💧 3. Sabesp<br/>Execução (SLA 15 dias)"]
+    C --> D["✅ 4. Conclusão<br/>Laudo & Asfalto recomposto"]
+```
 
 ---
 
@@ -134,8 +153,24 @@ mvn spring-boot:run
 
 Projeto concebido e desenvolvido para o Trabalho de Conclusão de Curso (TCC) por:
 
-* **Nathan Carvalho** — [@CarvalhoNathan](https://github.com/CarvalhoNathan)
-* **Andrey Celestino** — [@DreyCelestino](https://github.com/DreyCelestino)
+<table align="center">
+  <tr>
+    <td align="center" width="160px">
+      <a href="https://github.com/CarvalhoNathan">
+        <img src="https://github.com/CarvalhoNathan.png" width="85px" alt="Nathan Carvalho" style="border-radius: 50%;" /><br />
+        <sub><b>Nathan Carvalho</b></sub>
+      </a><br />
+      <small>Engenharia & Software</small>
+    </td>
+    <td align="center" width="160px">
+      <a href="https://github.com/DreyCelestino">
+        <img src="https://github.com/DreyCelestino.png" width="85px" alt="Andrey Celestino" style="border-radius: 50%;" /><br />
+        <sub><b>Andrey Celestino</b></sub>
+      </a><br />
+      <small>Engenharia & Software</small>
+    </td>
+  </tr>
+</table>
 
 > 🎨 **Protótipo Interativo:** [Acessar Telas no Figma](https://www.figma.com/design/Tb4SDE9A4oEpLaXfN7aAhe/Projeto-%7C-Sabesp?node-id=0-1&t=yQExxpGpTtvoIWHk-1)  
 > 🤝 **Padrões de Desenvolvimento & Git:** [Consulte o Guia de Contribuição (CONTRIBUTING.md)](CONTRIBUTING.md)
