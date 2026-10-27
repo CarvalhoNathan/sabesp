@@ -53,7 +53,7 @@ O trabalho reúne pesquisa de contexto, diagnóstico territorial, levantamento d
 
 Santos possui desafios de saneamento e zeladoria urbana que envolvem a manutenção da infraestrutura subterrânea histórica e consolidada do município, a fiscalização de prestadoras de serviço e a coordenação entre diferentes órgãos públicos:
 
-* **Cobertura Urbana de Esgotamento (PMISB):** Conforme o [PMISB (Relatório R4)](https://www.santos.sp.gov.br/static/files_www/conteudo/13%20Anexo%205%20-%20Plano%20Municipal%20Integrado%20de%20Saneamento%20B%C3%A1sico.pdf), a área urbana consolidada de Santos apresenta índice de atendimento por rede coletora próximo a 99%; o trabalho cita iniciativas voltadas a áreas de vulnerabilidade, a exemplo do termo de cooperação para implantação de redes e atendimento de até 2.500 domicílios no [Dique da Vila Gilda](https://www.santos.sp.gov.br/?q=noticia/parceria-garante-regularizacao-da-rede-de-agua-e-esgoto-para-a-vila-gilda-em-santos) (2025–2026).
+* **Cobertura Urbana de Esgotamento (PMISB):** Conforme o [PMISB (Relatório R4)](https://www.santos.sp.gov.br/static/files_www/conteudo/13%20Anexo%205%20-%20Plano%20Municipal%20Integrado%20de%20Saneamento%20B%C3%A1sico.pdf), a área urbana consolidada de Santos apresenta índice de atendimento por rede coletora de esgoto próximo a 99%; para o atendimento das áreas de vulnerabilidade, o projeto cita iniciativas públicas em andamento, a exemplo do termo de cooperação com previsão de cerca de 2.500 ligações regulares de água e esgoto no [Dique da Vila Gilda](https://www.santos.sp.gov.br/?q=noticia/parceria-garante-regularizacao-da-rede-de-agua-e-esgoto-para-a-vila-gilda-em-santos) (2025–2026).
 * **Prazo Legal para Recomposição Viária:** A legislação municipal ([Lei Complementar nº 852/2014](https://egov.santos.sp.gov.br/legis/documents/5195)) prevê prazo de 15 dias para a recomposição do pavimento nas situações e condições previstas na norma, contado conforme o marco legal aplicável (não se tratando de um tempo de atendimento operacional garantido pela concessionária).
 * **Faixas de Acompanhamento na Ouvidoria:** O [SOM Web / 162](https://egov.santos.sp.gov.br/somweb/) apresenta categorias de ocorrências em tramitação por tempo decorrido, incluindo faixas de até 30 dias, de 31 a 60 dias e acima de 60 dias. Essas faixas contextualizam o acompanhamento das demandas nos canais convencionais, mas não devem ser interpretadas isoladamente como prazos oficiais de resolução. ([Ver diagnóstico](docs/institucional/contexto-e-legislacao.md#-o-descompasso-entre-faixas-de-acompanhamento-da-ouvidoria-e-prazos-da-lei-nº-8522014))
 * **+190 Intimações em Balanço Oficial:** Volume registrado em balanço oficial da Prefeitura de Santos ([janeiro/2024](https://www.santos.sp.gov.br/?q=noticia/santos-aplica-197-intimacoes-e-notificacoes-a-prestadoras-de-servico-em-janeiro)), no qual a Secretaria de Prefeituras Regionais (Sepref) contabilizou 197 intimações e notificações a prestadoras de serviço (sendo 83 direcionadas à concessionária de saneamento) por pendências ou danos nas vias públicas das 5 Zonas.
@@ -92,14 +92,14 @@ Para garantir clareza e transparência no ciclo de vida do software, as capacida
 
 | Funcionalidade | Módulo Responsável | Estágio de Desenvolvimento |
 | :--- | :--- | :---: |
-| Abertura simplificada de ocorrências com geolocalização e fotos | Munícipe | `Em Prototipagem (Figma)` |
-| Acompanhamento transparente do chamado via Stepper visual | Munícipe | `Em Prototipagem (Figma)` |
-| Triagem lógica inteligente (segregação de drenagem pluvial vs. rede de esgoto) | Prefeitura (Sepref) | `Especificada nos Docs` |
-| Painel administrativo de triagem e despacho categorizado pelas 5 Zonas | Prefeitura (Sepref) | `Em Prototipagem (Figma)` |
-| Contagem regressiva e auditoria do prazo de 15 dias da Lei nº 852/2014 | Prefeitura / Sabesp | `Especificada nos Docs` |
-| Recepção de ordens de serviço, registro de parecer de campo e laudo fotográfico | Sabesp (Operação) | `Especificada nos Docs` |
-| Trilha de auditoria cronológica com modelo Append-Only para mudanças de status | Sistema / Auditoria | `Modelada (Proto SQL)` |
-| API RESTful documentada (Swagger), controle RBAC e banco relacional em nuvem | Core Backend | `A Implementar (Fases 6/7)` |
+| Abertura simplificada de ocorrências com geolocalização e fotos | Munícipe | `Em prototipagem (Figma)` |
+| Acompanhamento transparente do chamado via Stepper visual | Munícipe | `Em prototipagem (Figma)` |
+| Triagem lógica inteligente (segregação de drenagem pluvial vs. rede de esgoto) | Prefeitura (Sepref) | `Especificada na documentação` |
+| Painel administrativo de triagem e despacho categorizado pelas 5 Zonas | Prefeitura (Sepref) | `Em prototipagem (Figma)` |
+| Contagem regressiva e auditoria do prazo de 15 dias da Lei nº 852/2014 | Prefeitura / Sabesp | `Especificada na documentação` |
+| Recepção de ordens de serviço, registro de parecer de campo e laudo fotográfico | Sabesp (Operação) | `Especificada na documentação` |
+| Trilha de auditoria cronológica com modelo Append-Only para mudanças de status | Sistema / Auditoria | `Modelada conceitualmente (Proto SQL)` |
+| API RESTful documentada (Swagger), controle RBAC e banco relacional em nuvem | Core Backend | `Planejada para implementação (Fases 6/7)` |
 
 ---
 
@@ -152,7 +152,7 @@ Por se tratar de uma proposta acadêmica em evolução por etapas, o projeto del
 
 * **Validação Normativa Contínua:** As regras de negócio e os prazos operacionais devem ser constantemente confrontados com eventuais atualizações de decretos municipais e da agência reguladora estadual (ARSESP).
 * **Delimitação de Procedimentos:** Definição clara das responsabilidades e limites de atuação entre as Secretarias Municipais (`Sepref`, `Seserp`, `Semam`) e a concessionária para cada tipologia de ocorrência.
-* **Privacidade, Minimização de Dados e LGPD:** Como o sistema prevê envio de fotografias e coordenadas geográficas que podem expor fachadas residenciais, transeuntes ou placas de veículos, o desenho da solução adota o princípio da minimização (Lei Federal nº 13.709/2018): consultas públicas devem restringir a exibição a dados agregados por logradouro/bairro (sem identificação de munícipes ou numeração residencial exata), prevendo-se a elaboração de Relatório de Impacto à Proteção de Dados (RIPD) durante as etapas de implementação do software.
+* **Privacidade, Minimização de Dados e LGPD:** O projeto prevê a aplicação do princípio da minimização de dados, conforme a [Lei Federal nº 13.709/2018 (LGPD)](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm). As consultas públicas deverão restringir a exposição de informações pessoais e de localização exata (adotando agregação por logradouro/bairro), e a definição dos controles de acesso, da retenção e das medidas de proteção será aprofundada durante a implementação, considerando a necessidade de Relatório de Impacto à Proteção de Dados (RIPD).
 * **Ausência de Integração Legada:** O sistema não possui integração em tempo real com os sistemas internos da Sabesp ou da Prefeitura; opera como arquitetura de referência aberta (RESTful/OpenAPI) simulando a interoperabilidade. Não deve ser considerado canal oficial de atendimento.
 
 ---

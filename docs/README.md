@@ -50,7 +50,7 @@ Contempla as decisões técnicas de backend, banco de dados em nuvem, controle d
 | Documento | Descrição e Finalidade | Acesso |
 | :--- | :--- | :---: |
 | [`requisitos-do-sistema.md`](engenharia/requisitos-do-sistema.md) | Matriz formal MoSCoW com Requisitos Funcionais (RF01 a RF13), Requisitos Não-Funcionais (RNF01 a RNF07) e tipologias oficiais do PMISB R4. | [Abrir Documento →](engenharia/requisitos-do-sistema.md) |
-| [`arquitetura-e-banco.md`](engenharia/arquitetura-e-banco.md) | Ciclo de vida dos chamados, matriz de transição de status, modelo ER relacional (Proto SQL), padrão Soft Delete e logs imutáveis (*Append-Only*). | [Abrir Documento →](engenharia/arquitetura-e-banco.md) |
+| [`arquitetura-e-banco.md`](engenharia/arquitetura-e-banco.md) | Ciclo de vida dos chamados, matriz de transição de status, modelo ER relacional (Proto SQL), padrão Soft Delete e trilha de auditoria com modelo Append-Only. | [Abrir Documento →](engenharia/arquitetura-e-banco.md) |
 | [`regras-e-api.md`](engenharia/regras-e-api.md) | Controle de acesso baseado em papéis (RBAC), validações de domínio (CPF, fotos), especificação das rotas RESTful e Swagger UI. | [Abrir Documento →](engenharia/regras-e-api.md) |
 | [`matriz-de-riscos.md`](engenharia/matriz-de-riscos.md) | Análise de riscos segundo as normas ISO 31000 e PMBOK: contingências para trotes, vazamento de dados (LGPD), interferência de redes e marés. | [Abrir Documento →](engenharia/matriz-de-riscos.md) |
 

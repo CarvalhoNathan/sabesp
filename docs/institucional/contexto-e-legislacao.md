@@ -77,7 +77,7 @@ Se o incidente da Rua Goiás ilustra o risco em áreas consolidadas, o **Dique d
 > 🏘️ **A Maior Favela de Palafitas do Brasil:**  
 > O Dique da Vila Gilda abriga milhares de famílias em moradias erguidas sobre manguezal e lâmina d'água de maré. Historicamente, essa área concentrou o déficit residual de coleta e tratamento de esgoto apontado no PMISB.
 
-* **O Termo de Cooperação Prefeitura–Sabesp (Novembro de 2025):** A Prefeitura de Santos e a Sabesp firmaram parceria formal para a implantação de redes completas de distribuição de água e esgotamento sanitário em todas as palafitas da região, totalizando cerca de **2.500 ligações regulares** até o final de 2026.
+* **O Termo de Cooperação Prefeitura–Sabesp (Novembro de 2025):** A Prefeitura de Santos e a Sabesp firmaram parceria formal para a implantação de redes de distribuição de água e esgotamento sanitário nas áreas de palafitas da região, com previsão de cerca de **2.500 ligações domiciliares regulares** até o final de 2026.
 * **O Projeto Parque Palafitas:** Integração entre habitação social sustentável (reconhecida nacionalmente no Fórum de Habitação de Interesse Social) e engenharia sanitária avançada adaptada a solos de manguezal e oscilações de maré.
 * **Relevância para o Sistema:** No sistema, a **Zona Noroeste** possui tratamento prioritário para chamados de extravasamento, assegurando que áreas de alta densidade e vulnerabilidade socioambiental tenham o mesmo nível de transparência, celeridade e fiscalização pública que a Orla da praia.
 
@@ -88,7 +88,7 @@ Se o incidente da Rua Goiás ilustra o risco em áreas consolidadas, o **Dique d
 O planejamento de saneamento de Santos é consolidado no **Plano Municipal Integrado de Saneamento Básico (PMISB)**, em cumprimento à Lei Federal nº 11.445/2007 e ao Novo Marco Legal do Saneamento (Lei Federal nº 14.026/2020).
 
 > 🔍 **O Paradoxo do Saneamento Santista:**  
-> De acordo com o documento oficial **Anexo 5 · Relatório R4 (Ações para Emergências e Contingências)**, Santos possui cobertura urbana de esgoto próxima a **99%**. Portanto, o desafio central da cidade **não reside na ausência de infraestrutura**, mas sim na **manutenção preventiva e corretiva de uma malha subterrânea centenária**, sujeita a abatimentos asfálticos, refluxos prediais e rompimentos de coletores que extravasam para os canais de drenagem e praias.
+> De acordo com o documento oficial **Anexo 5 · Relatório R4 (Ações para Emergências e Contingências)**, a área urbana consolidada de Santos conta com atendimento por rede coletora de esgoto próximo a **99%**. Portanto, o desafio central da cidade **não reside na ausência de infraestrutura**, mas sim na **manutenção preventiva e corretiva de uma malha subterrânea centenária**, sujeita a abatimentos asfálticos, refluxos prediais e rompimentos de coletores que extravasam para os canais de drenagem e praias.
 
 ### As 4 Ocorrências Críticas Catalogadas no PMISB (Pág. 85):
 O plano municipal mapeia formalmente as 4 situações críticas de esgotamento que exigem resposta imediata da concessionária:
