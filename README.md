@@ -181,12 +181,6 @@ Projeto concebido e desenvolvido para o Trabalho de Conclusão de Curso (TCC) no
         <sub><b>Nathan Carvalho</b></sub>
       </a>
     </td>
-    <td align="center" width="160px">
-      <a href="https://github.com/DreyCelestino">
-        <img src="https://github.com/DreyCelestino.png" width="85px" alt="Andrey Celestino" style="border-radius: 50%;" /><br />
-        <sub><b>Andrey Celestino</b></sub>
-      </a>
-    </td>
   </tr>
 </table>
 
@@ -195,7 +189,7 @@ Projeto concebido e desenvolvido para o Trabalho de Conclusão de Curso (TCC) no
 ## 📄 Licença
 
 Este projeto é desenvolvido para fins acadêmicos e educacionais sob os termos da **[Licença MIT](LICENSE)**. Padrões de branching e desenvolvimento no **[Guia de Contribuição (CONTRIBUTING.md)](CONTRIBUTING.md)**.  
-&copy; 2026 Nathan Carvalho & Andrey Celestino.
+&copy; 2026 Nathan Carvalho.
 
 ---
 
