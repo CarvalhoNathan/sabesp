@@ -1,198 +1,35 @@
-<a id="topo"></a>
-<h1 align="center">💧 Sabesp &amp; Prefeitura de Santos</h1>
-<p align="center">
-  <b>Proposta de plataforma digital para registro, acompanhamento e fiscalização de ocorrências relacionadas à rede de esgoto e à recomposição de vias públicas em Santos (SP).</b>
-</p>
+# Santos Saneamento · SEMAM / Sabesp
 
-<p align="center">
-  <a href="#roadmap"><img src="https://img.shields.io/badge/Status-Concep%C3%A7%C3%A3o%20e%20prototipagem-0072CE?style=flat-square" alt="Status: Concepção e prototipagem" /></a>
-  <a href="https://www.figma.com/design/Tb4SDE9A4oEpLaXfN7aAhe/Projeto-%7C-Sabesp?node-id=0-1&t=yQExxpGpTtvoIWHk-1" target="_blank"><img src="https://img.shields.io/badge/Prot%C3%B3tipo-Figma-F24E1E?style=flat-square&logo=figma&logoColor=white" alt="Protótipo no Figma" /></a>
-  <a href="docs/README.md"><img src="https://img.shields.io/badge/Documenta%C3%A7%C3%A3o-11%20m%C3%B3dulos-00ADD8?style=flat-square" alt="Documentação: 11 módulos" /></a>
-  <a href="docs/academico/metodologia-tcc.md"><img src="https://img.shields.io/badge/Normas-Acad%C3%AAmicas-475569?style=flat-square" alt="Normas Acadêmicas" /></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/Licen%C3%A7a-MIT-10B981?style=flat-square" alt="Licença MIT" /></a>
-</p>
+Sistema Java Web com **Spring Boot 3 (Java 17)** para registro e acompanhamento de chamados de problemas na rede de esgoto de Santos.
 
-<p align="center">
-  <a href="https://www.figma.com/design/Tb4SDE9A4oEpLaXfN7aAhe/Projeto-%7C-Sabesp?node-id=0-1&t=yQExxpGpTtvoIWHk-1" target="_blank">
-    <img src="assets/preview-mockup.svg" alt="Prévia da interface proposta para a plataforma no Figma" width="900px" />
-  </a>
-</p>
+## Perfis disponíveis (sem login nesta etapa)
 
-> ℹ️ **Aviso de Natureza Acadêmica:**  
-> Este é um projeto acadêmico independente desenvolvido para o Trabalho de Conclusão de Curso (TCC) no curso de **Tecnologia em Sistemas para Internet** da **Faculdade de Tecnologia da Baixada Santista Rubens Lara (FATEC Rubens Lara)**. A menção à Sabesp e à Prefeitura de Santos contextualiza o problema territorial estudado e os atores considerados na proposta; não implica parceria, vínculo institucional, aprovação ou integração oficial com esses órgãos. Enquanto as funcionalidades não forem implementadas e validadas, a plataforma não deve ser considerada um canal oficial de atendimento.
+- **Pessoa comum (`/chamados/novo`)**: registra endereço (com CEP automático via ViaCEP, autocomplete em Santos e GPS), tipo de problema, descrição e até 5 fotos.
+- **Sabesp (`/sabesp/chamados`)**: visualiza chamados, aplica filtros, abre fotos em destaque, altera status e escreve comentários.
+- **Prefeitura / SEMAM (`/prefeitura/chamados`)**: acompanha chamados e realiza filtros (somente leitura).
 
 ---
 
-## 📌 Sobre o Projeto
+## Como rodar localmente (banco em memória H2)
 
-O projeto propõe uma plataforma digital para registrar, acompanhar e fiscalizar ocorrências relacionadas a vazamentos na rede de esgoto, abatimentos de pavimento e desobstruções no município de **Santos (SP)**.
-
-A proposta busca organizar o fluxo entre **munícipes**, **fiscalização municipal (`Sepref` / `Semam`)** e **operação da concessionária (`Sabesp`)**, reunindo informações do chamado, evidências fotográficas, encaminhamentos, prazos legais e histórico de ações em um processo transparente e auditável.
-
-O trabalho reúne pesquisa de contexto, diagnóstico territorial, levantamento de requisitos, modelagem de processos, documentação técnica e prototipagem de interface. A implementação do banco de dados e do backend está prevista para as próximas etapas do roadmap.
-
-### 🎯 Objetivos da Proposta
-
-* **Facilitar o registro de ocorrências** pelos munícipes por meio de interface mobile simples, com upload de fotos e geolocalização.
-* **Melhorar a visibilidade do andamento dos chamados**, oferecendo uma linha do tempo visual (*stepper*) complementar aos protocolos convencionais.
-* **Apoiar a triagem e o encaminhamento adequado**, utilizando regras de negócio para diferenciar ocorrências potencialmente relacionadas à drenagem pluvial e ao esgotamento sanitário, com encaminhamento para análise quando a classificação não for conclusiva.
-* **Centralizar evidências e registros de fiscalização**, municiando os fiscais das Prefeituras Regionais para cobrança formal de prazos.
-* **Auditar prazos e histórico de ações**, acompanhando o cumprimento dos prazos e obrigações legais de recomposição do pavimento urbano.
+1. No Eclipse, importe via **File > Import > Maven > Existing Maven Projects**.
+2. Execute `SaneamentoApplication.java` como **Java Application**.
+3. Acesse `http://localhost:8080`.
 
 ---
 
-## 🧭 Como Explorar este Repositório
+## Como conectar ao Supabase (para uso compartilhado)
 
-* 🎨 **[Explorar o Protótipo no Figma](https://www.figma.com/design/Tb4SDE9A4oEpLaXfN7aAhe/Projeto-%7C-Sabesp?node-id=0-1&t=yQExxpGpTtvoIWHk-1):** Conheça a proposta visual, sitemap, wireframes e fluxos interativos de uso.
-* 📚 **[Consultar a Documentação Técnica (Docs Hub)](docs/README.md):** Requisitos (`MoSCoW`), modelo relacional (`Proto SQL`), regras de negócio (`RBAC`) e marco legal de Santos.
-* 🗺️ **[Acompanhar o Roadmap](#roadmap):** Veja as etapas conceituais concluídas e os próximos passos previstos no projeto.
+### 1. Banco de Dados (PostgreSQL)
+1. Crie um projeto no [Supabase](https://supabase.com/).
+2. Abra o **SQL Editor** e execute o conteúdo de `supabase-schema.sql`.
+3. Em **Project Settings > Database > Connection string**, selecione **Session pooler** (porta `5432`) e anote a URL JDBC, usuário e senha.
 
----
+### 2. Armazenamento de Fotos (Supabase Storage)
+1. No menu **Storage**, crie um bucket chamado `chamados-fotos` e marque como **Public** (para que as fotos apareçam nos painéis da Sabesp e Prefeitura).
+2. Em **Project Settings > API**, copie a `Project URL` e a chave `service_role`.
 
-## 📊 O Cenário Real em Números
-
-Santos possui desafios de saneamento e zeladoria urbana que envolvem a manutenção da infraestrutura subterrânea histórica e consolidada do município, a fiscalização de prestadoras de serviço e a coordenação entre diferentes órgãos públicos:
-
-* **Atendimento e Cobertura de Esgotamento:** Segundo o balanço municipal de saneamento referente ao período de 2020–2024 ([Prefeitura de Santos, 2026](https://www.santos.sp.gov.br/?q=node%2F170908)), o município registrou 98,43% de atendimento total de esgoto e 81,91% de tratamento total. Esses indicadores são distintos das metas e dos indicadores de coleta e tratamento descritos no [PMISB (Relatório R4)](https://www.santos.sp.gov.br/static/files_www/conteudo/13%20Anexo%205%20-%20Plano%20Municipal%20Integrado%20de%20Saneamento%20B%C3%A1sico.pdf). Para áreas de vulnerabilidade, destaca-se a iniciativa de regularização das ligações de água e esgoto no [Dique da Vila Gilda](https://www.santos.sp.gov.br/?q=noticia/parceria-garante-regularizacao-da-rede-de-agua-e-esgoto-para-a-vila-gilda-em-santos), com previsão de cerca de 2.500 ligações (2025–2026).
-* **Prazo Legal para Recomposição Viária:** A legislação municipal ([Lei Complementar nº 852/2014](https://egov.santos.sp.gov.br/legis/documents/5195)) prevê prazo de 15 dias para a recomposição do pavimento nas situações e condições previstas na norma, contado conforme o marco legal aplicável (não se tratando de um tempo de atendimento operacional garantido pela concessionária).
-* **Faixas de Acompanhamento na Ouvidoria:** O [SOM Web / 162](https://egov.santos.sp.gov.br/somweb/) apresenta categorias de ocorrências em tramitação por tempo decorrido, incluindo faixas de até 30 dias, de 31 a 60 dias e acima de 60 dias. Essas faixas contextualizam o acompanhamento das demandas nos canais convencionais, mas não devem ser interpretadas isoladamente como prazos oficiais de resolução. ([Ver diagnóstico](docs/institucional/contexto-e-legislacao.md#descompasso-ouvidoria-prazos))
-* **+190 Intimações em Balanço Oficial:** Volume registrado em balanço oficial da Prefeitura de Santos ([janeiro/2024](https://www.santos.sp.gov.br/?q=noticia/santos-aplica-197-intimacoes-e-notificacoes-a-prestadoras-de-servico-em-janeiro)), no qual a Secretaria de Prefeituras Regionais (Sepref) contabilizou 197 intimações e notificações a prestadoras de serviço (sendo 83 direcionadas à concessionária de saneamento) por pendências ou danos nas vias públicas atendidas pelas cinco Prefeituras Regionais.
-* **Sanção Administrativa Ambiental (2023):** Multa de R$ 818 mil aplicada pela Secretaria Municipal de Meio Ambiente (SEMAM) em março de 2023 após vazamento que solapou a Rua Goiás ([Notícia Oficial PMS](https://www.santos.sp.gov.br/?q=noticia/santos-multa-sabesp-em-r-818-mil-reais-devido-a-contaminacao-de-solo-na-rua-goias) • [G1](https://g1.globo.com/sp/santos-regiao/noticia/2023/03/07/sabesp-e-multada-em-r-818-mil-apos-contaminacao-de-solo-na-rua-goias-em-santos-sp.ghtml)). A legislação municipal posterior ([Lei nº 4.525/2024](https://egov.santos.sp.gov.br/legis/documents/10840)) prevê, entre as fontes de recursos do Fundo Municipal de Saneamento Básico e Ambiental (FMSBA), sob controle social do [CMSBS](https://egov.santos.sp.gov.br/legis/documents/12103), receitas provenientes de multas e juros vinculados aos contratos e convênios especificados em seu artigo 4º, inciso VII. Essa previsão não comprova a liquidação ou o repasse efetivo da multa de R$ 818 mil mencionada no caso.
-
-> ⚠️ **Nota Metodológica:** Os dados acima são referências de contextualização territorial, não indicadores de desempenho da plataforma. Antes de utilizar os números em apresentações ou entregas acadêmicas, recomenda-se confirmar no documento original a data de referência, a definição do indicador e o contexto da informação. A documentação reúne mais detalhes em [Contexto e Legislação](docs/institucional/contexto-e-legislacao.md).
-
----
-
-## 💎 Perfis e Responsabilidades Propostas
-
-| Perfil / Ator | Responsabilidade Proposta | Contribuição Proposta pelo Sistema |
-| :--- | :--- | :--- |
-| **📱 Cidadão / Munícipe** | Registrar ocorrências e acompanhar o andamento dos chamados. | [Abertura ágil em 3 passos](docs/design-ux/jornada-e-ux.md#fluxo-mobile-municipe) com fotos e geolocalização, e [linha do tempo visual (stepper)](docs/design-ux/jornada-e-ux.md#stepper-visual) sem depender de ligações no `162`. |
-| **🏛️ Prefeitura (`Sepref` / `Semam`)** | Acompanhar ocorrências, fiscalizar prazos de reparos e gerenciar pendências viárias. | Proposta de painel centralizado de triagem nas [cinco regiões administrativas](docs/institucional/contexto-e-legislacao.md#regionalizacao-5-zonas), despacho de intimações e acompanhamento do prazo legal aplicável à recomposição viária ([Lei Complementar nº 852/2014](docs/institucional/contexto-e-legislacao.md#marco-regulatorio-lei-852)). |
-| **💧 Sabesp (Concessionária)** | Receber ocorrências pertinentes, documentar o atendimento operacional e atualizar informações de campo. | Recepção de chamados [pré-validados na triagem](docs/institucional/triagem-inteligente.md), com proposta de registro de laudo de campo e comprovação fotográfica da recomposição viária. |
-
-> ℹ️ *Essas responsabilidades e benefícios descrevem o desenho da solução proposta, respeitando as atribuições e os limites institucionais de cada órgão. A disponibilidade efetiva de cada recurso depende da implementação técnica e de validações institucionais.*
-
-### 🔄 Fluxo Operacional Proposto
-
-```mermaid
-flowchart LR
-    A["📱 1. Munícipe<br/>Abre chamado com foto"] --> B["🏛️ 2. Prefeitura (Sepref)<br/>Triagem & Intimação"]
-    B --> C["💧 3. Concessionária<br/>Execução do serviço e recomposição viária<br/>(conforme responsabilidade aplicável)"]
-    C --> D["✅ 4. Conclusão<br/>Laudo & Asfalto recomposto"]
-```
-
-> *O fluxo acima é conceitual. A atribuição de responsabilidades, os prazos e os critérios de encaminhamento seguem as normas municipais e as regras de negócio documentadas no projeto.*
-
-#### 📋 Exemplo de Registro de Ocorrência (Campos Previstos na Proposta)
-* **Tipologia do Incidente:** Extravasamento de esgoto em via pública (conforme catálogo técnico do PMISB).
-* **Localização Espacial:** Coordenadas geográficas coletadas para uso operacional das equipes e identificação pública agregada por logradouro/bairro.
-* **Registro de Evidências:** Fotos do dano viário ou extravasamento anexadas no momento da abertura.
-* **Marcação Temporal:** Data e hora registradas automaticamente pelo sistema (*timestamp* de abertura).
-* **Descrição do Munícipe:** Breve relato sobre o problema (ex.: retorno em poço de visita, odor intenso, solapamento).
-
-> 🔍 **Acompanhamento Fiscalizatório e Trilha Histórica:** A fiscalização municipal acompanha a evolução do chamado por meio de um histórico cronológico de alterações, que reúne pareceres de campo, registros de notificações e evidências fotográficas da recomposição viária. Essa trilha de registros visa assegurar transparência ao processo e fornecer subsídios objetivos para a conferência dos prazos legais aplicáveis.
-
----
-
-## ⚙️ Funcionalidades Propostas & Estágio de Desenvolvimento
-
-Para garantir clareza e transparência no ciclo de vida do software, as capacidades da plataforma são categorizadas por estágio real de entrega:
-
-| Funcionalidade | Módulo Responsável | Estágio de Desenvolvimento |
-| :--- | :--- | :---: |
-| Abertura simplificada de ocorrências com geolocalização e fotos | Munícipe | `Em prototipagem (Figma)` |
-| Acompanhamento transparente do chamado via Stepper visual | Munícipe | `Em prototipagem (Figma)` |
-| Triagem lógica inteligente (segregação de drenagem pluvial vs. rede de esgoto) | Prefeitura (Sepref) | `Especificada na documentação` |
-| Painel administrativo de triagem e despacho por Prefeituras Regionais (5 zonas) | Prefeitura (Sepref) | `Em prototipagem (Figma)` |
-| Controle e auditoria do prazo legal de recomposição viária, quando aplicável | Prefeitura / Sabesp | `Especificada na documentação` |
-| Recepção de ordens de serviço, registro de parecer de campo e laudo fotográfico | Sabesp (Operação) | `Especificada na documentação` |
-| Trilha de auditoria cronológica com modelo Append-Only para mudanças de status | Sistema / Auditoria | `Modelada conceitualmente (Proto SQL)` |
-| API RESTful documentada (Swagger), controle RBAC e banco relacional em nuvem | Core Backend | `Planejada para implementação (Fases 6/7)` |
-
----
-
-## 🌍 Compromisso com os Objetivos de Desenvolvimento Sustentável (ODS)
-
-Este projeto está alinhado à **[Agenda 2030 da Organização das Nações Unidas (ONU)](https://brasil.un.org/pt-br/sdgs)**, colaborando com metas de saneamento, infraestrutura e governança urbana:
-
-* **[ODS 6 · Água Potável e Saneamento](https://brasil.un.org/pt-br/sdgs/6):** Contribuição para a mitigação de impactos decorrentes de extravasamentos em canais de drenagem e praias de Santos.
-* **[ODS 9 · Indústria, Inovação e Infraestrutura](https://brasil.un.org/pt-br/sdgs/9):** Proposta de modernização da gestão urbana por meio de esteira digital e processos rastreáveis.
-* **[ODS 11 · Cidades e Comunidades Sustentáveis](https://brasil.un.org/pt-br/sdgs/11):** Apoio à resiliência urbana e suporte a áreas vulneráveis (Dique da Vila Gilda).
-* **[ODS 16 · Paz, Justiça e Instituições Eficazes](https://brasil.un.org/pt-br/sdgs/16):** Apoio à transparência ativa, controle social e acompanhamento da destinação legal de receitas vinculadas ao saneamento (`FMSBA`).
-
----
-
-## 🧭 Central de Documentação (Docs Hub)
-
-A documentação completa do projeto é categorizada em **4 pilares temáticos** (consulte também o **[Portal da Documentação (docs/README.md)](docs/README.md)**):
-
-| Categoria | Módulo | Foco & Conteúdo |
-| :---: | :--- | :--- |
-| 🏛️ **Institucional** | [**Contexto & Legislação**](docs/institucional/contexto-e-legislacao.md) | Diagnóstico territorial de Santos, concessão Sabesp (`LC 707`), caso Rua Goiás, Vila Gilda, `FMSBA` (`Lei 4.525`), `CMSBS` e `ODS`. |
-| 🏛️ **Institucional** | [**Triagem Inteligente**](docs/institucional/triagem-inteligente.md) | Árvore de decisão lógica: segregação entre rede de esgoto (`Sabesp`) e drenagem pluvial (`Prefeitura / Seserp`). |
-| 🏛️ **Institucional** | [**Glossário Terminológico**](docs/institucional/glossario.md) | Dicionário técnico-jurídico e de infraestrutura sanitária (`PV`, `EEE`, `EPC`, `FMSBA`) no padrão `ABNT`. |
-| 🎨 **Design & UX** | [**Personas & Cenários**](docs/design-ux/personas-e-cenarios.md) | `Design Thinking`: perfis de Munícipe (`Dona Helena`), Fiscal (`Sepref`), Operação (`Sabesp`) e Meio Ambiente (`Semam`). |
-| 🎨 **Design & UX** | [**Jornada & Arquitetura**](docs/design-ux/jornada-e-ux.md) | Arquitetura da informação, sitemap completo, wireframes textuais e linha do tempo de acompanhamento (`Stepper`). |
-| 🎨 **Design & UX** | [**Design System & UI**](docs/design-ux/design-system.md) | Tipografia `Montserrat`, catálogo de brasões vetoriais `.svg` da Prefeitura de Santos e protótipo no `Figma`. |
-| ⚙️ **Engenharia** | [**Requisitos do Sistema**](docs/engenharia/requisitos-do-sistema.md) | Matriz `MoSCoW` (`RF01–RF13` e `RNF01–RNF07`), regras de negócio e tipologias oficiais do `PMISB` (Relatório R4). |
-| ⚙️ **Engenharia** | [**Arquitetura & Banco**](docs/engenharia/arquitetura-e-banco.md) | Ciclo de vida do chamado, matriz de status, modelo ER (`Proto SQL`), `Soft Delete` e auditoria `Append-Only`. |
-| ⚙️ **Engenharia** | [**Regras de Negócio & API**](docs/engenharia/regras-e-api.md) | Controle de acesso por papéis (`RBAC`), validações de domínio e catálogo de rotas `RESTful` documentadas com `Swagger UI`. |
-| ⚙️ **Engenharia** | [**Gestão de Riscos**](docs/engenharia/matriz-de-riscos.md) | Matriz de riscos `ISO 31000` / `PMBOK`: mitigação de trotes, conformidade `LGPD`, interferências de concessionárias e maré. |
-| 🎓 **Acadêmico** | [**Metodologia TCC**](docs/academico/metodologia-tcc.md) | Estrutura do TCC, procedimentos metodológicos, apresentação acadêmica e normas aplicáveis, incluindo a `ABNT NBR 14724`. |
-
----
-
-<a id="roadmap"></a>
-<a id="roadmap-de-desenvolvimento"></a>
-<a id="-roadmap-de-desenvolvimento"></a>
-## 🗺️ Roadmap de Desenvolvimento
-
-- [x] **Fase 1 · Concepção e Marco Legal:** Diagnóstico municipal, [Lei Complementar nº 852/2014](https://egov.santos.sp.gov.br/legis/documents/5195), [FMSBA](https://egov.santos.sp.gov.br/legis/documents/10840), [PMISB R4](https://www.santos.sp.gov.br/static/files_www/conteudo/13%20Anexo%205%20-%20Plano%20Municipal%20Integrado%20de%20Saneamento%20B%C3%A1sico.pdf) e esteira de valor. ([Ver Documento](docs/institucional/contexto-e-legislacao.md))
-- [x] **Fase 2 · Modelagem e Arquitetura:** [Proto SQL & Logs](docs/engenharia/arquitetura-e-banco.md), `Soft Delete` e [Matriz de Requisitos RF01–RF14](docs/engenharia/requisitos-do-sistema.md).
-- [x] **Fase 3 · Identidade Visual:** Padronização dos vetores oficiais `.svg` da Prefeitura de Santos e tipografia `Montserrat`. ([Ver Design System](docs/design-ux/design-system.md))
-- [x] **Fase 4 · Design Thinking & UX:** [Personas](docs/design-ux/personas-e-cenarios.md), [Triagem Inteligente](docs/institucional/triagem-inteligente.md), [Jornada do Usuário](docs/design-ux/jornada-e-ux.md) e [Matriz de Riscos](docs/engenharia/matriz-de-riscos.md).
-- [ ] **Fase 5 · Prototipagem UI/UX (Em Andamento):** Telas interativas no [Figma](https://www.figma.com/design/Tb4SDE9A4oEpLaXfN7aAhe/Projeto-%7C-Sabesp?node-id=0-1&t=yQExxpGpTtvoIWHk-1) (Munícipe, Fiscalização Municipal e Operação Sabesp).
-- [ ] **Fase 6 · Banco em Nuvem (Planejada):** Implementação física do schema relacional no `PostgreSQL` ([Supabase](https://supabase.com/)).
-- [ ] **Fase 7 · Backend Spring Boot (Planejada):** Desenvolvimento da API `RESTful` em [Spring Boot 3](https://spring.io/projects/spring-boot) com autenticação, validações e `RBAC`.
-
----
-
-## ⚖️ Limitações de Escopo & Próximos Cuidados
-
-Por se tratar de uma proposta acadêmica em evolução por etapas, o projeto delimita os seguintes cuidados técnicos e normativos:
-
-* **Validação Normativa Contínua:** As regras de negócio e os prazos operacionais devem ser constantemente confrontados com eventuais atualizações de decretos municipais e da agência reguladora estadual (ARSESP).
-* **Delimitação de Procedimentos:** Definição clara das responsabilidades e limites de atuação entre as Secretarias Municipais (`Sepref`, `Seserp`, `Semam`) e a concessionária para cada tipologia de ocorrência.
-* **Privacidade, Minimização de Dados e LGPD:** O projeto prevê a aplicação do princípio da minimização de dados, conforme a [Lei Federal nº 13.709/2018 (LGPD)](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm). A localização precisa, quando necessária para o atendimento e a fiscalização, deverá ter acesso restrito aos perfis autorizados. Consultas públicas deverão limitar a exposição de dados pessoais e, quando adequado, apresentar a localização de forma agregada por logradouro ou bairro. Os critérios de acesso, retenção, segurança e eventual necessidade de Relatório de Impacto à Proteção de Dados Pessoais (RIPD) serão aprofundados durante a implementação.
-* **Ausência de Integração Legada:** O sistema não possui integração em tempo real com os sistemas internos da Sabesp ou da Prefeitura; opera como arquitetura de referência aberta (RESTful/OpenAPI) simulando a interoperabilidade. Não deve ser considerado canal oficial de atendimento.
-
----
-
-## 👥 Autoria
-
-Projeto concebido e desenvolvido para o Trabalho de Conclusão de Curso (TCC) no curso de **Tecnologia em Sistemas para Internet** da **Faculdade de Tecnologia da Baixada Santista Rubens Lara (FATEC Rubens Lara)** por:
-
-<table align="center">
-  <tr>
-    <td align="center" width="160px">
-      <a href="https://github.com/CarvalhoNathan">
-        <img src="https://github.com/CarvalhoNathan.png" width="85px" alt="Nathan Carvalho" style="border-radius: 50%;" /><br />
-        <sub><b>Nathan Carvalho</b></sub>
-      </a>
-    </td>
-  </tr>
-</table>
-
----
-
-## 📄 Licença
-
-Este projeto é desenvolvido para fins acadêmicos e educacionais sob os termos da **[Licença MIT](LICENSE)**. Padrões de branching e desenvolvimento no **[Guia de Contribuição (CONTRIBUTING.md)](CONTRIBUTING.md)**.  
-&copy; 2026 Nathan Carvalho.
-
----
-
-<p align="center">
-  <a href="#topo">↑ Voltar ao topo</a>
-</p>
+### 3. Configurar variáveis de ambiente no Eclipse
+1. Clique com o botão direito em `SaneamentoApplication.java` > **Run As > Run Configurations...**
+2. Na aba **Environment**, adicione as variáveis listadas em `.env.example` (incluindo `SPRING_PROFILES_ACTIVE=supabase`).
+3. Execute novamente o projeto.

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${'Chamado ' + chamado.protocolo + ' · Santos Saneamento'}">Detalhes do Chamado</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/painel.css}">
+</head>
+<body class="detail-body">
+    <header class="detail-topbar">
+        <div class="detail-container detail-topbar-inner">
+            <a th:href="@{${baseUrl}}" class="back-link">&larr; Voltar para a lista de chamados</a>
+            <div class="detail-topbar-right">
+                <span class="role-pill" th:classappend="${podeEditar ? 'role-sabesp' : 'role-prefeitura'}"
+                      th:text="${podeEditar ? 'Perfil: Sabesp (Edição)' : 'Perfil: Prefeitura (Somente leitura)'}">
+                    Perfil
+                </span>
+                <a th:href="@{/}" class="btn-switch-profile">&larr; Trocar perfil</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="detail-container detail-main">
+        <div th:if="${mensagemSucesso}" class="alert-success" th:text="${mensagemSucesso}">Atualizado!</div>
+        <div th:if="${mensagemErro}" class="alert-error" th:text="${mensagemErro}">Erro!</div>
+
+        <div class="detail-header-card">
+            <div>
+                <span class="detail-protocolo" th:text="${chamado.protocolo}">SAN-2026-0001</span>
+                <h1 th:text="${chamado.tipoProblema.descricao}">Vazamento na Via</h1>
+                <p th:text="${chamado.endereco}">Av. Ana Costa, 482 - Gonzaga</p>
+            </div>
+            <span class="status-badge status-badge-lg" th:classappend="${chamado.status.cssClass}" th:text="${chamado.status.descricao}">Pendente</span>
+        </div>
+
+        <div class="detail-grid">
+            <!-- Coluna Principal: Dados, Fotos e Comentários -->
+            <div class="detail-left">
+                <section class="detail-card">
+                    <h2>Informações da Ocorrência</h2>
+                    <dl class="info-dl">
+                        <div>
+                            <dt>Zona de Santos</dt>
+                            <dd th:text="${chamado.zona != null ? chamado.zona.descricao : '-'}">Orla/Intermediária</dd>
+                        </div>
+                        <div>
+                            <dt>Data e Hora do Registro</dt>
+                            <dd th:text="${#temporals.format(chamado.criadoEm, 'dd/MM/yyyy HH:mm')}">22/11/2026 14:00</dd>
+                        </div>
+                        <div>
+                            <dt>Coordenadas GPS</dt>
+                            <dd th:text="${chamado.latitude != null ? (chamado.latitude + ', ' + chamado.longitude) : 'Não informadas'}">-</dd>
+                        </div>
+                    </dl>
+
+                    <h3>Descrição do Problema</h3>
+                    <p class="descricao-box" th:text="${chamado.descricao}">Descrição completa...</p>
+                </section>
+
+                <section class="detail-card">
+                    <h2>Fotos Enviadas</h2>
+                    <p th:if="${#lists.isEmpty(chamado.fotos)}" class="muted-text">Nenhuma foto foi anexada a este chamado.</p>
+                    <div class="photos-grid" th:if="${!#lists.isEmpty(chamado.fotos)}" id="galeriaFotos">
+                        <button type="button"
+                                th:each="foto, iter : ${chamado.fotos}"
+                                class="photo-thumb"
+                                th:attr="data-index=${iter.index}, data-src=@{${foto.urlStorage}}, data-name=${foto.nomeArquivo}">
+                            <img th:src="@{${foto.urlStorage}}" th:alt="${foto.nomeArquivo}">
+                        </button>
+                    </div>
+                </section>
+
+                <section class="detail-card">
+                    <h2>Histórico de Comentários e Status</h2>
+                    <p th:if="${#lists.isEmpty(chamado.comentarios)}" class="muted-text">Ainda não há comentários registrados pela equipe técnica.</p>
+                    <ul class="timeline" th:if="${!#lists.isEmpty(chamado.comentarios)}">
+                        <li th:each="com : ${chamado.comentarios}" class="timeline-item">
+                            <div class="timeline-head">
+                                <strong th:text="${com.autorNome}">Equipe Sabesp</strong>
+                                <span th:text="${#temporals.format(com.criadoEm, 'dd/MM/yyyy HH:mm')}">22/11/2026 15:00</span>
+                            </div>
+                            <p class="timeline-status" th:if="${com.statusAnterior != null and com.statusNovo != null and com.statusAnterior != com.statusNovo}">
+                                Status alterado de <strong th:text="${com.statusAnterior.descricao}">Pendente</strong>
+                                para <strong th:text="${com.statusNovo.descricao}">Em Obra</strong>
+                            </p>
+                            <p class="timeline-text" th:text="${com.comentario}">Comentário...</p>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <!-- Coluna Direita: Ação da Sabesp ou Aviso de Somente Leitura (Prefeitura) -->
+            <aside class="detail-right">
+                <section class="detail-card" th:if="${podeEditar}">
+                    <h2>Atendimento Sabesp</h2>
+                    <p class="muted-text">Altere o status da solicitação e/ou registre um parecer técnico.</p>
+
+                    <form th:action="@{/sabesp/chamados/{id}/atualizar(id=${chamado.id})}" method="post" class="sabesp-form">
+                        <div class="form-field">
+                            <label for="novoStatus">Novo Status</label>
+                            <select id="novoStatus" name="novoStatus">
+                                <option th:each="st : ${statusDisponiveis}"
+                                        th:value="${st.name()}"
+                                        th:text="${st.descricao}"
+                                        th:selected="${st == chamado.status}">Status</option>
+                            </select>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="autorNome">Responsável / Equipe</label>
+                            <input type="text" id="autorNome" name="autorNome" value="Equipe Operacional Sabesp">
+                        </div>
+
+                        <div class="form-field">
+                            <label for="comentario">Comentário técnico</label>
+                            <textarea id="comentario" name="comentario" rows="4"
+                                      placeholder="Descreva a vistoria, equipe alocada ou solução aplicada..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-save-sabesp">Salvar atualização</button>
+                    </form>
+                </section>
+
+                <section class="detail-card readonly-card" th:if="${!podeEditar}">
+                    <h2>Modo Acompanhamento</h2>
+                    <p>Como usuário da <strong>Prefeitura (SEMAM)</strong>, você pode acompanhar todos os detalhes, fotos e histórico de comentários deste chamado.</p>
+                    <p>A alteração de status e o registro de comentários operacionais são exclusivos da equipe <strong>Sabesp</strong>.</p>
+                </section>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Lightbox para visualização das fotos em destaque -->
+    <div class="lightbox-overlay" id="lightboxOverlay" hidden aria-modal="true" role="dialog" aria-label="Visualização da foto">
+        <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Fechar visualização">&times;</button>
+        <button type="button" class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Foto anterior">&#8249;</button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightboxImg">
+            <div class="lightbox-caption">
+                <span id="lightboxName">foto.jpg</span>
+                <span id="lightboxCounter">1 / 1</span>
+            </div>
+        </div>
+        <button type="button" class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Próxima foto">&#8250;</button>
+    </div>
+
+    <script th:src="@{/js/detalhe-fotos.js}"></script>
+</body>
+</html>

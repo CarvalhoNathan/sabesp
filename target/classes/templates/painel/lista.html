@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${perfil == 'SABESP' ? 'Painel Sabesp · Santos Saneamento' : 'Painel Prefeitura · Santos Saneamento'}">Painel · Santos Saneamento</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/painel.css}">
+</head>
+<body class="dashboard-body">
+    <!-- Barra Lateral -->
+    <aside class="sidebar-nav">
+        <div class="sidebar-brand">
+            <span class="brand-icon-sm" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+                </svg>
+            </span>
+            <div>
+                <strong>Santos</strong>
+                <small>Saneamento</small>
+            </div>
+        </div>
+
+        <p class="sidebar-section-label" th:text="${perfil == 'SABESP' ? 'OPERAÇÃO SABESP' : 'GESTÃO E FISCALIZAÇÃO'}">GESTÃO E FISCALIZAÇÃO</p>
+
+        <nav class="sidebar-menu">
+            <a th:href="@{${baseUrl}}" class="sidebar-link active">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
+                    <rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
+                </svg>
+                <span>Dashboard</span>
+            </a>
+            <a th:href="@{${baseUrl}(status='PENDENTE')}" class="sidebar-link">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                    <polyline points="14 2 14 8 20 8"/>
+                </svg>
+                <span>Pendentes</span>
+                <span class="menu-count" th:text="${totalPendentes}">0</span>
+            </a>
+            <a th:href="@{${baseUrl}(status='EM_OBRA')}" class="sidebar-link">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                </svg>
+                <span>Em Obra</span>
+            </a>
+            <a th:href="@{/chamados/novo}" class="sidebar-link">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/>
+                </svg>
+                <span>Novo Chamado</span>
+            </a>
+        </nav>
+
+        <div class="sidebar-footer">
+            <div class="sidebar-status-box">
+                <strong class="semam-tag">SEMAM · SANTOS</strong>
+                <small>Secretaria de Meio Ambiente</small>
+                <div class="operator-row">
+                    <span>Operadora</span>
+                    <strong class="sabesp-word">sabesp</strong>
+                </div>
+                <span class="integration-dot">● Integração ativa</span>
+            </div>
+            <a th:href="@{/}" class="switch-profile-link">&larr; Trocar perfil de acesso</a>
+        </div>
+    </aside>
+
+    <!-- Conteúdo Principal -->
+    <div class="dashboard-main-wrap">
+        <header class="dash-topbar">
+            <form th:action="@{${baseUrl}}" method="get" class="topbar-search">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                </svg>
+                <input type="text" name="busca" th:value="${filtroBusca}" placeholder="Buscar protocolo, endereço ou descrição...">
+            </form>
+
+            <div class="topbar-user">
+                <a th:href="@{/}" class="btn-switch-profile" title="Voltar para seleção de perfil">
+                    &larr; Trocar perfil
+                </a>
+                <span class="user-avatar" th:text="${perfil == 'SABESP' ? 'SB' : 'PM'}">SB</span>
+                <div class="user-meta">
+                    <strong th:text="${perfil == 'SABESP' ? 'Equipe Operacional Sabesp' : 'Fiscal SEMAM · Prefeitura'}">Equipe</strong>
+                    <small th:text="${perfil == 'SABESP' ? 'Alteração de status e comentários' : 'Modo acompanhamento e filtros'}">Perfil</small>
+                </div>
+            </div>
+        </header>
+
+        <main class="dash-content">
+            <div class="dash-breadcrumb">
+                <a th:href="@{/}">Início</a>
+                <span>&gt;</span>
+                <strong th:text="${perfil == 'SABESP' ? 'Painel Sabesp' : 'Painel Prefeitura'}">Dashboard</strong>
+            </div>
+
+            <div class="dash-title-row">
+                <div>
+                    <h1>Visão geral do saneamento</h1>
+                    <p th:text="${perfil == 'SABESP'
+                        ? 'Visualize os chamados abertos pelos munícipes, atualize o status e registre comentários técnicos.'
+                        : 'Acompanhe os chamados de esgoto em Santos e utilize os filtros de consulta.'}">
+                        Acompanhe os chamados.
+                    </p>
+                </div>
+                <span class="role-pill" th:classappend="${perfil == 'SABESP' ? 'role-sabesp' : 'role-prefeitura'}"
+                      th:text="${perfil == 'SABESP' ? 'Perfil: Sabesp (Edição)' : 'Perfil: Prefeitura (Somente leitura)'}">
+                    Perfil
+                </span>
+            </div>
+
+            <!-- 4 KPI Cards -->
+            <section class="kpi-grid">
+                <div class="kpi-card">
+                    <div class="kpi-top">
+                        <span>Total de Chamados</span>
+                        <span class="kpi-icon kpi-green">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg>
+                        </span>
+                    </div>
+                    <strong class="kpi-value" th:text="${totalChamados}">0</strong>
+                    <span class="kpi-badge kpi-badge-green">Registrados no portal</span>
+                </div>
+
+                <div class="kpi-card">
+                    <div class="kpi-top">
+                        <span>Pendentes</span>
+                        <span class="kpi-icon kpi-amber">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        </span>
+                    </div>
+                    <strong class="kpi-value" th:text="${totalPendentes}">0</strong>
+                    <span class="kpi-badge kpi-badge-amber">Aguardando atendimento</span>
+                </div>
+
+                <div class="kpi-card">
+                    <div class="kpi-top">
+                        <span>Em Execução Sabesp</span>
+                        <span class="kpi-icon kpi-blue">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                        </span>
+                    </div>
+                    <strong class="kpi-value" th:text="${totalEmObra}">0</strong>
+                    <span class="kpi-badge kpi-badge-blue">Em obra</span>
+                </div>
+
+                <div class="kpi-card">
+                    <div class="kpi-top">
+                        <span>Concluídos</span>
+                        <span class="kpi-icon kpi-green">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                        </span>
+                    </div>
+                    <strong class="kpi-value" th:text="${totalConcluidos}">0</strong>
+                    <span class="kpi-badge kpi-badge-green">Finalizados</span>
+                </div>
+            </section>
+
+            <!-- Barra de Filtros -->
+            <form th:action="@{${baseUrl}}" method="get" class="filter-bar">
+                <div class="filter-field">
+                    <label for="filtroZona">Zona de Santos</label>
+                    <select id="filtroZona" name="zona">
+                        <option value="">Todas as zonas</option>
+                        <option th:each="z : ${zonas}"
+                                th:value="${z.name()}"
+                                th:text="${z.descricao}"
+                                th:selected="${filtroZona == z}">Zona</option>
+                    </select>
+                </div>
+
+                <div class="filter-field">
+                    <label for="filtroStatus">Status</label>
+                    <select id="filtroStatus" name="status">
+                        <option value="">Todos os status</option>
+                        <option th:each="st : ${statusLista}"
+                                th:value="${st.name()}"
+                                th:text="${st.descricao}"
+                                th:selected="${filtroStatus == st}">Status</option>
+                    </select>
+                </div>
+
+                <div class="filter-field">
+                    <label for="filtroDataInicio">Data inicial</label>
+                    <input type="date" id="filtroDataInicio" name="dataInicio" th:value="${filtroDataInicio}">
+                </div>
+
+                <div class="filter-field">
+                    <label for="filtroDataFim">Data final</label>
+                    <input type="date" id="filtroDataFim" name="dataFim" th:value="${filtroDataFim}">
+                </div>
+
+                <input type="hidden" name="busca" th:value="${filtroBusca}">
+
+                <div class="filter-actions">
+                    <button type="submit" class="btn-filter">Aplicar filtros</button>
+                    <a th:href="@{${baseUrl}}" class="btn-clear">Limpar filtros</a>
+                </div>
+            </form>
+
+            <!-- Tabela de Chamados -->
+            <section class="table-card">
+                <div class="table-header">
+                    <div>
+                        <h2>Chamados de saneamento <span class="count-pill" th:text="${#lists.size(chamados) + ' registros'}">0 registros</span></h2>
+                        <p>Solicitações dos munícipes e acompanhamento das intervenções Sabesp.</p>
+                    </div>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="chamados-table">
+                        <thead>
+                            <tr>
+                                <th>Protocolo</th>
+                                <th>Endereço</th>
+                                <th>Tipo</th>
+                                <th>Zona</th>
+                                <th>Data/Hora</th>
+                                <th>Status</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr th:if="${#lists.isEmpty(chamados)}">
+                                <td colspan="7" class="empty-state">Nenhum chamado encontrado com os filtros informados.</td>
+                            </tr>
+                            <tr th:each="c : ${chamados}">
+                                <td class="col-protocolo" th:text="${c.protocolo}">SAN-2026-0001</td>
+                                <td class="col-endereco" th:text="${c.endereco}">Av. Ana Costa, 482</td>
+                                <td th:text="${c.tipoProblema.descricao}">Vazamento na Via</td>
+                                <td th:text="${c.zona != null ? c.zona.descricao : '-'}">Orla/Intermediária</td>
+                                <td class="col-data" th:text="${#temporals.format(c.criadoEm, 'dd/MM/yyyy HH:mm')}">22/11/2026 14:00</td>
+                                <td>
+                                    <span class="status-badge" th:classappend="${c.status.cssClass}" th:text="${c.status.descricao}">Pendente</span>
+                                </td>
+                                <td>
+                                    <a th:href="@{${baseUrl + '/' + c.id}}" class="btn-view">
+                                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                                        Visualizar
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

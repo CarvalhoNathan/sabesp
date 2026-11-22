@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportar Problema na Rede · Santos Saneamento</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/santos-saneamento.css}">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="topbar">
+        <div class="container topbar-inner">
+            <a th:href="@{/}" class="brand">
+                <span class="brand-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+                    </svg>
+                </span>
+                <span class="brand-text">
+                    <strong>Santos</strong>
+                    <small>Saneamento</small>
+                </span>
+            </a>
+
+            <nav class="topbar-nav" aria-label="Navegação principal">
+                <a th:href="@{/}" class="nav-link active">Portal do cidadão</a>
+                <span class="nav-divider" aria-hidden="true"></span>
+                <a href="#minhas-solicitacoes" class="nav-link nav-link-icon" title="Em breve: consulta por protocolo">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14 2 14 8 20 8"/>
+                        <line x1="16" y1="13" x2="8" y2="13"/>
+                        <line x1="16" y1="17" x2="8" y2="17"/>
+                    </svg>
+                    Minhas solicitações
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-main">
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a th:href="@{/}">Início</a>
+            <span aria-hidden="true">&gt;</span>
+            <span class="breadcrumb-current">Novo Chamado de Esgoto</span>
+        </nav>
+
+        <!-- Cabeçalho da página -->
+        <section class="page-header">
+            <div class="page-header-left">
+                <a th:href="@{/}" class="btn-back" aria-label="Voltar">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="19" y1="12" x2="5" y2="12"/>
+                        <polyline points="12 19 5 12 12 5"/>
+                    </svg>
+                </a>
+                <div>
+                    <h1>Reportar Problema na Rede</h1>
+                    <p>Informe o local e o que aconteceu. Vamos encaminhar seu relato para atendimento.</p>
+                </div>
+            </div>
+            <a href="#ajuda" class="help-link" id="btnAjuda">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                    <line x1="12" y1="17" x2="12.01" y2="17"/>
+                </svg>
+                Precisa de ajuda?
+            </a>
+        </section>
+
+        <!-- Alerta de protocolo gerado com sucesso -->
+        <div th:if="${protocoloGerado}" class="alert-success" role="status">
+            <div>
+                <strong>Solicitação registrada com sucesso!</strong>
+                <p>Seu número de protocolo é <code th:text="${protocoloGerado}">SAN-2026-000001</code>. A Prefeitura (SEMAM) fará a triagem e encaminhará à Sabesp.</p>
+            </div>
+        </div>
+
+        <!-- Alerta de erro geral de upload -->
+        <div th:if="${erroUpload}" class="alert-error" role="alert">
+            <span th:text="${erroUpload}">Erro ao processar os arquivos enviados.</span>
+        </div>
+
+        <!-- Grid principal: Formulário + Barra lateral -->
+        <div class="content-grid">
+            <!-- Coluna esquerda: Formulário -->
+            <section class="card form-card">
+                <div class="card-header">
+                    <div>
+                        <h2>Detalhes da ocorrência</h2>
+                        <p class="required-note">Os campos com * são obrigatórios.</p>
+                    </div>
+                    <span class="badge-sewer">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="9"/>
+                            <circle cx="9" cy="10" r="1"/>
+                            <circle cx="15" cy="10" r="1"/>
+                            <circle cx="12" cy="15" r="1"/>
+                        </svg>
+                        Rede de esgoto
+                    </span>
+                </div>
+
+                <form th:action="@{/chamados/novo}" th:object="${chamadoForm}" method="post" enctype="multipart/form-data" id="formChamado" novalidate>
+                    <!-- CEP (opcional) e Endereço -->
+                    <div class="form-group">
+                        <label for="cep">CEP <span class="optional">(opcional · preenche o endereço automaticamente)</span></label>
+                        <div class="cep-row">
+                            <input type="text"
+                                   id="cep"
+                                   inputmode="numeric"
+                                   maxlength="9"
+                                   placeholder="Ex: 11060-000"
+                                   autocomplete="postal-code">
+                            <span id="cepStatus" class="gps-status" aria-live="polite"></span>
+                        </div>
+                    </div>
+
+                    <!-- Endereço -->
+                    <div class="form-group">
+                        <label for="endereco">Endereço da Ocorrência <span class="req">*</span></label>
+                        <div class="autocomplete-wrap">
+                            <div class="input-with-icon">
+                                <span class="input-icon" aria-hidden="true">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                </span>
+                                <input type="text"
+                                       id="endereco"
+                                       th:field="*{endereco}"
+                                       placeholder="Rua, número e bairro, em Santos"
+                                       autocomplete="off"
+                                       required>
+                            </div>
+                            <ul id="enderecoSugestoes" class="address-autocomplete" role="listbox" hidden></ul>
+                        </div>
+                        <input type="hidden" id="latitude" th:field="*{latitude}">
+                        <input type="hidden" id="longitude" th:field="*{longitude}">
+
+                        <div class="gps-row">
+                            <button type="button" class="btn-gps" id="btnDetectarGps">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                Detectar Localização Atual (GPS)
+                            </button>
+                            <span id="gpsStatus" class="gps-status" aria-live="polite"></span>
+                        </div>
+                        <p class="field-hint">Informe o número mais próximo ou um ponto de referência.</p>
+                        <p class="field-error" th:if="${#fields.hasErrors('endereco')}" th:errors="*{endereco}"></p>
+                    </div>
+
+                    <!-- Tipo de Problema -->
+                    <div class="form-group">
+                        <label for="tipoProblemaSelect">Tipo de Problema <span class="req">*</span></label>
+
+                        <!-- Select nativo oculto para binding do Spring MVC -->
+                        <select id="tipoProblemaSelect" th:field="*{tipoProblema}" class="sr-only-select" required>
+                            <option value="">Selecione o tipo de problema</option>
+                            <option th:each="tipo : ${tiposProblema}"
+                                    th:value="${tipo.name()}"
+                                    th:text="${tipo.descricao}">
+                            </option>
+                        </select>
+
+                        <!-- Dropdown customizado fiel ao layout -->
+                        <div class="custom-select" id="customTipoSelect">
+                            <button type="button" class="custom-select-trigger" aria-haspopup="listbox" aria-expanded="false">
+                                <span id="customSelectLabel" class="placeholder">Selecione o tipo de problema</span>
+                                <svg class="chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"/>
+                                </svg>
+                            </button>
+
+                            <ul class="custom-select-options" role="listbox" tabindex="-1">
+                                <li th:each="tipo : ${tiposProblema}"
+                                    role="option"
+                                    class="custom-select-option"
+                                    th:attr="data-value=${tipo.name()}, data-label=${tipo.descricao}">
+                                    <span class="option-icon" th:switch="${tipo.icone}" aria-hidden="true">
+                                        <svg th:case="'droplet'" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+                                        </svg>
+                                        <svg th:case="'waves'" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/>
+                                            <path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/>
+                                            <path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/>
+                                        </svg>
+                                        <svg th:case="'wrench'" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                                        </svg>
+                                        <svg th:case="*" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                            <circle cx="12" cy="12" r="10"/>
+                                            <line x1="12" y1="8" x2="12" y2="12"/>
+                                            <line x1="12" y1="16" x2="12.01" y2="16"/>
+                                        </svg>
+                                    </span>
+                                    <span th:text="${tipo.descricao}">Tipo</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="field-error" th:if="${#fields.hasErrors('tipoProblema')}" th:errors="*{tipoProblema}"></p>
+                    </div>
+
+                    <!-- Descrição do Problema -->
+                    <div class="form-group">
+                        <label for="descricao">Descrição do Problema <span class="req">*</span></label>
+                        <textarea id="descricao"
+                                  th:field="*{descricao}"
+                                  rows="4"
+                                  placeholder="Descreva os detalhes visíveis do problema..."
+                                  required></textarea>
+                        <p class="field-hint">Conte o que você observou e há quanto tempo o problema acontece.</p>
+                        <p class="field-error" th:if="${#fields.hasErrors('descricao')}" th:errors="*{descricao}"></p>
+                    </div>
+
+                    <!-- Fotos da ocorrência -->
+                    <div class="form-group">
+                        <label for="fotosInput">Fotos da ocorrência <span class="optional">(opcional)</span></label>
+                        <div class="upload-dropzone" id="uploadDropzone">
+                            <input type="file"
+                                   id="fotosInput"
+                                   name="fotos"
+                                   accept="image/jpeg,image/png"
+                                   multiple
+                                   hidden>
+                            <div class="upload-icon-box" aria-hidden="true">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+                                    <circle cx="12" cy="13" r="4"/>
+                                </svg>
+                            </div>
+                            <p class="upload-title">Tire uma foto ou envie fotos do vazamento</p>
+                            <p class="upload-sub">Arraste as imagens aqui ou clique para selecionar</p>
+                            <p class="upload-meta">JPG ou PNG · Até 5 fotos de 10 MB cada</p>
+                        </div>
+                        <div class="upload-previews" id="uploadPreviews"></div>
+                    </div>
+
+                    <!-- Aviso legal -->
+                    <div class="legal-banner">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="12" y1="16" x2="12" y2="12"/>
+                            <line x1="12" y1="8" x2="12.01" y2="8"/>
+                        </svg>
+                        <span>Conforme Lei Complementar nº 852/2014, a solicitação será triada pela Prefeitura e enviada à Sabesp.</span>
+                    </div>
+
+                    <!-- Rodapé do formulário -->
+                    <div class="form-actions">
+                        <span class="privacy-note">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                <path d="M9 12l2 2 4-4"/>
+                            </svg>
+                            Seus dados estão protegidos.
+                        </span>
+                        <button type="submit" class="btn-submit">
+                            Enviar Solicitação
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                                <polyline points="12 5 19 12 12 19"/>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Coluna direita: Informações -->
+            <aside class="sidebar">
+                <div class="card info-card">
+                    <div class="info-icon-box" aria-hidden="true">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/>
+                            <rect x="8" y="2" width="8" height="4" rx="1" ry="1"/>
+                            <path d="M9 14l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <h3>O que acontece depois?</h3>
+                    <p class="info-subtitle">Seu relato ajuda a cuidar do saneamento de Santos.</p>
+
+                    <ol class="steps-list">
+                        <li>
+                            <span class="step-num">1</span>
+                            <div>
+                                <strong>Recebemos sua solicitação</strong>
+                                <p>Após o envio, você recebe um número de protocolo.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="step-num">2</span>
+                            <div>
+                                <strong>A Prefeitura faz a triagem</strong>
+                                <p>A equipe analisa as informações e encaminha o chamado à Sabesp.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="step-num">3</span>
+                            <div>
+                                <strong>Você acompanha o andamento</strong>
+                                <p>Consulte as atualizações em Minhas solicitações.</p>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="safety-card">
+                    <div class="safety-title">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="M9 12l2 2 4-4"/>
+                        </svg>
+                        <strong>Sua segurança vem primeiro</strong>
+                    </div>
+                    <p>Mantenha distância do esgoto e de bueiros abertos. Registre as fotos apenas se for seguro.</p>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div>
+                <strong>Prefeitura de Santos · SEMAM</strong>
+                <p>Cuidar da cidade começa com a sua participação.</p>
+            </div>
+            <div class="footer-operator">
+                <span>Operadora de saneamento</span>
+                <strong>sabesp</strong>
+            </div>
+        </div>
+    </footer>
+
+    <script th:src="@{/js/novo-chamado.js}"></script>
+</body>
+</html>

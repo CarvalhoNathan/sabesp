@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso ao Sistema · Santos Saneamento</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/painel.css}">
+</head>
+<body class="login-body">
+    <main class="login-wrapper">
+        <div class="login-card">
+            <div class="login-brand">
+                <span class="brand-icon-lg" aria-hidden="true">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+                    </svg>
+                </span>
+                <div>
+                    <h1>Santos Saneamento</h1>
+                    <p>Secretaria de Meio Ambiente (SEMAM) · Operação Sabesp</p>
+                </div>
+            </div>
+
+            <p class="login-subtitle">Selecione o perfil de acesso para entrar no sistema:</p>
+
+            <div class="profile-buttons">
+                <a th:href="@{/chamados/novo}" class="profile-btn profile-btn-cidadao">
+                    <span class="profile-icon" aria-hidden="true">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                            <circle cx="12" cy="7" r="4"/>
+                        </svg>
+                    </span>
+                    <span class="profile-info">
+                        <strong>Pessoa comum</strong>
+                        <small>Registrar problema de esgoto e enviar fotos</small>
+                    </span>
+                    <span class="profile-arrow" aria-hidden="true">&rarr;</span>
+                </a>
+
+                <a th:href="@{/sabesp/chamados}" class="profile-btn profile-btn-sabesp">
+                    <span class="profile-icon" aria-hidden="true">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                        </svg>
+                    </span>
+                    <span class="profile-info">
+                        <strong>Sabesp</strong>
+                        <small>Visualizar chamados, alterar status e escrever comentários</small>
+                    </span>
+                    <span class="profile-arrow" aria-hidden="true">&rarr;</span>
+                </a>
+
+                <a th:href="@{/prefeitura/chamados}" class="profile-btn profile-btn-prefeitura">
+                    <span class="profile-icon" aria-hidden="true">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 21h18"/>
+                            <path d="M5 21V7l7-4 7 4v14"/>
+                            <path d="M9 21v-4h6v4"/>
+                        </svg>
+                    </span>
+                    <span class="profile-info">
+                        <strong>Prefeitura (SEMAM)</strong>
+                        <small>Acompanhar chamados e aplicar filtros por zona e status</small>
+                    </span>
+                    <span class="profile-arrow" aria-hidden="true">&rarr;</span>
+                </a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
